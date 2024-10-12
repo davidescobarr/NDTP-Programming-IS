@@ -94,6 +94,7 @@ class WeatherAgent(ScAgentClassic):
             return ScResult.ERROR
 
         entity_idtf = get_link_content_data(city_idtf_link)
+        
         try:
             temperature = self.get_weather(
                 entity_idtf, city_addr, country_addr)
