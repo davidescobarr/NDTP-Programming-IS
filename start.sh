@@ -16,7 +16,7 @@ chmod +x "$SCRIPT4"
 
 cd "../"
 source .venv/bin/activate
-cd "/nika"
+cd "nika"
 
 # Function to start a screen session and run a script
 start_screen_session() {
