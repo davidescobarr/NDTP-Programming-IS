@@ -14,6 +14,10 @@ chmod +x "$SCRIPT3"
 
 chmod +x "$SCRIPT4"
 
+cd "../Рабочий стол"
+source .venv/bin/activate
+cd "../nika"
+
 # Function to start a screen session and run a script
 start_screen_session() {
     local session_name="$1"
