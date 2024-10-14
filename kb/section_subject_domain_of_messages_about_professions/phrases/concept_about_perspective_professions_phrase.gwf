@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GWF version="2.0">
     <staticSector>
-        <node type="node/const/perm/group" idtf="concept_about_perspective_professions_phrase" shapeColor="0" id="105130267430992" parent="0" left="0" top="0" right="296.313" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="396" y="238" haveBus="false" idtf_pos="0">
+        <node type="node/const/perm/general" idtf="" shapeColor="193" id="105989837003424" parent="0" x="652" y="368" haveBus="false" idtf_pos="0">
+            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[В Беларуси перспективными считаются
+профессии в сфере IT, такие как программисты, специалисты по
+кибербезопасности и аналитики данных. Также востребованы
+медицинские работники и аграрные профессии. Развиваются профессии в
+условиях глобализации и изменений рынка труда, также становятся
+важными специалисты по маркетингу и логистике.]]></content>
+        </node>
+        <node type="node/const/perm/group" idtf="lang_ru" shapeColor="0" id="105989848614144" parent="0" left="0" top="0" right="53.6406" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="251" y="347" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
-        <node type="node/const/perm/general" idtf="" shapeColor="0" id="105130266366848" parent="0" x="396" y="346" haveBus="false" idtf_pos="0">
-            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[about_perspective_professions]]></content>
-        </node>
-        <node type="node/const/perm/group" idtf="lang_ru" shapeColor="0" id="105130265073760" parent="0" left="0" top="0" right="53.6406" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="251" y="347" haveBus="false" idtf_pos="0">
+        <node type="node/const/perm/group" idtf="concept_about_perspective_professions_phrase" shapeColor="0" id="105989838884688" parent="0" left="0" top="0" right="296.313" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="396" y="238" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
-        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="105130267374848" parent="0" id_b="105130267430992" id_e="105130266366848" b_x="396" b_y="238" e_x="396" e_y="346" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="105989835919136" parent="0" id_b="105989848614144" id_e="105989837003424" b_x="251" b_y="347" e_x="652" e_y="368" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="105130266085360" parent="0" id_b="105130265073760" id_e="105130266366848" b_x="251" b_y="347" e_x="396" e_y="346" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="105989848610800" parent="0" id_b="105989838884688" id_e="105989837003424" b_x="396" b_y="238" e_x="652" e_y="368" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
     </staticSector>
