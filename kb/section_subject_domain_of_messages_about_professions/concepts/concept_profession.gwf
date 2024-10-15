@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GWF version="2.0">
     <staticSector>
+        <node type="node/const/perm/general" idtf="" shapeColor="0" id="111068924334000" parent="0" x="1262.27" y="-11.1798" haveBus="false" idtf_pos="0">
+            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Архитектор — это специалист, который разрабатывает проекты зданий и сооружений. Он отвечает за создание удобных, безопасных и красивых пространств, учитывая пожелания заказчика и строительные нормы. Архитектор проектирует планировки, выбирает материалы и следит за тем, чтобы здание было функциональным и эстетичным. Его работа сочетает творческий подход и технические знания.
+Вот примеры задач, с которыми сталкивается архитектор на работе:
+Проектирование дома: Архитектор должен придумать, как будет выглядеть дом, сколько в нем будет комнат, где разместить окна и двери, чтобы всё было удобно для жителей.
+Планировка офиса: Нужно создать такой проект офиса, чтобы рабочие места были комфортными, а сотрудники могли легко передвигаться по зданию.
+Реставрация старого здания: Архитектор разрабатывает план, как восстановить здание, сохраняя его исторический облик, но при этом сделать его современным и безопасным.
+Разработка общественного парка: Задача архитектора — продумать, где будут пешеходные дорожки, зоны отдыха и детские площадки, чтобы парк был приятным для посещения.
+Согласование проекта: Архитектор должен убедиться, что все строительные чертежи соответствуют нормам безопасности и правилам города.]]></content>
+        </node>
         <node type="node/const/perm/general" idtf="" shapeColor="0" id="111068935584192" parent="0" x="2082.21" y="262.777" haveBus="false" idtf_pos="0">
             <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[психолога]]></content>
         </node>
@@ -200,9 +209,6 @@
             <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[2047 BYN]]></content>
         </node>
         <node type="node/const/perm/general" idtf="" shapeColor="0" id="111068929827248" parent="0" x="345.928" y="190.754" haveBus="false" idtf_pos="0">
-            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[-]]></content>
-        </node>
-        <node type="node/const/perm/general" idtf="" shapeColor="0" id="111068924334000" parent="0" x="959.904" y="-7.24275" haveBus="false" idtf_pos="0">
             <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[-]]></content>
         </node>
         <node type="node/const/perm/general" idtf="" shapeColor="0" id="111068930008128" parent="0" x="-909.436" y="649.068" haveBus="false" idtf_pos="0">
@@ -796,10 +802,10 @@
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="111068935447456" parent="0" id_b="111068935416384" id_e="111068935446528" b_x="944.246" b_y="48.4831" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.517653">
             <points/>
         </pair>
-        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="111068935446528" parent="0" id_b="111068935296704" id_e="111068924334000" b_x="823.931" b_y="35.9467" e_x="959.904" e_y="-7.24275" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="111068935446528" parent="0" id_b="111068935296704" id_e="111068924334000" b_x="823.931" b_y="35.9467" e_x="1262.27" e_y="-11.1798" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="111068935445008" parent="0" id_b="111068935379136" id_e="111068924334000" b_x="1043.2" b_y="40.4381" e_x="959.904" e_y="-7.24275" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="111068935445008" parent="0" id_b="111068935379136" id_e="111068924334000" b_x="1043.2" b_y="40.4381" e_x="1262.27" e_y="-11.1798" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="111068935443952" parent="0" id_b="111068935312256" id_e="111068935296704" b_x="996.555" b_y="287.842" e_x="823.931" e_y="35.9467" dotBBalance="0" dotEBalance="0">
