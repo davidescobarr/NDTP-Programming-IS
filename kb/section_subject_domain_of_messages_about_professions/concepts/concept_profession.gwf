@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GWF version="2.0">
     <staticSector>
-        <node type="node/const/perm/relation" idtf="nrel_salary" shapeColor="193" id="111285412821888" parent="0" left="0" top="0" right="75.9688" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-1035.91" y="426.333" haveBus="false" idtf_pos="0">
+        <node type="node/const/perm/general" idtf="" shapeColor="0" id="111285412254720" parent="0" x="-1344.92" y="1289.4" haveBus="false" idtf_pos="0">
+            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[<b>Повар</b> — это специалист, который готовит еду в ресторанах, кафе или на кухнях других заведений. Он разрабатывает рецепты, подбирает ингредиенты и создает вкусные блюда, соблюдая правила гигиены и безопасности.<br><br>
+Вот примеры задач, с которыми сталкивается повар на работе:<br><ul style="list-style: decimal;">
+<li><b>Приготовление блюд</b>: Повар готовит еду по рецептам, правильно комбинируя ингредиенты и следуя технологиям./li>
+<li><b>Разработка меню</b>: Повар создаёт новое меню, подбирая интересные и вкусные блюда для гостей.</li>
+<li><b>Контроль качества продуктов</b>: Он проверяет свежесть и качество ингредиентов перед приготовлением.</li>
+<li><b>Украшение блюд</b>: Повар красиво оформляет готовые блюда, чтобы они были аппетитными и эстетичными.</li>
+<li><b>Организация кухни</b>: Повар следит за чистотой и порядком на кухне, соблюдает правила гигиены и безопасности.</li>
+</ul>]]></content>
+        </node>
+        <node type="node/const/perm/relation" idtf="nrel_salary" shapeColor="0" id="111285412821888" parent="0" left="0" top="0" right="75.9688" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-1035.91" y="426.333" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
         <node type="node/const/perm/relation" idtf="nrel_info" shapeColor="0" id="111285412877280" parent="0" left="0" top="0" right="61.4688" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-873.785" y="410.601" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
-        <node type="node/const/perm/general" idtf="" shapeColor="255" id="111285412239872" parent="0" x="-979.889" y="138.538" haveBus="false" idtf_pos="0">
+        <node type="node/const/perm/general" idtf="" shapeColor="0" id="111285412239872" parent="0" x="-979.889" y="138.538" haveBus="false" idtf_pos="0">
             <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[<b>Врач</b> — это специалист, который диагностирует, лечит и предотвращает болезни у людей. Он проводит осмотры, назначает анализы, ставит диагнозы и разрабатывает планы лечения для поддержания здоровья пациентов.<br><br>
 Вот примеры задач, с которыми сталкивается врач на работе:<br><ul style="list-style: decimal;">
 <li><b>Диагностика</b> заболевания: Врач осматривает пациента, анализирует симптомы и назначает необходимые обследования для постановки диагноза.</li>
@@ -230,9 +240,6 @@
         </node>
         <node type="node/const/perm/general" idtf="" shapeColor="0" id="111285412283088" parent="0" x="698.626" y="-103.118" haveBus="false" idtf_pos="0">
             <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[949 BYN]]></content>
-        </node>
-        <node type="node/const/perm/general" idtf="" shapeColor="0" id="111285412254720" parent="0" x="-1187.26" y="1293.14" haveBus="false" idtf_pos="0">
-            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[-]]></content>
         </node>
         <node type="node/const/perm/general" idtf="" shapeColor="0" id="111285412247296" parent="0" x="-715.956" y="1082.93" haveBus="false" idtf_pos="0">
             <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[-]]></content>
@@ -561,7 +568,7 @@
         <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="111285413375776" parent="0" id_b="111285412366240" id_e="111285412346048" b_x="-1285.91" b_y="863.644" e_x="-1411.21" e_y="724.579" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="111285413374864" parent="0" id_b="111285412366240" id_e="111285412254720" b_x="-1285.91" b_y="863.644" e_x="-1187.26" e_y="1293.14" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="111285413374864" parent="0" id_b="111285412366240" id_e="111285412254720" b_x="-1285.91" b_y="863.644" e_x="-1344.92" e_y="1289.4" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="111285413373888" parent="0" id_b="111285412822656" id_e="111285413378768" b_x="-1370.98" b_y="923.623" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.363798">
@@ -672,7 +679,7 @@
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="111285413339728" parent="0" id_b="111285411472320" id_e="111285412477168" b_x="996.555" b_y="287.842" e_x="275.541" e_y="281.065" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="111285413338688" parent="0" id_b="111285412859200" id_e="111285412254720" b_x="-1066.64" b_y="868.135" e_x="-1187.26" e_y="1293.14" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="111285413338688" parent="0" id_b="111285412859200" id_e="111285412254720" b_x="-1066.64" b_y="868.135" e_x="-1344.92" e_y="1289.4" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
         <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="111285413337776" parent="0" id_b="111285411531712" id_e="111285411454480" b_x="841.146" b_y="1260.69" e_x="590.105" e_y="1236.46" dotBBalance="0" dotEBalance="0">
