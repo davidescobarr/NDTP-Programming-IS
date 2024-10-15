@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GWF version="2.0">
     <staticSector>
+        <node type="node/const/perm/relation" idtf="nrel_idtf" shapeColor="0" id="111285412201152" parent="0" left="0" top="0" right="61.0781" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="738.836" y="1320.67" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/group" idtf="lang_ru" shapeColor="0" id="111285412105952" parent="0" left="0" top="0" right="53.6406" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1030.53" y="1573.23" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/relation" idtf="nrel_info" shapeColor="0" id="111285412183296" parent="0" left="0" top="0" right="61.4688" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="895.944" y="1428.4" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/general" idtf="" shapeColor="0" id="111285412219248" parent="0" x="629.366" y="1688.08" haveBus="false" idtf_pos="0">
+            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[<b>Программист</b> — это специалист, который пишет и разрабатывает программы и приложения для компьютеров и других устройств. Он создает код, тестирует программы и исправляет ошибки, чтобы обеспечить их правильную работу.<br><br>
+Вот примеры задач, с которыми сталкивается программист на работе:<br><ul style="list-style: decimal;">
+<li><b>Написание кода</b>: Программист создаёт программы и приложения, используя языки программирования, такие как C#, Python, Java и другие.</li>
+<li><b>Исправление ошибок</b>: Он находит и устраняет баги и ошибки в коде, чтобы программа работала корректно.</li>
+<li><b>Тестирование программ</b>: Программист проверяет программы на наличие ошибок и тестирует их работоспособность в разных условиях.</li>
+<li><b>Разработка интерфейсов</b>: Программист создаёт удобные пользовательские интерфейсы, чтобы пользователи могли легко взаимодействовать с программой.</li>
+<li><b>Оптимизация кода</b>: Он улучшает производительность программ, делая их быстрее и эффективнее.</li>
+</ul>]]></content>
+        </node>
         <node type="node/const/perm/general" idtf="" shapeColor="0" id="111285411527328" parent="0" x="-45.6567" y="1696.77" haveBus="false" idtf_pos="0">
             <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[<b>Пожарный</b> — это специалист, который занимается тушением пожаров, спасением людей и предотвращением чрезвычайных ситуаций. Он защищает людей и имущество от огня, а также проводит профилактическую работу по предупреждению пожаров.<br><br>
 Вот примеры задач, с которыми сталкивается пожарный на работе:<br><ul style="list-style: decimal;">
@@ -261,15 +280,6 @@
         <node type="node/const/perm/general" idtf="" shapeColor="0" id="111285412283088" parent="0" x="698.626" y="-103.118" haveBus="false" idtf_pos="0">
             <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[949 BYN]]></content>
         </node>
-        <node type="node/const/perm/general" idtf="" shapeColor="0" id="111285412219248" parent="0" x="961.55" y="1163.94" haveBus="false" idtf_pos="0">
-            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[-]]></content>
-        </node>
-        <node type="node/const/perm/relation" idtf="nrel_idtf" shapeColor="0" id="111285412201152" parent="0" left="0" top="0" right="61.0781" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="756.077" y="1320.67" haveBus="false" idtf_pos="0">
-            <content type="0" mime_type="" content_visibility="false" file_name=""/>
-        </node>
-        <node type="node/const/perm/relation" idtf="nrel_info" shapeColor="0" id="111285412183296" parent="0" left="0" top="0" right="61.4688" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="961.461" y="1273.23" haveBus="false" idtf_pos="0">
-            <content type="0" mime_type="" content_visibility="false" file_name=""/>
-        </node>
         <node type="node/const/perm/relation" idtf="nrel_salary" shapeColor="0" id="111285412162064" parent="0" left="0" top="0" right="75.9688" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="812.67" y="1147.63" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
@@ -277,9 +287,6 @@
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
         <node type="node/const/perm/relation" idtf="nrel_main_idtf" shapeColor="0" id="111285412125824" parent="0" left="0" top="0" right="97.4375" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="731.723" y="1196.81" haveBus="false" idtf_pos="0">
-            <content type="0" mime_type="" content_visibility="false" file_name=""/>
-        </node>
-        <node type="node/const/perm/group" idtf="lang_ru" shapeColor="0" id="111285412105952" parent="0" left="0" top="0" right="53.6406" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1060.42" y="1265.18" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
         <node type="node/const/perm/group" idtf="lang_ru" shapeColor="0" id="111285412087168" parent="0" left="0" top="0" right="53.6406" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="646.018" y="1381.9" haveBus="false" idtf_pos="0">
@@ -699,7 +706,7 @@
         <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="111285413337776" parent="0" id_b="111285411531712" id_e="111285411454480" b_x="841.146" b_y="1260.69" e_x="590.105" e_y="1236.46" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="111285413336800" parent="0" id_b="111285412105952" id_e="111285412219248" b_x="1060.42" b_y="1265.18" e_x="961.55" e_y="1163.94" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="111285413336800" parent="0" id_b="111285412105952" id_e="111285412219248" b_x="1030.53" b_y="1573.23" e_x="629.366" e_y="1688.08" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="111285413335824" parent="0" id_b="111285412162064" id_e="111285413332832" b_x="812.67" b_y="1147.63" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.500081">
@@ -708,7 +715,7 @@
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="111285413334848" parent="0" id_b="111285412087168" id_e="111285407817744" b_x="646.018" b_y="1381.9" e_x="633.178" e_y="1296.9" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="111285413333808" parent="0" id_b="111285412183296" id_e="111285413328992" b_x="961.461" b_y="1273.23" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.517653">
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="111285413333808" parent="0" id_b="111285412183296" id_e="111285413328992" b_x="895.944" b_y="1428.4" e_x="-172.414" e_y="356.322" dotBBalance="0" dotEBalance="0.517653">
             <points/>
         </pair>
         <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="111285413332832" parent="0" id_b="111285411531712" id_e="111285411447424" b_x="841.146" b_y="1260.69" e_x="715.841" e_y="1119.76" dotBBalance="0" dotEBalance="0">
@@ -717,13 +724,13 @@
         <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="111285413331920" parent="0" id_b="111285411531712" id_e="111285407817744" b_x="841.146" b_y="1260.69" e_x="633.178" e_y="1296.9" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="111285413330944" parent="0" id_b="111285412201152" id_e="111285413331920" b_x="756.077" b_y="1320.67" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.363798">
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="111285413330944" parent="0" id_b="111285412201152" id_e="111285413331920" b_x="738.836" b_y="1320.67" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.363798">
             <points/>
         </pair>
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="111285413329904" parent="0" id_b="111285412143248" id_e="111285411454480" b_x="627.422" b_y="1181.21" e_x="590.105" e_y="1236.46" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="111285413328992" parent="0" id_b="111285411531712" id_e="111285412219248" b_x="841.146" b_y="1260.69" e_x="961.55" e_y="1163.94" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="111285413328992" parent="0" id_b="111285411531712" id_e="111285412219248" b_x="841.146" b_y="1260.69" e_x="629.366" e_y="1688.08" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="111285413327952" parent="0" id_b="111285412125824" id_e="111285413337776" b_x="731.723" b_y="1196.81" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.630753">
