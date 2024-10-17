@@ -1,25 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GWF version="2.0">
     <staticSector>
-        <node type="node/const/perm/relation" idtf="nrel_education" shapeColor="0" id="104114793631600" parent="0" left="0" top="0" right="98.7344" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-703.67" y="1071.56" haveBus="false" idtf_pos="0">
+        <node type="node/const/perm/relation" idtf="nrel_education" shapeColor="0" id="104114793530416" parent="0" left="0" top="0" right="98.7344" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-398.99" y="1436.36" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
-        <node type="node/const/perm/relation" idtf="nrel_salary" shapeColor="0" id="104114796933792" parent="0" left="0" top="0" right="75.9688" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-123.802" y="1226.14" haveBus="false" idtf_pos="0">
-            <content type="0" mime_type="" content_visibility="false" file_name=""/>
-        </node>
-        <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114793806512" parent="0" x="-427.849" y="1100.06" haveBus="false" idtf_pos="0">
-            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Вот некоторые университеты Беларуси где можно обучаться на электрика<br><ul style="list-style: decimal;">
-<li>Могилевский политехнический колледж</li>
-<li>Гомельский политехнический колледж</li>
-<li>Новополоцкий политехнический колледж</li>
-<li>Витебский технический колледж</li>
-<li>Минский политехнический колледж</li>
+        <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114793555824" parent="0" x="-561.908" y="1648.84" haveBus="false" idtf_pos="0">
+            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Вот некоторые учебные заведения Беларуси где можно обучаться на пожарного<br><ul style="list-style: decimal;">
+<li>Университет гражданской защиты Министерства по чрезвычайным ситуациям Республики Беларусь</li>
+<li>«Специализированный лицей при Университете гражданской защиты» Министерства по чрезвычайным ситуациям Республики Беларусь</li>
 </ul>]]></content>
         </node>
-        <node type="node/const/perm/group" idtf="lang_ru" shapeColor="0" id="104114796915712" parent="0" left="0" top="0" right="53.6406" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-323.729" y="1293.66" haveBus="false" idtf_pos="0">
-            <content type="0" mime_type="" content_visibility="false" file_name=""/>
-        </node>
-        <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114797814352" parent="0" x="31.1549" y="1709.32" haveBus="false" idtf_pos="0">
+        <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114797814352" parent="0" x="-32.8014" y="1706.86" haveBus="false" idtf_pos="0">
             <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[<b>Пожарный</b> — это специалист, который занимается тушением пожаров, спасением людей и предотвращением чрезвычайных ситуаций. Он защищает людей и имущество от огня, а также проводит профилактическую работу по предупреждению пожаров.<br><br>
 Вот примеры задач, с которыми сталкивается пожарный на работе:<br><ul style="list-style: decimal;">
 <li><b>Тушение пожара</b>: Пожарный использует специальное оборудование и воду, чтобы потушить огонь и предотвратить его распространение.</li>
@@ -29,11 +20,26 @@
 <li><b>Работа в чрезвычайных ситуациях</b>: Помимо пожаров, пожарные реагируют на аварии, наводнения и другие чрезвычайные происшествия, оказывая помощь пострадавшим.</li>
 </ul>]]></content>
         </node>
-        <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114796270752" parent="0" x="-317.973" y="1409.35" haveBus="false" idtf_pos="0">
-            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[пожарный]]></content>
+        <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114795490512" parent="0" x="831.043" y="-274.783" haveBus="false" idtf_pos="0">
+            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Вот некоторые учебные заведения Беларуси в которых можно обучаться на архитектора:<br><ul style="list-style: decimal;">
+<li>Брестский государственный технический университет</li>
+<li>Белорусский государственный университет транспорта</li>
+<li>Гродненский государственный университет имени Янки Купалы</li>
+<li>Белорусский национальный технический университет</li>
+<li>Полоцкий государственный университет</li>
+</ul>]]></content>
+        </node>
+        <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114792082800" parent="0" x="-325.5" y="218" haveBus="false" idtf_pos="0">
+            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Вот некоторые учебные заведения Беларуси где можно обучаться на строителя<br><ul style="list-style: decimal;">
+<li>Белорусская государственная орденов Октябрьской Революции и Трудового Красного Знамени сельскохозяйственная академия</li>
+<li>Белорусский государственный университет транспорта</li>
+<li>Белорусский национальный технический университет</li>
+<li>Брестский государственный технический университет</li>
+<li>Гродненский государственный университет имени Янки Купалы</li>
+</ul>]]></content>
         </node>
         <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114783713216" parent="0" x="-1341" y="420" haveBus="false" idtf_pos="0">
-            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Вот некоторые университеты Беларуси где можно обучаться на врача<br><ul style="list-style: decimal;">
+            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Вот некоторые учебные заведения Беларуси где можно обучаться на врача<br><ul style="list-style: decimal;">
 <li>Гомельский государственный медицинский университет</li>
 <li>Гродненский государственный медицинский университет</li>
 <li>Белорусский государственный медицинский университет</li>
@@ -42,13 +48,52 @@
 </ul>]]></content>
         </node>
         <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114793049872" parent="0" x="-1770.9" y="690.921" haveBus="false" idtf_pos="0">
-            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Вот некоторые университеты Беларуси где можно обучаться на повара<br><ul style="list-style: decimal;">
+            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Вот некоторые учебные заведения Беларуси где можно обучаться на повара<br><ul style="list-style: decimal;">
 <li>Брестский торгово-технологический колледж</li>
 <li>Витебский аграрно-технический колледж</li>
 <li>Жлобинский технологический колледж</li>
 <li>Минский колледж кулинарии</li>
 <li>Слуцкий государственный колледж</li>
 </ul>]]></content>
+        </node>
+        <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114793806512" parent="0" x="-399.491" y="1095.58" haveBus="false" idtf_pos="0">
+            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Вот некоторые учебные заведения Беларуси где можно обучаться на электрика<br><ul style="list-style: decimal;">
+<li>Могилевский политехнический колледж</li>
+<li>Гомельский политехнический колледж</li>
+<li>Новополоцкий политехнический колледж</li>
+<li>Витебский технический колледж</li>
+<li>Минский политехнический колледж</li>
+</ul>]]></content>
+        </node>
+        <node type="node/const/perm/group" idtf="lang_ru" shapeColor="0" id="104114797684864" parent="0" left="0" top="0" right="53.6406" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="145.709" y="1462.31" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/relation" idtf="nrel_info" shapeColor="0" id="104114797666768" parent="0" left="0" top="0" right="61.4688" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="11.9496" y="1410.92" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114796270752" parent="0" x="-399.987" y="1345.32" haveBus="false" idtf_pos="0">
+            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[пожарный]]></content>
+        </node>
+        <node type="node/const/perm/group" idtf="lang_ru" shapeColor="0" id="104114796915712" parent="0" left="0" top="0" right="53.6406" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-400.707" y="1229.63" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/group" idtf="lang_ru" shapeColor="0" id="104114797648688" parent="0" left="0" top="0" right="53.6406" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-496.5" y="1346.87" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/relation" idtf="nrel_idtf" shapeColor="0" id="104114796952288" parent="0" left="0" top="0" right="61.0781" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-274.93" y="1358.3" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/relation" idtf="nrel_main_idtf" shapeColor="0" id="104114796970384" parent="0" left="0" top="0" right="97.4375" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-312.953" y="1261.78" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114796752560" parent="0" x="-398.456" y="1304.31" haveBus="false" idtf_pos="0">
+            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[пожарного]]></content>
+        </node>
+        <node type="node/const/perm/relation" idtf="nrel_education" shapeColor="0" id="104114793631600" parent="0" left="0" top="0" right="98.7344" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-703.67" y="1071.56" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/relation" idtf="nrel_salary" shapeColor="0" id="104114796933792" parent="0" left="0" top="0" right="75.9688" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-123.802" y="1226.14" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
         <node type="node/const/perm/group" idtf="lang_ru" shapeColor="0" id="104114797097424" parent="0" left="0" top="0" right="53.6406" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-710.246" y="1115.88" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
@@ -103,15 +148,6 @@
         <node type="node/const/perm/relation" idtf="nrel_education" shapeColor="0" id="104114794516848" parent="0" left="0" top="0" right="98.7344" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-1050" y="496" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
-        <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114792082800" parent="0" x="-325.5" y="218" haveBus="false" idtf_pos="0">
-            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Вот некоторые университеты Беларуси где можно обучаться на строителя<br><ul style="list-style: decimal;">
-<li>Белорусская государственная орденов Октябрьской Революции и Трудового Красного Знамени сельскохозяйственная академия</li>
-<li>Белорусский государственный университет транспорта</li>
-<li>Белорусский национальный технический университет</li>
-<li>Брестский государственный технический университет</li>
-<li>Гродненский государственный университет имени Янки Купалы</li>
-</ul>]]></content>
-        </node>
         <node type="node/const/perm/group" idtf="lang_ru" shapeColor="0" id="104114797242560" parent="0" left="0" top="0" right="53.6406" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-1085.09" y="581.881" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
@@ -141,15 +177,6 @@
 </ul>
 
 ]]></content>
-        </node>
-        <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114795490512" parent="0" x="831.043" y="-274.783" haveBus="false" idtf_pos="0">
-            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Вот некоторые университеты Беларуси в которых можно обучаться на архитектора:<br><ul style="list-style: decimal;">
-<li>Брестский государственный технический университет</li>
-<li>Белорусский государственный университет транспорта</li>
-<li>Гродненский государственный университет имени Янки Купалы</li>
-<li>Белорусский национальный технический университет</li>
-<li>Полоцкий государственный университет</li>
-</ul>]]></content>
         </node>
         <node type="node/const/perm/group" idtf="lang_ru" shapeColor="0" id="104114797334448" parent="0" left="0" top="0" right="53.6406" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-78.183" y="286.585" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
@@ -205,15 +232,6 @@
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
         <node type="node/const/perm/group" idtf="lang_ru" shapeColor="0" id="104114797702944" parent="0" left="0" top="0" right="53.6406" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1030.53" y="1573.23" haveBus="false" idtf_pos="0">
-            <content type="0" mime_type="" content_visibility="false" file_name=""/>
-        </node>
-        <node type="node/const/perm/group" idtf="lang_ru" shapeColor="0" id="104114797684864" parent="0" left="0" top="0" right="53.6406" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="161.78" y="1440.88" haveBus="false" idtf_pos="0">
-            <content type="0" mime_type="" content_visibility="false" file_name=""/>
-        </node>
-        <node type="node/const/perm/relation" idtf="nrel_info" shapeColor="0" id="104114797666768" parent="0" left="0" top="0" right="61.4688" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="29.8067" y="1389.49" haveBus="false" idtf_pos="0">
-            <content type="0" mime_type="" content_visibility="false" file_name=""/>
-        </node>
-        <node type="node/const/perm/group" idtf="lang_ru" shapeColor="0" id="104114797648688" parent="0" left="0" top="0" right="53.6406" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-305.133" y="1494.35" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
         <node type="node/const/perm/relation" idtf="nrel_salary" shapeColor="0" id="104114797630592" parent="0" left="0" top="0" right="75.9688" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-961.836" y="322.63" haveBus="false" idtf_pos="0">
@@ -291,12 +309,6 @@
         <node type="node/const/perm/group" idtf="lang_ru" shapeColor="0" id="104114797006528" parent="0" left="0" top="0" right="53.6406" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-901.455" y="1126.8" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
-        <node type="node/const/perm/relation" idtf="nrel_main_idtf" shapeColor="0" id="104114796970384" parent="0" left="0" top="0" right="97.4375" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-219.428" y="1309.26" haveBus="false" idtf_pos="0">
-            <content type="0" mime_type="" content_visibility="false" file_name=""/>
-        </node>
-        <node type="node/const/perm/relation" idtf="nrel_idtf" shapeColor="0" id="104114796952288" parent="0" left="0" top="0" right="61.0781" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-195.074" y="1433.12" haveBus="false" idtf_pos="0">
-            <content type="0" mime_type="" content_visibility="false" file_name=""/>
-        </node>
         <node type="node/const/perm/general" idtf="Architector" shapeColor="0" id="104114796878528" parent="0" left="0" top="0" right="77.5469" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="823.931" y="35.9467" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
@@ -320,9 +332,6 @@
         </node>
         <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114796759136" parent="0" x="-831.632" y="866.526" haveBus="false" idtf_pos="0">
             <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[1287 BYN]]></content>
-        </node>
-        <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114796752560" parent="0" x="-361.046" y="1348.91" haveBus="false" idtf_pos="0">
-            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[пожарного]]></content>
         </node>
         <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114796746640" parent="0" x="-235.31" y="1234.08" haveBus="false" idtf_pos="0">
             <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[1208 BYN]]></content>
@@ -550,10 +559,16 @@
         <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114779785168" parent="0" x="560.322" y="-159.379" haveBus="false" idtf_pos="0">
             <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[949 BYN]]></content>
         </node>
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114793690848" parent="0" id_b="104114793530416" id_e="104114792061664" b_x="-398.99" b_y="1436.36" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.851164">
+            <points/>
+        </pair>
+        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="104114792061664" parent="0" id_b="104114796309904" id_e="104114793555824" b_x="-42.5635" b_y="1294.88" e_x="-561.908" e_y="1648.84" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114792460352" parent="0" id_b="104114793631600" id_e="104114794597040" b_x="-703.67" b_y="1071.56" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.689435">
             <points/>
         </pair>
-        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="104114794597040" parent="0" id_b="104114796781408" id_e="104114793806512" b_x="-706.327" b_y="1005.59" e_x="-427.849" e_y="1100.06" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="104114794597040" parent="0" id_b="104114796781408" id_e="104114793806512" b_x="-706.327" b_y="1005.59" e_x="-399.491" e_y="1095.58" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114795224272" parent="0" id_b="104114794565584" id_e="104114794851872" b_x="-1545.19" b_y="847.115" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.634666">
@@ -760,37 +775,37 @@
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798112176" parent="0" id_b="104114797097424" id_e="104114797778768" b_x="-710.246" b_y="1115.88" e_x="-960.499" e_y="1351.26" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798111136" parent="0" id_b="104114797648688" id_e="104114796270752" b_x="-305.133" b_y="1494.35" e_x="-317.973" e_y="1409.35" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798111136" parent="0" id_b="104114797648688" id_e="104114796270752" b_x="-496.5" b_y="1346.87" e_x="-399.987" e_y="1345.32" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="104114798110224" parent="0" id_b="104114796309904" id_e="104114796270752" b_x="-42.5635" b_y="1294.88" e_x="-317.973" e_y="1409.35" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="104114798110224" parent="0" id_b="104114796309904" id_e="104114796270752" b_x="-42.5635" b_y="1294.88" e_x="-399.987" e_y="1345.32" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798109184" parent="0" id_b="104114796915712" id_e="104114796752560" b_x="-323.729" b_y="1293.66" e_x="-361.046" e_y="1348.91" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798109184" parent="0" id_b="104114796915712" id_e="104114796752560" b_x="-400.707" b_y="1229.63" e_x="-398.456" e_y="1304.31" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="104114798108208" parent="0" id_b="104114796309904" id_e="104114796752560" b_x="-42.5635" b_y="1294.88" e_x="-361.046" e_y="1348.91" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="104114798108208" parent="0" id_b="104114796309904" id_e="104114796752560" b_x="-42.5635" b_y="1294.88" e_x="-398.456" e_y="1304.31" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
         <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="104114798107232" parent="0" id_b="104114796309904" id_e="104114796746640" b_x="-42.5635" b_y="1294.88" e_x="-235.31" e_y="1234.08" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="104114798106320" parent="0" id_b="104114796309904" id_e="104114797814352" b_x="-42.5635" b_y="1294.88" e_x="31.1549" e_y="1709.32" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="104114798106320" parent="0" id_b="104114796309904" id_e="104114797814352" b_x="-42.5635" b_y="1294.88" e_x="-32.8014" e_y="1706.86" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798105344" parent="0" id_b="104114796952288" id_e="104114798110224" b_x="-195.074" b_y="1433.12" e_x="-66.6667" e_y="78.2609" dotBBalance="0" dotEBalance="0.363798">
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798105344" parent="0" id_b="104114796952288" id_e="104114798110224" b_x="-274.93" b_y="1358.3" e_x="-66.6667" e_y="78.2609" dotBBalance="0" dotEBalance="0.363798">
             <points/>
         </pair>
-        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798104368" parent="0" id_b="104114797666768" id_e="104114798106320" b_x="29.8067" b_y="1389.49" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.517653">
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798104368" parent="0" id_b="104114797666768" id_e="104114798106320" b_x="11.9496" b_y="1410.92" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.517653">
             <points/>
         </pair>
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798103392" parent="0" id_b="104114796933792" id_e="104114798107232" b_x="-123.802" b_y="1226.14" e_x="-66.6667" e_y="78.2609" dotBBalance="0" dotEBalance="0.500081">
             <points/>
         </pair>
-        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798102416" parent="0" id_b="104114796970384" id_e="104114798108208" b_x="-219.428" b_y="1309.26" e_x="-66.6667" e_y="78.2609" dotBBalance="0" dotEBalance="0.630753">
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798102416" parent="0" id_b="104114796970384" id_e="104114798108208" b_x="-312.953" b_y="1261.78" e_x="-66.6667" e_y="78.2609" dotBBalance="0" dotEBalance="0.630753">
             <points/>
         </pair>
-        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798101440" parent="0" id_b="104114797684864" id_e="104114797814352" b_x="161.78" b_y="1440.88" e_x="31.1549" e_y="1709.32" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798101440" parent="0" id_b="104114797684864" id_e="104114797814352" b_x="145.709" b_y="1462.31" e_x="-32.8014" e_y="1706.86" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798100464" parent="0" id_b="104114796292384" id_e="104114796898064" b_x="791.581" b_y="621.097" e_x="209.541" e_y="277.065" dotBBalance="0" dotEBalance="0">
