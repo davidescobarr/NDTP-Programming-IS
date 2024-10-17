@@ -1,7 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GWF version="2.0">
     <staticSector>
-        <node type="node/const/perm/relation" idtf="nrel_education" shapeColor="0" id="104114793736800" parent="0" left="0" top="0" right="98.7344" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2328.32" y="919.469" haveBus="false" idtf_pos="0">
+        <node type="node/const/perm/relation" idtf="nrel_salary" shapeColor="0" id="104114795639104" parent="0" left="0" top="0" right="75.9688" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2235.33" y="136.546" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/relation" idtf="nrel_info" shapeColor="0" id="104114796398144" parent="0" left="0" top="0" right="61.4688" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2176.06" y="82.6244" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/group" idtf="lang_ru" shapeColor="0" id="104114796345152" parent="0" left="0" top="0" right="53.6406" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2378.27" y="-43.3117" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114783657872" parent="0" x="2495.09" y="109.244" haveBus="false" idtf_pos="0">
+            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[723 BYN]]></content>
+        </node>
+        <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114796118960" parent="0" x="1969.75" y="202.765" haveBus="false" idtf_pos="0">
+            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[психолога]]></content>
+        </node>
+        <node type="node/const/perm/relation" idtf="nrel_education" shapeColor="0" id="104114792077296" parent="0" left="0" top="0" right="98.7344" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2158.54" y="613.821" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114793641504" parent="0" x="2359.33" y="466.414" haveBus="false" idtf_pos="0">
+            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Вот некоторые учебные заведения Беларуси где можно обучаться на психолога<br><ul style="list-style: decimal;">
+<li>Гомельский государственный университет им. Франциска Скорины</li>
+<li>Гродненский государственный университет имени Янки Купалы</li>
+<li>Белорусский государственный университет</li>
+<li>Могилевский государственный университет имени А.А.Кулешова</li>
+<li>Полоцкий государственный университет</li>
+</ul>]]></content>
+        </node>
+        <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114795773792" parent="0" x="2024.85" y="-107.954" haveBus="false" idtf_pos="0">
+            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[<b>Психолог</b> — это специалист, который помогает людям справляться с эмоциональными и психологическими трудностями, улучшать их эмоциональное состояние и развивать навыки общения и самопонимания.<br><br>
+Вот примеры задач, с которыми сталкивается психолог на работе:<br><ul style="list-style: decimal;">
+<li><b>Консультирование клиентов</b>: Психолог беседует с людьми, помогает разобраться в их переживаниях и эмоциях, предлагает способы решения проблем.</li>
+<li><b>Психологическое тестирование</b>: Он проводит тесты и опросы для оценки эмоционального состояния, личности и способностей человека.</li>
+<li><b>Психотерапия</b>: Психолог использует различные методы терапии для работы с депрессией, тревожностью и другими проблемами.</li>
+<li><b>Помощь в развитии личностных навыков</b>: Он помогает людям улучшить самооценку, развить навыки общения и справляться со стрессом.</li>
+<li><b>Проведение тренингов и лекций</b>: Психолог организует тренинги для развития психологической устойчивости и обучения техникам саморегуляции.</li>
+</ul>
+
+]]></content>
+        </node>
+        <node type="node/const/perm/relation" idtf="nrel_info" shapeColor="0" id="104114796034528" parent="0" left="0" top="0" right="61.4688" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2446.33" y="736.701" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/group" idtf="lang_ru" shapeColor="0" id="104114795980144" parent="0" left="0" top="0" right="53.6406" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2524.13" y="804.656" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114795997200" parent="0" x="2882.34" y="694.367" haveBus="false" idtf_pos="0">
+            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[<b>Юрист</b> — это специалист, который занимается правовыми вопросами, помогает людям и организациям разбираться в законах, защищает их интересы в суде и консультирует по правовым вопросам.<br><br>
+Вот примеры задач, с которыми сталкивается юрист на работе:<br><ul style="list-style: decimal;">
+<li><b>Консультирование клиентов</b>: Юрист объясняет законы и помогает клиентам разобраться в их правах и обязанностях.</li>
+<li><b>Составление документов</b>: Он готовит юридические документы, такие как контракты, договоры и жалобы.</li>
+<li><b>Представление интересов в суде</b>: Юрист защищает клиентов в суде, выступая в их интересах и доказывая их правоту.</li>
+<li><b>Разработка стратегии защиты</b>: Юрист анализирует дело и разрабатывает план для успешной защиты интересов клиента.`</li>
+<li><b>Проверка договоров</b>: Он проверяет документы и контракты, чтобы убедиться, что они соответствуют законодательству и выгодны для клиента.</li>
+</ul>]]></content>
+        </node>
+        <node type="node/const/perm/group" idtf="lang_ru" shapeColor="0" id="104114796327824" parent="0" left="0" top="0" right="53.6406" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2025.66" y="348.205" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
         <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114793516864" parent="0" x="2691" y="975.027" haveBus="false" idtf_pos="0">
@@ -12,6 +67,33 @@
 <li>Гродненский государственный профессиональный технологический колледж</li>
 <li>Минский государственный ПТК кулинарии</li>
 </ul>]]></content>
+        </node>
+        <node type="node/const/perm/relation" idtf="nrel_salary" shapeColor="0" id="104114796487968" parent="0" left="0" top="0" right="75.9688" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2077.74" y="688.246" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114796158912" parent="0" x="2019.85" y="738.353" haveBus="false" idtf_pos="0">
+            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[1937 BYN]]></content>
+        </node>
+        <node type="node/const/perm/group" idtf="lang_ru" shapeColor="0" id="104114796469856" parent="0" left="0" top="0" right="53.6406" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2067.71" y="801.473" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/relation" idtf="nrel_main_idtf" shapeColor="0" id="104114796452128" parent="0" left="0" top="0" right="97.4375" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2131.3" y="733.002" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114796172304" parent="0" x="2157.98" y="800.97" haveBus="false" idtf_pos="0">
+            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[юриста]]></content>
+        </node>
+        <node type="node/const/perm/group" idtf="lang_ru" shapeColor="0" id="104114796434000" parent="0" left="0" top="0" right="53.6406" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2311.09" y="779.154" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114796165312" parent="0" x="2233.65" y="780.879" haveBus="false" idtf_pos="0">
+            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[юрист]]></content>
+        </node>
+        <node type="node/const/perm/relation" idtf="nrel_idtf" shapeColor="0" id="104114796506624" parent="0" left="0" top="0" right="61.0781" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2310.53" y="723.233" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/relation" idtf="nrel_education" shapeColor="0" id="104114793736800" parent="0" left="0" top="0" right="98.7344" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2328.32" y="919.469" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
         <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114794766352" parent="0" x="1970.63" y="1309.01" haveBus="false" idtf_pos="0">
             <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Вот некоторые учебные заведения Беларуси где можно обучаться на педагога<br><ul style="list-style: decimal;">
@@ -444,37 +526,13 @@
         <node type="node/const/perm/group" idtf="lang_ru" shapeColor="0" id="104114796543152" parent="0" left="0" top="0" right="53.6406" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2431.44" y="1029.06" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
-        <node type="node/const/perm/relation" idtf="nrel_idtf" shapeColor="0" id="104114796506624" parent="0" left="0" top="0" right="61.0781" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2203.45" y="731.198" haveBus="false" idtf_pos="0">
+        <node type="node/const/perm/relation" idtf="nrel_idtf" shapeColor="0" id="104114796415872" parent="0" left="0" top="0" right="61.0781" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2135.72" y="286.975" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
-        <node type="node/const/perm/relation" idtf="nrel_salary" shapeColor="0" id="104114796487968" parent="0" left="0" top="0" right="75.9688" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2260.04" y="558.158" haveBus="false" idtf_pos="0">
+        <node type="node/const/perm/group" idtf="lang_ru" shapeColor="0" id="104114796380016" parent="0" left="0" top="0" right="53.6406" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2007.07" y="147.515" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
-        <node type="node/const/perm/group" idtf="lang_ru" shapeColor="0" id="104114796469856" parent="0" left="0" top="0" right="53.6406" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2074.79" y="591.738" haveBus="false" idtf_pos="0">
-            <content type="0" mime_type="" content_visibility="false" file_name=""/>
-        </node>
-        <node type="node/const/perm/relation" idtf="nrel_main_idtf" shapeColor="0" id="104114796452128" parent="0" left="0" top="0" right="97.4375" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2179.09" y="607.338" haveBus="false" idtf_pos="0">
-            <content type="0" mime_type="" content_visibility="false" file_name=""/>
-        </node>
-        <node type="node/const/perm/group" idtf="lang_ru" shapeColor="0" id="104114796434000" parent="0" left="0" top="0" right="53.6406" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2093.39" y="792.428" haveBus="false" idtf_pos="0">
-            <content type="0" mime_type="" content_visibility="false" file_name=""/>
-        </node>
-        <node type="node/const/perm/relation" idtf="nrel_idtf" shapeColor="0" id="104114796415872" parent="0" left="0" top="0" right="61.0781" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2248.18" y="346.987" haveBus="false" idtf_pos="0">
-            <content type="0" mime_type="" content_visibility="false" file_name=""/>
-        </node>
-        <node type="node/const/perm/relation" idtf="nrel_info" shapeColor="0" id="104114796398144" parent="0" left="0" top="0" right="61.4688" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2453.57" y="299.547" haveBus="false" idtf_pos="0">
-            <content type="0" mime_type="" content_visibility="false" file_name=""/>
-        </node>
-        <node type="node/const/perm/group" idtf="lang_ru" shapeColor="0" id="104114796380016" parent="0" left="0" top="0" right="53.6406" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2119.53" y="207.527" haveBus="false" idtf_pos="0">
-            <content type="0" mime_type="" content_visibility="false" file_name=""/>
-        </node>
-        <node type="node/const/perm/relation" idtf="nrel_main_idtf" shapeColor="0" id="104114796362288" parent="0" left="0" top="0" right="97.4375" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2223.83" y="223.127" haveBus="false" idtf_pos="0">
-            <content type="0" mime_type="" content_visibility="false" file_name=""/>
-        </node>
-        <node type="node/const/perm/group" idtf="lang_ru" shapeColor="0" id="104114796345152" parent="0" left="0" top="0" right="53.6406" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2552.52" y="291.497" haveBus="false" idtf_pos="0">
-            <content type="0" mime_type="" content_visibility="false" file_name=""/>
-        </node>
-        <node type="node/const/perm/group" idtf="lang_ru" shapeColor="0" id="104114796327824" parent="0" left="0" top="0" right="53.6406" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2138.12" y="408.217" haveBus="false" idtf_pos="0">
+        <node type="node/const/perm/relation" idtf="nrel_main_idtf" shapeColor="0" id="104114796362288" parent="0" left="0" top="0" right="97.4375" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2111.37" y="163.115" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
         <node type="node/const/perm/general" idtf="Fireman" shapeColor="0" id="104114796309904" parent="0" left="0" top="0" right="58.5" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-42.5635" y="1294.88" haveBus="false" idtf_pos="0">
@@ -510,54 +568,11 @@
         <node type="node/const/perm/general" idtf="Waiter" shapeColor="0" id="104114796179728" parent="0" left="0" top="0" right="49.9531" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2212.17" y="1024.57" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
-        <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114796172304" parent="0" x="2039.4" y="646.988" haveBus="false" idtf_pos="0">
-            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[юриста]]></content>
-        </node>
-        <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114796165312" parent="0" x="2080.55" y="707.428" haveBus="false" idtf_pos="0">
-            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[юрист]]></content>
-        </node>
-        <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114796158912" parent="0" x="2163.21" y="532.158" haveBus="false" idtf_pos="0">
-            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[1937 BYN]]></content>
-        </node>
-        <node type="node/const/perm/general" idtf="Psychologist" shapeColor="0" id="104114783040016" parent="0" left="0" top="0" right="86" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2333.25" y="287.007" haveBus="false" idtf_pos="0">
+        <node type="node/const/perm/general" idtf="Psychologist" shapeColor="255" id="104114783040016" parent="0" left="0" top="0" right="86" bottom="26" textColor="157" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2220.79" y="226.995" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
-        <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114796131168" parent="0" x="2125.28" y="323.217" haveBus="false" idtf_pos="0">
+        <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114796131168" parent="0" x="2012.82" y="263.205" haveBus="false" idtf_pos="0">
             <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[психолог]]></content>
-        </node>
-        <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114796118960" parent="0" x="2082.21" y="262.777" haveBus="false" idtf_pos="0">
-            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[психолога]]></content>
-        </node>
-        <node type="node/const/perm/relation" idtf="nrel_info" shapeColor="0" id="104114796034528" parent="0" left="0" top="0" right="61.4688" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2345.43" y="763.573" haveBus="false" idtf_pos="0">
-            <content type="0" mime_type="" content_visibility="false" file_name=""/>
-        </node>
-        <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114795997200" parent="0" x="2676.59" y="575.43" haveBus="false" idtf_pos="0">
-            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[<b>Юрист</b> — это специалист, который занимается правовыми вопросами, помогает людям и организациям разбираться в законах, защищает их интересы в суде и консультирует по правовым вопросам.<br><br>
-Вот примеры задач, с которыми сталкивается юрист на работе:<br><ul style="list-style: decimal;">
-<li><b>Консультирование клиентов</b>: Юрист объясняет законы и помогает клиентам разобраться в их правах и обязанностях.</li>
-<li><b>Составление документов</b>: Он готовит юридические документы, такие как контракты, договоры и жалобы.</li>
-<li><b>Представление интересов в суде</b>: Юрист защищает клиентов в суде, выступая в их интересах и доказывая их правоту.</li>
-<li><b>Разработка стратегии защиты</b>: Юрист анализирует дело и разрабатывает план для успешной защиты интересов клиента.`</li>
-<li><b>Проверка договоров</b>: Он проверяет документы и контракты, чтобы убедиться, что они соответствуют законодательству и выгодны для клиента.</li>
-</ul>]]></content>
-        </node>
-        <node type="node/const/perm/group" idtf="lang_ru" shapeColor="0" id="104114795980144" parent="0" left="0" top="0" right="53.6406" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2678.61" y="817.751" haveBus="false" idtf_pos="0">
-            <content type="0" mime_type="" content_visibility="false" file_name=""/>
-        </node>
-        <node type="node/const/perm/relation" idtf="nrel_salary" shapeColor="0" id="104114795639104" parent="0" left="0" top="0" right="75.9688" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2221.25" y="168.065" haveBus="false" idtf_pos="0">
-            <content type="0" mime_type="" content_visibility="false" file_name=""/>
-        </node>
-        <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114795773792" parent="0" x="2689.26" y="-45.2417" haveBus="false" idtf_pos="0">
-            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[<b>Психолог</b> — это специалист, который помогает людям справляться с эмоциональными и психологическими трудностями, улучшать их эмоциональное состояние и развивать навыки общения и самопонимания.<br><br>
-Вот примеры задач, с которыми сталкивается психолог на работе:<br><ul style="list-style: decimal;">
-<li><b>Консультирование клиентов</b>: Психолог беседует с людьми, помогает разобраться в их переживаниях и эмоциях, предлагает способы решения проблем.</li>
-<li><b>Психологическое тестирование</b>: Он проводит тесты и опросы для оценки эмоционального состояния, личности и способностей человека.</li>
-<li><b>Психотерапия</b>: Психолог использует различные методы терапии для работы с депрессией, тревожностью и другими проблемами.</li>
-<li><b>Помощь в развитии личностных навыков</b>: Он помогает людям улучшить самооценку, развить навыки общения и справляться со стрессом.</li>
-<li><b>Проведение тренингов и лекций</b>: Психолог организует тренинги для развития психологической устойчивости и обучения техникам саморегуляции.</li>
-</ul>
-
-]]></content>
         </node>
         <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114795701888" parent="0" x="634.328" y="1086.57" haveBus="false" idtf_pos="0">
             <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[6347  BYN]]></content>
@@ -595,6 +610,15 @@
         <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114779785168" parent="0" x="560.322" y="-159.379" haveBus="false" idtf_pos="0">
             <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[949 BYN]]></content>
         </node>
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114779861744" parent="0" id_b="104114792077296" id_e="104114779712016" b_x="2158.54" b_y="613.821" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.442002">
+            <points/>
+        </pair>
+        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="104114779712016" parent="0" id_b="104114796196992" id_e="104114793641504" b_x="2288.51" b_y="671.218" e_x="2359.33" e_y="466.414" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798054592" parent="0" id_b="104114796327824" id_e="104114796131168" b_x="2025.66" b_y="348.205" e_x="2012.82" e_y="263.205" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114793683792" parent="0" id_b="104114793736800" id_e="104114793410464" b_x="2328.32" b_y="919.469" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.305037">
             <points/>
         </pair>
@@ -961,64 +985,61 @@
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798068192" parent="0" id_b="104114796561008" id_e="104114798078016" b_x="2102.74" b_y="960.691" e_x="18.3908" e_y="-41.3793" dotBBalance="0" dotEBalance="0.630753">
             <points/>
         </pair>
-        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="104114798067280" parent="0" id_b="104114796196992" id_e="104114796172304" b_x="2288.51" b_y="671.218" e_x="2039.4" e_y="646.988" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="104114798067280" parent="0" id_b="104114796196992" id_e="104114796172304" b_x="2288.51" b_y="671.218" e_x="2157.98" e_y="800.97" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798066304" parent="0" id_b="104114795980144" id_e="104114795997200" b_x="2678.61" b_y="817.751" e_x="2676.59" e_y="575.43" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798066304" parent="0" id_b="104114795980144" id_e="104114795997200" b_x="2524.13" b_y="804.656" e_x="2882.34" e_y="694.367" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798065328" parent="0" id_b="104114796487968" id_e="104114798062336" b_x="2260.04" b_y="558.158" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.500081">
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798065328" parent="0" id_b="104114796487968" id_e="104114798062336" b_x="2077.74" b_y="688.246" e_x="-42.4779" e_y="9.73451" dotBBalance="0" dotEBalance="0.500081">
             <points/>
         </pair>
-        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798064352" parent="0" id_b="104114796434000" id_e="104114796165312" b_x="2093.39" b_y="792.428" e_x="2080.55" e_y="707.428" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798064352" parent="0" id_b="104114796434000" id_e="104114796165312" b_x="2311.09" b_y="779.154" e_x="2233.65" e_y="780.879" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798063312" parent="0" id_b="104114796034528" id_e="104114798058496" b_x="2345.43" b_y="763.573" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.517653">
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798063312" parent="0" id_b="104114796034528" id_e="104114798058496" b_x="2446.33" b_y="736.701" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.517653">
             <points/>
         </pair>
-        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="104114798062336" parent="0" id_b="104114796196992" id_e="104114796158912" b_x="2288.51" b_y="671.218" e_x="2163.21" e_y="532.158" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="104114798062336" parent="0" id_b="104114796196992" id_e="104114796158912" b_x="2288.51" b_y="671.218" e_x="2019.85" e_y="738.353" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="104114798061424" parent="0" id_b="104114796196992" id_e="104114796165312" b_x="2288.51" b_y="671.218" e_x="2080.55" e_y="707.428" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="104114798061424" parent="0" id_b="104114796196992" id_e="104114796165312" b_x="2288.51" b_y="671.218" e_x="2233.65" e_y="780.879" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798060448" parent="0" id_b="104114796506624" id_e="104114798061424" b_x="2203.45" b_y="731.198" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.363798">
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798060448" parent="0" id_b="104114796506624" id_e="104114798061424" b_x="2310.53" b_y="723.233" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.363798">
             <points/>
         </pair>
-        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798059408" parent="0" id_b="104114796469856" id_e="104114796172304" b_x="2074.79" b_y="591.738" e_x="2039.4" e_y="646.988" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798059408" parent="0" id_b="104114796469856" id_e="104114796172304" b_x="2067.71" b_y="801.473" e_x="2157.98" e_y="800.97" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="104114798058496" parent="0" id_b="104114796196992" id_e="104114795997200" b_x="2288.51" b_y="671.218" e_x="2676.59" e_y="575.43" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="104114798058496" parent="0" id_b="104114796196992" id_e="104114795997200" b_x="2288.51" b_y="671.218" e_x="2882.34" e_y="694.367" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798057456" parent="0" id_b="104114796452128" id_e="104114798067280" b_x="2179.09" b_y="607.338" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.630753">
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798057456" parent="0" id_b="104114796452128" id_e="104114798067280" b_x="2131.3" b_y="733.002" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.630753">
             <points/>
         </pair>
-        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="104114798056544" parent="0" id_b="104114783040016" id_e="104114796118960" b_x="2333.25" b_y="287.007" e_x="2082.21" e_y="262.777" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="104114798056544" parent="0" id_b="104114783040016" id_e="104114796118960" b_x="2220.79" b_y="226.995" e_x="1969.75" e_y="202.765" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798055568" parent="0" id_b="104114796345152" id_e="104114795773792" b_x="2552.52" b_y="291.497" e_x="2689.26" e_y="-45.2417" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798055568" parent="0" id_b="104114796345152" id_e="104114795773792" b_x="2378.27" b_y="-43.3117" e_x="2024.85" e_y="-107.954" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798054592" parent="0" id_b="104114796327824" id_e="104114796131168" b_x="2138.12" b_y="408.217" e_x="2125.28" e_y="323.217" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798053552" parent="0" id_b="104114796398144" id_e="104114798049712" b_x="2176.06" b_y="82.6244" e_x="-112.464" e_y="-60.012" dotBBalance="0" dotEBalance="0.517653">
             <points/>
         </pair>
-        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798053552" parent="0" id_b="104114796398144" id_e="104114798049712" b_x="2453.57" b_y="299.547" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.517653">
+        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="104114798052640" parent="0" id_b="104114783040016" id_e="104114796131168" b_x="2220.79" b_y="226.995" e_x="2012.82" e_y="263.205" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="104114798052640" parent="0" id_b="104114783040016" id_e="104114796131168" b_x="2333.25" b_y="287.007" e_x="2125.28" e_y="323.217" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798051664" parent="0" id_b="104114796415872" id_e="104114798052640" b_x="2135.72" b_y="286.975" e_x="-112.464" e_y="-60.012" dotBBalance="0" dotEBalance="0.363798">
             <points/>
         </pair>
-        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798051664" parent="0" id_b="104114796415872" id_e="104114798052640" b_x="2248.18" b_y="346.987" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.363798">
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798050624" parent="0" id_b="104114796380016" id_e="104114796118960" b_x="2007.07" b_y="147.515" e_x="1969.75" e_y="202.765" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798050624" parent="0" id_b="104114796380016" id_e="104114796118960" b_x="2119.53" b_y="207.527" e_x="2082.21" e_y="262.777" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="104114798049712" parent="0" id_b="104114783040016" id_e="104114795773792" b_x="2220.79" b_y="226.995" e_x="2024.85" e_y="-107.954" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="104114798049712" parent="0" id_b="104114783040016" id_e="104114795773792" b_x="2333.25" b_y="287.007" e_x="2689.26" e_y="-45.2417" dotBBalance="0" dotEBalance="0">
-            <points/>
-        </pair>
-        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798048736" parent="0" id_b="104114796362288" id_e="104114798056544" b_x="2223.83" b_y="223.127" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.630753">
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798048736" parent="0" id_b="104114796362288" id_e="104114798056544" b_x="2111.37" b_y="163.115" e_x="-112.464" e_y="-60.012" dotBBalance="0" dotEBalance="0.630753">
             <points/>
         </pair>
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798047760" parent="0" id_b="104114796292384" id_e="104114796252624" b_x="791.581" b_y="621.097" e_x="1633.25" e_y="1247.53" dotBBalance="0" dotEBalance="0">
@@ -1027,10 +1048,10 @@
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798046704" parent="0" id_b="104114796292384" id_e="104114796179728" b_x="791.581" b_y="621.097" e_x="2212.17" e_y="1024.57" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798045728" parent="0" id_b="104114796292384" id_e="104114783040016" b_x="791.581" b_y="621.097" e_x="2333.25" e_y="287.007" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798045728" parent="0" id_b="104114796292384" id_e="104114783040016" b_x="791.581" b_y="621.097" e_x="2220.79" e_y="226.995" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798044752" parent="0" id_b="104114798013936" id_e="104114783040016" b_x="629.317" b_y="507.756" e_x="2333.25" e_y="287.007" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798044752" parent="0" id_b="104114798013936" id_e="104114783040016" b_x="629.317" b_y="507.756" e_x="2220.79" e_y="226.995" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798043776" parent="0" id_b="104114798013936" id_e="104114796196992" b_x="629.317" b_y="507.756" e_x="2288.51" e_y="671.218" dotBBalance="0" dotEBalance="0">
