@@ -1,8 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GWF version="2.0">
     <staticSector>
-        <node type="node/const/perm/relation" idtf="nrel_education" shapeColor="0" id="104114791474880" parent="0" left="0" top="0" right="98.7344" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="754.091" y="1336.36" haveBus="false" idtf_pos="0">
+        <node type="node/const/perm/relation" idtf="nrel_education" shapeColor="0" id="104114793736800" parent="0" left="0" top="0" right="98.7344" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2328.32" y="919.469" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114793516864" parent="0" x="2691" y="975.027" haveBus="false" idtf_pos="0">
+            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Вот некоторые учебные заведения Беларуси где можно обучаться на официанта<br><ul style="list-style: decimal;">
+<li>Барановичский технологический колледж Белкоопсоюза</li>
+<li>Витебский государственный индустриально-технологический колледж</li>
+<li>Гомельский государственный ПТК кулинарии</li>
+<li>Гродненский государственный профессиональный технологический колледж</li>
+<li>Минский государственный ПТК кулинарии</li>
+</ul>]]></content>
+        </node>
+        <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114794766352" parent="0" x="1970.63" y="1309.01" haveBus="false" idtf_pos="0">
+            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Вот некоторые учебные заведения Беларуси где можно обучаться на педагога<br><ul style="list-style: decimal;">
+<li>Барановичский государственный университет</li>
+<li>Белорусская государственная академия искусств</li>
+<li>Белорусский государственный университет</li>
+<li>Белорусский государственный университет физической культуры</li>
+<li>Минский государственный лингвистический университет</li>
+</ul>]]></content>
+        </node>
+        <node type="node/const/perm/relation" idtf="nrel_education" shapeColor="0" id="104114780526640" parent="0" left="0" top="0" right="98.7344" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1660.07" y="1208.55" haveBus="false" idtf_pos="3">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/group" idtf="lang_ru" shapeColor="0" id="104114796524752" parent="0" left="0" top="0" right="53.6406" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2017.04" y="1145.78" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114796050544" parent="0" x="2540.54" y="1307.22" haveBus="false" idtf_pos="0">
+            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[<b>Официант</b> — это специалист, который обслуживает посетителей в ресторанах и кафе. Он принимает заказы, подаёт еду и напитки, а также следит за комфортом гостей во время их пребывания.<br><br>
+Вот примеры задач, с которыми сталкивается официант на работе:<br><ul style="list-style: decimal;">
+<li><b>Приём заказов</b>: Официант внимательно записывает заказы гостей, уточняя предпочтения и особенности блюд.</li>
+<li><b>Подача блюд</b>: Он приносит еду и напитки на стол, следя за тем, чтобы всё было подано вовремя и аккуратно.</li>
+<li><b>Консультирование гостей</b>: Официант помогает гостям выбрать блюда, рассказывая о меню и предлагая рекомендации.</li>
+<li><b>Поддержание чистоты столов</b>: Он убирает посуду и поддерживает чистоту на столах после ухода гостей.</li>
+<li><b>Обработка оплаты</b>: Официант приносит счёт и принимает оплату, будь то наличные или карта.</li>
+</ul>]]></content>
         </node>
         <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114791843968" parent="0" x="1069.51" y="1378.53" haveBus="false" idtf_pos="0">
             <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Вот некоторые учебные заведения Беларуси где можно обучаться на программиста<br><ul style="list-style: decimal;">
@@ -12,6 +46,28 @@
 <li>Гродненский государственный университет имени Янки Купалы</li>
 <li>Брестский государственный технический университет</li>
 </ul>]]></content>
+        </node>
+        <node type="node/const/perm/relation" idtf="nrel_info" shapeColor="0" id="104114797979984" parent="0" left="0" top="0" right="61.4688" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1675.12" y="1341.01" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/group" idtf="lang_ru" shapeColor="0" id="104114797996368" parent="0" left="0" top="0" right="53.6406" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1663.63" y="1388.63" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114796084688" parent="0" x="1576.15" y="1589.96" haveBus="false" idtf_pos="0">
+            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[<b>Учитель</b> — это специалист, который обучает детей и взрослых различным предметам и помогает им развивать знания и навыки. Он планирует уроки, объясняет материал и контролирует успеваемость учеников.<br><br>
+Вот примеры задач, с которыми сталкивается учитель на работе:<br><ul style="list-style: decimal;">
+<li><b>Планирование уроков:</b> Учитель готовит учебный материал, чтобы эффективно объяснять темы ученикам.</li>
+<li><b>Объяснение сложных тем</b>: Он помогает ученикам понять сложные темы, используя различные методы преподавания.</li>
+<li><b>Оценка знаний</b>: Учитель проводит тесты и контрольные работы, чтобы проверить, как ученики усвоили материал.</li>
+<li><b>Помощь ученикам</b>: Учитель поддерживает учеников, помогает решать учебные трудности и развивает их способности.</li>
+<li><b>Поддержание дисциплины</b>: Учитель следит за порядком на уроках, чтобы создать благоприятные условия для обучения.</li>
+</ul>]]></content>
+        </node>
+        <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114796237744" parent="0" x="1344.89" y="1109.44" haveBus="false" idtf_pos="0">
+            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[1692 BYN]]></content>
+        </node>
+        <node type="node/const/perm/relation" idtf="nrel_education" shapeColor="0" id="104114791474880" parent="0" left="0" top="0" right="98.7344" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="754.091" y="1336.36" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
         <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114793555824" parent="0" x="-564.105" y="1649.94" haveBus="false" idtf_pos="0">
             <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Вот некоторые учебные заведения Беларуси где можно обучаться на пожарного<br><ul style="list-style: decimal;">
@@ -230,12 +286,6 @@
         <node type="node/const/perm/group" idtf="concept_wit_entity" shapeColor="0" id="104114798013936" parent="0" left="0" top="0" right="123.391" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="629.317" y="507.756" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
-        <node type="node/const/perm/group" idtf="lang_ru" shapeColor="0" id="104114797996368" parent="0" left="0" top="0" right="53.6406" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2040.64" y="1617.37" haveBus="false" idtf_pos="0">
-            <content type="0" mime_type="" content_visibility="false" file_name=""/>
-        </node>
-        <node type="node/const/perm/relation" idtf="nrel_info" shapeColor="0" id="104114797979984" parent="0" left="0" top="0" right="61.4688" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1726.84" y="1357.1" haveBus="false" idtf_pos="0">
-            <content type="0" mime_type="" content_visibility="false" file_name=""/>
-        </node>
         <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114797938192" parent="0" x="-914.905" y="59.0763" haveBus="false" idtf_pos="0">
             <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[<b>Врач</b> — это специалист, который диагностирует, лечит и предотвращает болезни у людей. Он проводит осмотры, назначает анализы, ставит диагнозы и разрабатывает планы лечения для поддержания здоровья пациентов.<br><br>
 Вот примеры задач, с которыми сталкивается врач на работе:<br><ul style="list-style: decimal;">
@@ -376,25 +426,22 @@
         <node type="node/const/perm/group" idtf="lang_ru" shapeColor="0" id="104114796650736" parent="0" left="0" top="0" right="53.6406" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1438.12" y="1368.74" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
-        <node type="node/const/perm/relation" idtf="nrel_idtf" shapeColor="0" id="104114796632896" parent="0" left="0" top="0" right="61.0781" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2108.71" y="1125.93" haveBus="false" idtf_pos="0">
+        <node type="node/const/perm/relation" idtf="nrel_idtf" shapeColor="0" id="104114796632896" parent="0" left="0" top="0" right="61.0781" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2127.1" y="1084.55" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
-        <node type="node/const/perm/relation" idtf="nrel_info" shapeColor="0" id="104114796614768" parent="0" left="0" top="0" right="61.4688" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2314.09" y="1078.49" haveBus="false" idtf_pos="0">
+        <node type="node/const/perm/relation" idtf="nrel_info" shapeColor="0" id="104114796614768" parent="0" left="0" top="0" right="61.4688" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2332.48" y="1037.11" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
-        <node type="node/const/perm/relation" idtf="nrel_salary" shapeColor="0" id="104114796596320" parent="0" left="0" top="0" right="75.9688" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2165.3" y="952.895" haveBus="false" idtf_pos="0">
+        <node type="node/const/perm/relation" idtf="nrel_salary" shapeColor="0" id="104114796596320" parent="0" left="0" top="0" right="75.9688" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2183.69" y="911.516" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
-        <node type="node/const/perm/group" idtf="lang_ru" shapeColor="0" id="104114796578480" parent="0" left="0" top="0" right="53.6406" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1980.05" y="986.475" haveBus="false" idtf_pos="0">
+        <node type="node/const/perm/group" idtf="lang_ru" shapeColor="0" id="104114796578480" parent="0" left="0" top="0" right="53.6406" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1998.44" y="945.096" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
-        <node type="node/const/perm/relation" idtf="nrel_main_idtf" shapeColor="0" id="104114796561008" parent="0" left="0" top="0" right="97.4375" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2084.35" y="1002.07" haveBus="false" idtf_pos="0">
+        <node type="node/const/perm/relation" idtf="nrel_main_idtf" shapeColor="0" id="104114796561008" parent="0" left="0" top="0" right="97.4375" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2102.74" y="960.691" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
-        <node type="node/const/perm/group" idtf="lang_ru" shapeColor="0" id="104114796543152" parent="0" left="0" top="0" right="53.6406" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2413.05" y="1070.44" haveBus="false" idtf_pos="0">
-            <content type="0" mime_type="" content_visibility="false" file_name=""/>
-        </node>
-        <node type="node/const/perm/group" idtf="lang_ru" shapeColor="0" id="104114796524752" parent="0" left="0" top="0" right="53.6406" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1998.65" y="1187.16" haveBus="false" idtf_pos="0">
+        <node type="node/const/perm/group" idtf="lang_ru" shapeColor="0" id="104114796543152" parent="0" left="0" top="0" right="53.6406" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2431.44" y="1029.06" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
         <node type="node/const/perm/relation" idtf="nrel_idtf" shapeColor="0" id="104114796506624" parent="0" left="0" top="0" right="61.0781" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2203.45" y="731.198" haveBus="false" idtf_pos="0">
@@ -448,22 +495,19 @@
         <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114796245200" parent="0" x="1425.28" y="1283.74" haveBus="false" idtf_pos="0">
             <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[учитель]]></content>
         </node>
-        <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114796237744" parent="0" x="1395.45" y="1072.36" haveBus="false" idtf_pos="0">
-            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[1692 BYN]]></content>
-        </node>
-        <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114796230320" parent="0" x="1985.81" y="1102.16" haveBus="false" idtf_pos="0">
+        <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114796230320" parent="0" x="2004.2" y="1060.78" haveBus="false" idtf_pos="0">
             <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[официант]]></content>
         </node>
-        <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114796222016" parent="0" x="1942.74" y="1041.72" haveBus="false" idtf_pos="0">
+        <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114796222016" parent="0" x="1961.13" y="1000.34" haveBus="false" idtf_pos="0">
             <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[официанта]]></content>
         </node>
-        <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114796214544" parent="0" x="2068.47" y="926.895" haveBus="false" idtf_pos="0">
+        <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114796214544" parent="0" x="2086.86" y="885.516" haveBus="false" idtf_pos="0">
             <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[1038 BYN]]></content>
         </node>
         <node type="node/const/perm/general" idtf="Lawyer" shapeColor="0" id="104114796196992" parent="0" left="0" top="0" right="53.1094" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2288.51" y="671.218" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
-        <node type="node/const/perm/general" idtf="Waiter" shapeColor="0" id="104114796179728" parent="0" left="0" top="0" right="49.9531" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2193.78" y="1065.95" haveBus="false" idtf_pos="0">
+        <node type="node/const/perm/general" idtf="Waiter" shapeColor="0" id="104114796179728" parent="0" left="0" top="0" right="49.9531" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2212.17" y="1024.57" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
         <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114796172304" parent="0" x="2039.4" y="646.988" haveBus="false" idtf_pos="0">
@@ -483,26 +527,6 @@
         </node>
         <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114796118960" parent="0" x="2082.21" y="262.777" haveBus="false" idtf_pos="0">
             <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[психолога]]></content>
-        </node>
-        <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114796084688" parent="0" x="1569.25" y="1633.64" haveBus="false" idtf_pos="0">
-            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[<b>Учитель</b> — это специалист, который обучает детей и взрослых различным предметам и помогает им развивать знания и навыки. Он планирует уроки, объясняет материал и контролирует успеваемость учеников.<br><br>
-Вот примеры задач, с которыми сталкивается учитель на работе:<br><ul style="list-style: decimal;">
-<li><b>Планирование уроков:</b> Учитель готовит учебный материал, чтобы эффективно объяснять темы ученикам.</li>
-<li><b>Объяснение сложных тем</b>: Он помогает ученикам понять сложные темы, используя различные методы преподавания.</li>
-<li><b>Оценка знаний</b>: Учитель проводит тесты и контрольные работы, чтобы проверить, как ученики усвоили материал.</li>
-<li><b>Помощь ученикам</b>: Учитель поддерживает учеников, помогает решать учебные трудности и развивает их способности.</li>
-<li><b>Поддержание дисциплины</b>: Учитель следит за порядком на уроках, чтобы создать благоприятные условия для обучения.</li>
-</ul>]]></content>
-        </node>
-        <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114796050544" parent="0" x="2411.8" y="1371.59" haveBus="false" idtf_pos="0">
-            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[<b>Официант</b> — это специалист, который обслуживает посетителей в ресторанах и кафе. Он принимает заказы, подаёт еду и напитки, а также следит за комфортом гостей во время их пребывания.<br><br>
-Вот примеры задач, с которыми сталкивается официант на работе:<br><ul style="list-style: decimal;">
-<li><b>Приём заказов</b>: Официант внимательно записывает заказы гостей, уточняя предпочтения и особенности блюд.</li>
-<li><b>Подача блюд</b>: Он приносит еду и напитки на стол, следя за тем, чтобы всё было подано вовремя и аккуратно.</li>
-<li><b>Консультирование гостей</b>: Официант помогает гостям выбрать блюда, рассказывая о меню и предлагая рекомендации.</li>
-<li><b>Поддержание чистоты столов</b>: Он убирает посуду и поддерживает чистоту на столах после ухода гостей.</li>
-<li><b>Обработка оплаты</b>: Официант приносит счёт и принимает оплату, будь то наличные или карта.</li>
-</ul>]]></content>
         </node>
         <node type="node/const/perm/relation" idtf="nrel_info" shapeColor="0" id="104114796034528" parent="0" left="0" top="0" right="61.4688" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2345.43" y="763.573" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
@@ -571,6 +595,18 @@
         <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114779785168" parent="0" x="560.322" y="-159.379" haveBus="false" idtf_pos="0">
             <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[949 BYN]]></content>
         </node>
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114793683792" parent="0" id_b="104114793736800" id_e="104114793410464" b_x="2328.32" b_y="919.469" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.305037">
+            <points/>
+        </pair>
+        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="104114793410464" parent="0" id_b="104114796179728" id_e="104114793516864" b_x="2212.17" b_y="1024.57" e_x="2691" e_y="975.027" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114791142480" parent="0" id_b="104114780526640" id_e="104114783833456" b_x="1660.07" b_y="1208.55" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.415405">
+            <points/>
+        </pair>
+        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="104114783833456" parent="0" id_b="104114796252624" id_e="104114794766352" b_x="1633.25" b_y="1247.53" e_x="1970.63" e_y="1309.01" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114793030704" parent="0" id_b="104114791474880" id_e="104114793711936" b_x="754.091" b_y="1336.36" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.610139">
             <points/>
         </pair>
@@ -862,7 +898,7 @@
         <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="104114798088752" parent="0" id_b="104114796252624" id_e="104114796277760" b_x="1633.25" b_y="1247.53" e_x="1382.21" e_y="1223.3" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798087776" parent="0" id_b="104114797996368" id_e="104114796084688" b_x="2040.64" b_y="1617.37" e_x="1569.25" e_y="1633.64" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798087776" parent="0" id_b="104114797996368" id_e="104114796084688" b_x="1663.63" b_y="1388.63" e_x="1576.15" e_y="1589.96" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798086800" parent="0" id_b="104114796707168" id_e="104114798083808" b_x="1604.78" b_y="1134.47" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.500081">
@@ -871,10 +907,10 @@
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798085824" parent="0" id_b="104114796650736" id_e="104114796245200" b_x="1438.12" b_y="1368.74" e_x="1425.28" e_y="1283.74" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798084784" parent="0" id_b="104114797979984" id_e="104114798079968" b_x="1726.84" b_y="1357.1" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.517653">
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798084784" parent="0" id_b="104114797979984" id_e="104114798079968" b_x="1675.12" b_y="1341.01" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.517653">
             <points/>
         </pair>
-        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="104114798083808" parent="0" id_b="104114796252624" id_e="104114796237744" b_x="1633.25" b_y="1247.53" e_x="1395.45" e_y="1072.36" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="104114798083808" parent="0" id_b="104114796252624" id_e="104114796237744" b_x="1633.25" b_y="1247.53" e_x="1344.89" e_y="1109.44" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
         <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="104114798082896" parent="0" id_b="104114796252624" id_e="104114796245200" b_x="1633.25" b_y="1247.53" e_x="1425.28" e_y="1283.74" dotBBalance="0" dotEBalance="0">
@@ -886,43 +922,43 @@
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798080880" parent="0" id_b="104114796689344" id_e="104114796277760" b_x="1419.53" b_y="1168.05" e_x="1382.21" e_y="1223.3" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="104114798079968" parent="0" id_b="104114796252624" id_e="104114796084688" b_x="1633.25" b_y="1247.53" e_x="1569.25" e_y="1633.64" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="104114798079968" parent="0" id_b="104114796252624" id_e="104114796084688" b_x="1633.25" b_y="1247.53" e_x="1576.15" e_y="1589.96" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798078928" parent="0" id_b="104114796668848" id_e="104114798088752" b_x="1523.83" b_y="1183.65" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.630753">
             <points/>
         </pair>
-        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="104114798078016" parent="0" id_b="104114796179728" id_e="104114796222016" b_x="2193.78" b_y="1065.95" e_x="1942.74" e_y="1041.72" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="104114798078016" parent="0" id_b="104114796179728" id_e="104114796222016" b_x="2212.17" b_y="1024.57" e_x="1961.13" e_y="1000.34" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798077040" parent="0" id_b="104114796543152" id_e="104114796050544" b_x="2413.05" b_y="1070.44" e_x="2411.8" e_y="1371.59" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798077040" parent="0" id_b="104114796543152" id_e="104114796050544" b_x="2431.44" b_y="1029.06" e_x="2540.54" e_y="1307.22" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798076064" parent="0" id_b="104114796596320" id_e="104114798073072" b_x="2165.3" b_y="952.895" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.500081">
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798076064" parent="0" id_b="104114796596320" id_e="104114798073072" b_x="2183.69" b_y="911.516" e_x="18.3908" e_y="-41.3793" dotBBalance="0" dotEBalance="0.500081">
             <points/>
         </pair>
-        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798075088" parent="0" id_b="104114796524752" id_e="104114796230320" b_x="1998.65" b_y="1187.16" e_x="1985.81" e_y="1102.16" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798075088" parent="0" id_b="104114796524752" id_e="104114796230320" b_x="2017.04" b_y="1145.78" e_x="2004.2" e_y="1060.78" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798074048" parent="0" id_b="104114796614768" id_e="104114798069232" b_x="2314.09" b_y="1078.49" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.517653">
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798074048" parent="0" id_b="104114796614768" id_e="104114798069232" b_x="2332.48" b_y="1037.11" e_x="18.3908" e_y="-41.3793" dotBBalance="0" dotEBalance="0.517653">
             <points/>
         </pair>
-        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="104114798073072" parent="0" id_b="104114796179728" id_e="104114796214544" b_x="2193.78" b_y="1065.95" e_x="2068.47" e_y="926.895" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="104114798073072" parent="0" id_b="104114796179728" id_e="104114796214544" b_x="2212.17" b_y="1024.57" e_x="2086.86" e_y="885.516" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="104114798072160" parent="0" id_b="104114796179728" id_e="104114796230320" b_x="2193.78" b_y="1065.95" e_x="1985.81" e_y="1102.16" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="104114798072160" parent="0" id_b="104114796179728" id_e="104114796230320" b_x="2212.17" b_y="1024.57" e_x="2004.2" e_y="1060.78" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798071184" parent="0" id_b="104114796632896" id_e="104114798072160" b_x="2108.71" b_y="1125.93" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.363798">
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798071184" parent="0" id_b="104114796632896" id_e="104114798072160" b_x="2127.1" b_y="1084.55" e_x="18.3908" e_y="-41.3793" dotBBalance="0" dotEBalance="0.363798">
             <points/>
         </pair>
-        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798070144" parent="0" id_b="104114796578480" id_e="104114796222016" b_x="1980.05" b_y="986.475" e_x="1942.74" e_y="1041.72" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798070144" parent="0" id_b="104114796578480" id_e="104114796222016" b_x="1998.44" b_y="945.096" e_x="1961.13" e_y="1000.34" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="104114798069232" parent="0" id_b="104114796179728" id_e="104114796050544" b_x="2193.78" b_y="1065.95" e_x="2411.8" e_y="1371.59" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="104114798069232" parent="0" id_b="104114796179728" id_e="104114796050544" b_x="2212.17" b_y="1024.57" e_x="2540.54" e_y="1307.22" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798068192" parent="0" id_b="104114796561008" id_e="104114798078016" b_x="2084.35" b_y="1002.07" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.630753">
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798068192" parent="0" id_b="104114796561008" id_e="104114798078016" b_x="2102.74" b_y="960.691" e_x="18.3908" e_y="-41.3793" dotBBalance="0" dotEBalance="0.630753">
             <points/>
         </pair>
         <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="104114798067280" parent="0" id_b="104114796196992" id_e="104114796172304" b_x="2288.51" b_y="671.218" e_x="2039.4" e_y="646.988" dotBBalance="0" dotEBalance="0">
@@ -988,7 +1024,7 @@
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798047760" parent="0" id_b="104114796292384" id_e="104114796252624" b_x="791.581" b_y="621.097" e_x="1633.25" e_y="1247.53" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798046704" parent="0" id_b="104114796292384" id_e="104114796179728" b_x="791.581" b_y="621.097" e_x="2193.78" e_y="1065.95" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798046704" parent="0" id_b="104114796292384" id_e="104114796179728" b_x="791.581" b_y="621.097" e_x="2212.17" e_y="1024.57" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798045728" parent="0" id_b="104114796292384" id_e="104114783040016" b_x="791.581" b_y="621.097" e_x="2333.25" e_y="287.007" dotBBalance="0" dotEBalance="0">
@@ -1000,7 +1036,7 @@
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798043776" parent="0" id_b="104114798013936" id_e="104114796196992" b_x="629.317" b_y="507.756" e_x="2288.51" e_y="671.218" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798042800" parent="0" id_b="104114798013936" id_e="104114796179728" b_x="629.317" b_y="507.756" e_x="2193.78" e_y="1065.95" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798042800" parent="0" id_b="104114798013936" id_e="104114796179728" b_x="629.317" b_y="507.756" e_x="2212.17" e_y="1024.57" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798041824" parent="0" id_b="104114798013936" id_e="104114796252624" b_x="629.317" b_y="507.756" e_x="1633.25" e_y="1247.53" dotBBalance="0" dotEBalance="0">
