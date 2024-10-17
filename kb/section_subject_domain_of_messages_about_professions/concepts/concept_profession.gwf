@@ -1,14 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GWF version="2.0">
     <staticSector>
-        <node type="node/const/perm/relation" idtf="nrel_education" shapeColor="0" id="104114793530416" parent="0" left="0" top="0" right="98.7344" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-398.99" y="1436.36" haveBus="false" idtf_pos="0">
+        <node type="node/const/perm/relation" idtf="nrel_education" shapeColor="0" id="104114791474880" parent="0" left="0" top="0" right="98.7344" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="754.091" y="1336.36" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
-        <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114793555824" parent="0" x="-561.908" y="1648.84" haveBus="false" idtf_pos="0">
+        <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114791843968" parent="0" x="1069.51" y="1378.53" haveBus="false" idtf_pos="0">
+            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Вот некоторые учебные заведения Беларуси где можно обучаться на программиста<br><ul style="list-style: decimal;">
+<li>Белорусский государственный университет информатики и радиоэлектроники</li>
+<li>Белорусский национальный технический университет</li>
+<li>Белорусский государственный университет</li>
+<li>Гродненский государственный университет имени Янки Купалы</li>
+<li>Брестский государственный технический университет</li>
+</ul>]]></content>
+        </node>
+        <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114793555824" parent="0" x="-564.105" y="1649.94" haveBus="false" idtf_pos="0">
             <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Вот некоторые учебные заведения Беларуси где можно обучаться на пожарного<br><ul style="list-style: decimal;">
 <li>Университет гражданской защиты Министерства по чрезвычайным ситуациям Республики Беларусь</li>
 <li>«Специализированный лицей при Университете гражданской защиты» Министерства по чрезвычайным ситуациям Республики Беларусь</li>
 </ul>]]></content>
+        </node>
+        <node type="node/const/perm/group" idtf="lang_ru" shapeColor="0" id="104114797702944" parent="0" left="0" top="0" right="53.6406" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="772.806" y="1480.55" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/relation" idtf="nrel_info" shapeColor="0" id="104114795539456" parent="0" left="0" top="0" right="61.4688" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="621.12" y="1377.02" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114795707984" parent="0" x="587.36" y="1683.2" haveBus="false" idtf_pos="0">
+            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[<b>Программист</b> — это специалист, который пишет и разрабатывает программы и приложения для компьютеров и других устройств. Он создает код, тестирует программы и исправляет ошибки, чтобы обеспечить их правильную работу.<br><br>
+Вот примеры задач, с которыми сталкивается программист на работе:<br><ul style="list-style: decimal;">
+<li><b>Написание кода</b>: Программист создаёт программы и приложения, используя языки программирования, такие как C#, Python, Java и другие.</li>
+<li><b>Исправление ошибок</b>: Он находит и устраняет баги и ошибки в коде, чтобы программа работала корректно.</li>
+<li><b>Тестирование программ</b>: Программист проверяет программы на наличие ошибок и тестирует их работоспособность в разных условиях.</li>
+<li><b>Разработка интерфейсов</b>: Программист создаёт удобные пользовательские интерфейсы, чтобы пользователи могли легко взаимодействовать с программой.</li>
+<li><b>Оптимизация кода</b>: Он улучшает производительность программ, делая их быстрее и эффективнее.</li>
+</ul>]]></content>
+        </node>
+        <node type="node/const/perm/relation" idtf="nrel_education" shapeColor="0" id="104114793530416" parent="0" left="0" top="0" right="98.7344" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-398.99" y="1436.36" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
         <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114797814352" parent="0" x="-32.8014" y="1706.86" haveBus="false" idtf_pos="0">
             <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[<b>Пожарный</b> — это специалист, который занимается тушением пожаров, спасением людей и предотвращением чрезвычайных ситуаций. Он защищает людей и имущество от огня, а также проводит профилактическую работу по предупреждению пожаров.<br><br>
@@ -229,9 +257,6 @@
 </ul>]]></content>
         </node>
         <node type="node/const/perm/group" idtf="lang_ru" shapeColor="0" id="104114796724240" parent="0" left="0" top="0" right="53.6406" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-895.49" y="627.566" haveBus="false" idtf_pos="0">
-            <content type="0" mime_type="" content_visibility="false" file_name=""/>
-        </node>
-        <node type="node/const/perm/group" idtf="lang_ru" shapeColor="0" id="104114797702944" parent="0" left="0" top="0" right="53.6406" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1030.53" y="1573.23" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
         <node type="node/const/perm/relation" idtf="nrel_salary" shapeColor="0" id="104114797630592" parent="0" left="0" top="0" right="75.9688" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-961.836" y="322.63" haveBus="false" idtf_pos="0">
@@ -510,16 +535,6 @@
 
 ]]></content>
         </node>
-        <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114795707984" parent="0" x="651.588" y="1688.08" haveBus="false" idtf_pos="0">
-            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[<b>Программист</b> — это специалист, который пишет и разрабатывает программы и приложения для компьютеров и других устройств. Он создает код, тестирует программы и исправляет ошибки, чтобы обеспечить их правильную работу.<br><br>
-Вот примеры задач, с которыми сталкивается программист на работе:<br><ul style="list-style: decimal;">
-<li><b>Написание кода</b>: Программист создаёт программы и приложения, используя языки программирования, такие как C#, Python, Java и другие.</li>
-<li><b>Исправление ошибок</b>: Он находит и устраняет баги и ошибки в коде, чтобы программа работала корректно.</li>
-<li><b>Тестирование программ</b>: Программист проверяет программы на наличие ошибок и тестирует их работоспособность в разных условиях.</li>
-<li><b>Разработка интерфейсов</b>: Программист создаёт удобные пользовательские интерфейсы, чтобы пользователи могли легко взаимодействовать с программой.</li>
-<li><b>Оптимизация кода</b>: Он улучшает производительность программ, делая их быстрее и эффективнее.</li>
-</ul>]]></content>
-        </node>
         <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114795701888" parent="0" x="634.328" y="1086.57" haveBus="false" idtf_pos="0">
             <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[6347  BYN]]></content>
         </node>
@@ -544,9 +559,6 @@
         <node type="node/const/perm/relation" idtf="nrel_main_idtf" shapeColor="0" id="104114795612800" parent="0" left="0" top="0" right="97.4375" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="555.97" y="1132.09" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
-        <node type="node/const/perm/relation" idtf="nrel_info" shapeColor="0" id="104114795539456" parent="0" left="0" top="0" right="61.4688" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="836.567" y="1393.28" haveBus="false" idtf_pos="0">
-            <content type="0" mime_type="" content_visibility="false" file_name=""/>
-        </node>
         <node type="node/const/perm/relation" idtf="nrel_salary" shapeColor="0" id="104114795543408" parent="0" left="0" top="0" right="75.9688" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="756.7" y="1108.34" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
@@ -559,10 +571,16 @@
         <node type="node/const/perm/general" idtf="" shapeColor="0" id="104114779785168" parent="0" x="560.322" y="-159.379" haveBus="false" idtf_pos="0">
             <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[949 BYN]]></content>
         </node>
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114793030704" parent="0" id_b="104114791474880" id_e="104114793711936" b_x="754.091" b_y="1336.36" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.610139">
+            <points/>
+        </pair>
+        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="104114793711936" parent="0" id_b="104114795683472" id_e="104114791843968" b_x="783.582" b_y="1223.88" e_x="1069.51" e_y="1378.53" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114793690848" parent="0" id_b="104114793530416" id_e="104114792061664" b_x="-398.99" b_y="1436.36" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.851164">
             <points/>
         </pair>
-        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="104114792061664" parent="0" id_b="104114796309904" id_e="104114793555824" b_x="-42.5635" b_y="1294.88" e_x="-561.908" e_y="1648.84" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="104114792061664" parent="0" id_b="104114796309904" id_e="104114793555824" b_x="-42.5635" b_y="1294.88" e_x="-564.105" e_y="1649.94" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114792460352" parent="0" id_b="104114793631600" id_e="104114794597040" b_x="-703.67" b_y="1071.56" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.689435">
@@ -838,7 +856,7 @@
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798090704" parent="0" id_b="104114797223952" id_e="104114796744912" b_x="-1345.97" b_y="964.086" e_x="-1596.59" e_y="1167.26" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798089664" parent="0" id_b="104114797702944" id_e="104114795707984" b_x="1030.53" b_y="1573.23" e_x="651.588" e_y="1688.08" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114798089664" parent="0" id_b="104114797702944" id_e="104114795707984" b_x="772.806" b_y="1480.55" e_x="587.36" e_y="1683.2" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
         <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="104114798088752" parent="0" id_b="104114796252624" id_e="104114796277760" b_x="1633.25" b_y="1247.53" e_x="1382.21" e_y="1223.3" dotBBalance="0" dotEBalance="0">
@@ -1015,10 +1033,10 @@
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114783408048" parent="0" id_b="104114795612800" id_e="104114798037856" b_x="555.97" b_y="1132.09" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.861318">
             <points/>
         </pair>
-        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="104114783408512" parent="0" id_b="104114795683472" id_e="104114795707984" b_x="783.582" b_y="1223.88" e_x="651.588" e_y="1688.08" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="104114783408512" parent="0" id_b="104114795683472" id_e="104114795707984" b_x="783.582" b_y="1223.88" e_x="587.36" e_y="1683.2" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114783408848" parent="0" id_b="104114795539456" id_e="104114783408512" b_x="836.567" b_y="1393.28" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.537463">
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114783408848" parent="0" id_b="104114795539456" id_e="104114783408512" b_x="621.12" b_y="1377.02" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.537463">
             <points/>
         </pair>
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="104114794110352" parent="0" id_b="104114798013936" id_e="104114795683472" b_x="629.317" b_y="507.756" e_x="783.582" e_y="1223.88" dotBBalance="0" dotEBalance="0">
