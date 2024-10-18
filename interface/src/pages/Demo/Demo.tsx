@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState, Fragment } from 'react';
 import { Wrapper, ChatWrapper, SCgViewerWrapper } from "./styled";
 import { Message } from '@components/Chat/Message';
 import { Chat } from '@components/Chat';
+import { FormPanel } from '@components/Chat/Forms/Form';
 import { Date } from '@components/Chat/Date';
 import { ScAddr } from 'ts-sc-client';
 import { resolveUserAgent } from '@agents/resolveUserAgent';
@@ -11,6 +12,7 @@ import { SC_WEB_URL } from "@constants";
 
 export const Demo = () => {
     const [user, setUser] = useState<ScAddr | null>(null);
+    const [isFormActivated, activateForm] = useState<boolean>(false);
     const [isLoading, setIsLoading] = useState(false);
 
     const { initChat, sendMessage, isAgentAnswer, onFetching, messages, chatRef } = useChat(user);
@@ -18,8 +20,13 @@ export const Demo = () => {
         async (text: string) => {
             if (!user) return;
             await sendMessage(user, text);
+            if (text === "")
+                activateForm(true);
+            else if (text === "")
+                activateForm(false);
+
         },
-        [user, sendMessage],
+        [user, sendMessage, activateForm],
     );
 
     const url = SC_WEB_URL + '/?sys_id=answer_structure&scg_structure_view_only=true';
@@ -69,6 +76,9 @@ export const Demo = () => {
                     })}
                 </Chat>
             </ChatWrapper>
+            <FormPanel>
+
+            </FormPanel>
             <SCgViewerWrapper>
                 <iframe src={url} style={{width: '100%', height: '100%', border: 0, borderRadius: '15px'}}/>
             </SCgViewerWrapper>

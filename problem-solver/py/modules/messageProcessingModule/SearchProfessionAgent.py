@@ -58,7 +58,7 @@ class SearchProfessionAgent(ScAgentClassic):
                 "nrel_profession", sc_types.NODE_NOROLE)
             nrel_skills = ScKeynodes.resolve(
                 "nrel_skills", sc_types.NODE_NOROLE)
-            message_type = ScKeynodes.resolve('concept_message_ask_about_personaly_profession', sc_types.NODE_CONST_CLASS)
+            message_type = ScKeynodes.resolve('concept_message_about_test', sc_types.NODE_CONST_CLASS)
 
             if not check_edge(sc_types.EDGE_ACCESS_VAR_POS_PERM, message_type, message_addr):
                 self.logger.info(
