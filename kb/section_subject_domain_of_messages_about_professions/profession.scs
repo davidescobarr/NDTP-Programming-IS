@@ -1,0 +1,7 @@
+nrel_profession
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+    [профессия*]
+    (* <- lang_ru;; *);
+    [profession*]
+    (* <- lang_en;; *);;
