@@ -1,17 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GWF version="2.0">
     <staticSector>
-        <node type="node/const/perm/group" idtf="lang_ru" shapeColor="0" id="105307612445920" parent="0" left="0" top="0" right="53.6406" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-588.408" y="52.0283" haveBus="false" idtf_pos="0">
-            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        <node type="node/const/perm/general" idtf="" shapeColor="193" id="105307612892176" parent="0" x="2057.74" y="332.926" haveBus="false" idtf_pos="0">
+            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[психолог]]></content>
+        </node>
+        <node type="node/const/perm/general" idtf="" shapeColor="0" id="105307612835968" parent="0" x="2635.83" y="169.237" haveBus="false" idtf_pos="0">
+            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Вот некоторые <b><i>учебные заведения Беларуси</i></b> где можно обучаться на <b><i>психолога</i></b>:<br><ul style="list-style: decimal;">
+<li>Гомельский государственный университет им. Франциска Скорины</li>
+<li>Гродненский государственный университет имени Янки Купалы</li>
+<li>Белорусский государственный университет</li>
+<li>Могилевский государственный университет имени А.А.Кулешова</li>
+<li>Полоцкий государственный университет</li>
+</ul>]]></content>
+        </node>
+        <node type="node/const/perm/general" idtf="" shapeColor="0" id="105307612178160" parent="0" x="2356.56" y="465.291" haveBus="false" idtf_pos="0">
+            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Вот некоторые <b><i>учебные заведения Беларуси</i></b> где можно обучаться на <b><i>юриста</i></b>:<br><ul style="list-style: decimal;">
+<li>Белорусский торгово-экономический университет потребительской кооперации</li>
+<li>Гомельский государственный университет им. Франциска Скорины</li>
+<li>Гомельский филиал Международного университета "МИТСО"</li>
+<li>Академия Министерства внутренних дел Республики Беларусь</li>
+<li>Могилевский институт Министерства внутренних дел Республики Беларусь</li>
+</ul>]]></content>
+        </node>
+        <node type="node/const/perm/general" idtf="" shapeColor="0" id="105307612991056" parent="0" x="2691" y="975.027" haveBus="false" idtf_pos="0">
+            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Вот некоторые <b><i>учебные заведения Беларуси</i></b> где можно обучаться на <b><i>официанта</i></b>:<br><ul style="list-style: decimal;">
+<li>Барановичский технологический колледж Белкоопсоюза</li>
+<li>Витебский государственный индустриально-технологический колледж</li>
+<li>Гомельский государственный ПТК кулинарии</li>
+<li>Гродненский государственный профессиональный технологический колледж</li>
+<li>Минский государственный ПТК кулинарии</li>
+</ul>]]></content>
+        </node>
+        <node type="node/const/perm/general" idtf="" shapeColor="0" id="105307613148496" parent="0" x="1970.63" y="1309.01" haveBus="false" idtf_pos="0">
+            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Вот некоторые <b><i>учебные заведения Беларуси</i></b> где можно обучаться на <b><i>педагога</i></b>:<br><ul style="list-style: decimal;">
+<li>Барановичский государственный университет</li>
+<li>Белорусская государственная академия искусств</li>
+<li>Белорусский государственный университет</li>
+<li>Белорусский государственный университет физической культуры</li>
+<li>Минский государственный лингвистический университет</li>
+</ul>]]></content>
+        </node>
+        <node type="node/const/perm/general" idtf="" shapeColor="0" id="105307613251216" parent="0" x="1069.51" y="1378.53" haveBus="false" idtf_pos="0">
+            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Вот некоторые <b><i>учебные заведения Беларуси</i></b> где можно обучаться на <b><i>программиста</i></b>:<br><ul style="list-style: decimal;">
+<li>Белорусский государственный университет информатики и радиоэлектроники</li>
+<li>Белорусский национальный технический университет</li>
+<li>Белорусский государственный университет</li>
+<li>Гродненский государственный университет имени Янки Купалы</li>
+<li>Брестский государственный технический университет</li>
+</ul>]]></content>
+        </node>
+        <node type="node/const/perm/general" idtf="" shapeColor="0" id="105307613360416" parent="0" x="-564.105" y="1649.94" haveBus="false" idtf_pos="0">
+            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Вот некоторые <b><i>учебные заведения Беларуси</i></b> где можно обучаться на <b><i>пожарного</i></b>:<br><ul style="list-style: decimal;">
+<li>Университет гражданской защиты Министерства по чрезвычайным ситуациям Республики Беларусь</li>
+<li>«Специализированный лицей при Университете гражданской защиты» Министерства по чрезвычайным ситуациям Республики Беларусь</li>
+</ul>]]></content>
+        </node>
+        <node type="node/const/perm/general" idtf="" shapeColor="0" id="105307613599408" parent="0" x="-399.491" y="1094.33" haveBus="false" idtf_pos="0">
+            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Вот некоторые <b><i>учебные заведения Беларуси</i></b> где можно обучаться на <b><i>электрика</i></b>:<br><ul style="list-style: decimal;">
+<li>Могилевский политехнический колледж</li>
+<li>Гомельский политехнический колледж</li>
+<li>Новополоцкий политехнический колледж</li>
+<li>Витебский технический колледж</li>
+<li>Минский политехнический колледж</li>
+</ul>]]></content>
+        </node>
+        <node type="node/const/perm/general" idtf="" shapeColor="0" id="105307613880080" parent="0" x="-1597.52" y="1196.23" haveBus="false" idtf_pos="0">
+            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[<b>Повар</b> — это специалист, который готовит еду в ресторанах, кафе или на кухнях других заведений. Он разрабатывает рецепты, подбирает ингредиенты и создает вкусные блюда, соблюдая правила гигиены и безопасности.<br><br>
+Вот примеры задач, с которыми сталкивается повар на работе:<br><ul style="list-style: decimal;">
+<li><b>Приготовление блюд</b>: Повар готовит еду по рецептам, правильно комбинируя ингредиенты и следуя технологиям./li>
+<li><b>Разработка меню</b>: Повар создаёт новое меню, подбирая интересные и вкусные блюда для гостей.</li>
+<li><b>Контроль качества продуктов</b>: Он проверяет свежесть и качество ингредиентов перед приготовлением.</li>
+<li><b>Украшение блюд</b>: Повар красиво оформляет готовые блюда, чтобы они были аппетитными и эстетичными.</li>
+<li><b>Организация кухни</b>: Повар следит за чистотой и порядком на кухне, соблюдает правила гигиены и безопасности.</li>
+</ul>]]></content>
+        </node>
+        <node type="node/const/perm/general" idtf="" shapeColor="0" id="105307613571440" parent="0" x="-1770.9" y="690.921" haveBus="false" idtf_pos="0">
+            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Вот некоторые <b><i>учебные заведения Беларуси</i></b> где можно обучаться на <b><i>повара</i></b>:<br><ul style="list-style: decimal;">
+<li>Брестский торгово-технологический колледж</li>
+<li>Витебский аграрно-технический колледж</li>
+<li>Жлобинский технологический колледж</li>
+<li>Минский колледж кулинарии</li>
+<li>Слуцкий государственный колледж</li>
+</ul>]]></content>
+        </node>
+        <node type="node/const/perm/general" idtf="" shapeColor="0" id="105307613501184" parent="0" x="-335.222" y="220.778" haveBus="false" idtf_pos="0">
+            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Вот некоторые <b><i>учебные заведения Беларуси</i></b> где можно обучаться на <b><i>строителя</i></b>:<br><ul style="list-style: decimal;">
+<li>Белорусская государственная орденов Октябрьской Революции и Трудового Красного Знамени сельскохозяйственная академия</li>
+<li>Белорусский государственный университет транспорта</li>
+<li>Белорусский национальный технический университет</li>
+<li>Брестский государственный технический университет</li>
+<li>Гродненский государственный университет имени Янки Купалы</li>
+</ul>]]></content>
+        </node>
+        <node type="node/const/perm/general" idtf="" shapeColor="0" id="105307613544320" parent="0" x="-1341" y="420" haveBus="false" idtf_pos="0">
+            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Вот некоторые <b><i>учебные заведения Беларуси</i></b> где можно обучаться на <b><i>врача</i></b>:<br><ul style="list-style: decimal;">
+<li>Гомельский государственный медицинский университет</li>
+<li>Гродненский государственный медицинский университет</li>
+<li>Белорусский государственный медицинский университет</li>
+<li>Витебский государственный ордена Дружбы народов медицинский университет</li>
+<li>Витебская ордена «Знак Почёта» государственная академия ветеринарной медицины</li>
+</ul>]]></content>
         </node>
         <node type="node/const/perm/general" idtf="" shapeColor="0" id="105307612463760" parent="0" x="837.267" y="-318.69" haveBus="false" idtf_pos="0">
-            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Вот некоторые учебные заведения Беларуси в которых можно обучаться на архитектора:<br><ul style="list-style: decimal;">
+            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Вот некоторые <b><i>учебные заведения Беларуси</i></b> в которых можно обучаться на <b><i>архитектора</i></b>:<br><ul style="list-style: decimal;">
 <li>Брестский государственный технический университет</li>
 <li>Белорусский государственный университет транспорта</li>
 <li>Гродненский государственный университет имени Янки Купалы</li>
 <li>Белорусский национальный технический университет</li>
 <li>Полоцкий государственный университет</li>
 </ul>]]></content>
+        </node>
+        <node type="node/const/perm/group" idtf="lang_ru" shapeColor="0" id="105307612445920" parent="0" left="0" top="0" right="53.6406" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-588.408" y="52.0283" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
         <node type="node/const/perm/relation" idtf="nrel_main_idtf" shapeColor="0" id="105307615356352" parent="0" left="0" top="0" right="97.4375" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="58.7703" y="344.066" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
@@ -312,16 +412,6 @@
         <node type="node/const/perm/relation" idtf="nrel_education" shapeColor="0" id="105307613913248" parent="0" left="0" top="0" right="98.7344" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-1547.97" y="874.893" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
-        <node type="node/const/perm/general" idtf="" shapeColor="0" id="105307613880080" parent="0" x="-1596.59" y="1167.26" haveBus="false" idtf_pos="0">
-            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[<b>Повар</b> — это специалист, который готовит еду в ресторанах, кафе или на кухнях других заведений. Он разрабатывает рецепты, подбирает ингредиенты и создает вкусные блюда, соблюдая правила гигиены и безопасности.<br><br>
-Вот примеры задач, с которыми сталкивается повар на работе:<br><ul style="list-style: decimal;">
-<li><b>Приготовление блюд</b>: Повар готовит еду по рецептам, правильно комбинируя ингредиенты и следуя технологиям./li>
-<li><b>Разработка меню</b>: Повар создаёт новое меню, подбирая интересные и вкусные блюда для гостей.</li>
-<li><b>Контроль качества продуктов</b>: Он проверяет свежесть и качество ингредиентов перед приготовлением.</li>
-<li><b>Украшение блюд</b>: Повар красиво оформляет готовые блюда, чтобы они были аппетитными и эстетичными.</li>
-<li><b>Организация кухни</b>: Повар следит за чистотой и порядком на кухне, соблюдает правила гигиены и безопасности.</li>
-</ul>]]></content>
-        </node>
         <node type="node/const/perm/group" idtf="lang_ru" shapeColor="0" id="105307613860864" parent="0" left="0" top="0" right="53.6406" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-1348.75" y="991.864" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
@@ -371,42 +461,6 @@
         <node type="node/const/perm/group" idtf="lang_ru" shapeColor="0" id="105307612130816" parent="0" left="0" top="0" right="53.6406" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="142.931" y="1490.09" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
-        <node type="node/const/perm/general" idtf="" shapeColor="0" id="105307613599408" parent="0" x="-399.491" y="1095.58" haveBus="false" idtf_pos="0">
-            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Вот некоторые учебные заведения Беларуси где можно обучаться на электрика<br><ul style="list-style: decimal;">
-<li>Могилевский политехнический колледж</li>
-<li>Гомельский политехнический колледж</li>
-<li>Новополоцкий политехнический колледж</li>
-<li>Витебский технический колледж</li>
-<li>Минский политехнический колледж</li>
-</ul>]]></content>
-        </node>
-        <node type="node/const/perm/general" idtf="" shapeColor="0" id="105307613571440" parent="0" x="-1770.9" y="690.921" haveBus="false" idtf_pos="0">
-            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Вот некоторые учебные заведения Беларуси где можно обучаться на повара<br><ul style="list-style: decimal;">
-<li>Брестский торгово-технологический колледж</li>
-<li>Витебский аграрно-технический колледж</li>
-<li>Жлобинский технологический колледж</li>
-<li>Минский колледж кулинарии</li>
-<li>Слуцкий государственный колледж</li>
-</ul>]]></content>
-        </node>
-        <node type="node/const/perm/general" idtf="" shapeColor="0" id="105307613544320" parent="0" x="-1341" y="420" haveBus="false" idtf_pos="0">
-            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Вот некоторые учебные заведения Беларуси где можно обучаться на врача<br><ul style="list-style: decimal;">
-<li>Гомельский государственный медицинский университет</li>
-<li>Гродненский государственный медицинский университет</li>
-<li>Белорусский государственный медицинский университет</li>
-<li>Витебский государственный ордена Дружбы народов медицинский университет</li>
-<li>Витебская ордена «Знак Почёта» государственная академия ветеринарной медицины</li>
-</ul>]]></content>
-        </node>
-        <node type="node/const/perm/general" idtf="" shapeColor="0" id="105307613501184" parent="0" x="-325.5" y="218" haveBus="false" idtf_pos="0">
-            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Вот некоторые учебные заведения Беларуси где можно обучаться на строителя<br><ul style="list-style: decimal;">
-<li>Белорусская государственная орденов Октябрьской Революции и Трудового Красного Знамени сельскохозяйственная академия</li>
-<li>Белорусский государственный университет транспорта</li>
-<li>Белорусский национальный технический университет</li>
-<li>Брестский государственный технический университет</li>
-<li>Гродненский государственный университет имени Янки Купалы</li>
-</ul>]]></content>
-        </node>
         <node type="node/const/perm/general" idtf="" shapeColor="0" id="105307613480384" parent="0" x="-32.8014" y="1706.86" haveBus="false" idtf_pos="0">
             <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[<b>Пожарный</b> — это специалист, который занимается тушением пожаров, спасением людей и предотвращением чрезвычайных ситуаций. Он защищает людей и имущество от огня, а также проводит профилактическую работу по предупреждению пожаров.<br><br>
 Вот примеры задач, с которыми сталкивается пожарный на работе:<br><ul style="list-style: decimal;">
@@ -436,12 +490,6 @@
         <node type="node/const/perm/group" idtf="lang_ru" shapeColor="0" id="105307613388208" parent="0" left="0" top="0" right="53.6406" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="770.028" y="1508.33" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
-        <node type="node/const/perm/general" idtf="" shapeColor="0" id="105307613360416" parent="0" x="-564.105" y="1649.94" haveBus="false" idtf_pos="0">
-            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Вот некоторые учебные заведения Беларуси где можно обучаться на пожарного<br><ul style="list-style: decimal;">
-<li>Университет гражданской защиты Министерства по чрезвычайным ситуациям Республики Беларусь</li>
-<li>«Специализированный лицей при Университете гражданской защиты» Министерства по чрезвычайным ситуациям Республики Беларусь</li>
-</ul>]]></content>
-        </node>
         <node type="node/const/perm/relation" idtf="nrel_education" shapeColor="0" id="105307613342752" parent="0" left="0" top="0" right="98.7344" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="751.313" y="1364.14" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
@@ -461,15 +509,6 @@
         <node type="node/const/perm/relation" idtf="nrel_info" shapeColor="0" id="105307613279920" parent="0" left="0" top="0" right="61.4688" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1672.34" y="1368.79" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
-        <node type="node/const/perm/general" idtf="" shapeColor="0" id="105307613251216" parent="0" x="1069.51" y="1378.53" haveBus="false" idtf_pos="0">
-            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Вот некоторые учебные заведения Беларуси где можно обучаться на программиста<br><ul style="list-style: decimal;">
-<li>Белорусский государственный университет информатики и радиоэлектроники</li>
-<li>Белорусский национальный технический университет</li>
-<li>Белорусский государственный университет</li>
-<li>Гродненский государственный университет имени Янки Купалы</li>
-<li>Брестский государственный технический университет</li>
-</ul>]]></content>
-        </node>
         <node type="node/const/perm/general" idtf="" shapeColor="0" id="105307613213056" parent="0" x="2540.54" y="1307.22" haveBus="false" idtf_pos="0">
             <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[<b>Официант</b> — это специалист, который обслуживает посетителей в ресторанах и кафе. Он принимает заказы, подаёт еду и напитки, а также следит за комфортом гостей во время их пребывания.<br><br>
 Вот примеры задач, с которыми сталкивается официант на работе:<br><ul style="list-style: decimal;">
@@ -485,15 +524,6 @@
         </node>
         <node type="node/const/perm/relation" idtf="nrel_education" shapeColor="0" id="105307613177824" parent="0" left="0" top="0" right="98.7344" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1657.29" y="1236.33" haveBus="false" idtf_pos="3">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
-        </node>
-        <node type="node/const/perm/general" idtf="" shapeColor="0" id="105307613148496" parent="0" x="1970.63" y="1309.01" haveBus="false" idtf_pos="0">
-            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Вот некоторые учебные заведения Беларуси где можно обучаться на педагога<br><ul style="list-style: decimal;">
-<li>Барановичский государственный университет</li>
-<li>Белорусская государственная академия искусств</li>
-<li>Белорусский государственный университет</li>
-<li>Белорусский государственный университет физической культуры</li>
-<li>Минский государственный лингвистический университет</li>
-</ul>]]></content>
         </node>
         <node type="node/const/perm/relation" idtf="nrel_education" shapeColor="0" id="105307613130736" parent="0" left="0" top="0" right="98.7344" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2325.54" y="947.247" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
@@ -522,15 +552,6 @@
         <node type="node/const/perm/relation" idtf="nrel_salary" shapeColor="0" id="105307613019520" parent="0" left="0" top="0" right="75.9688" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2074.96" y="716.024" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
-        <node type="node/const/perm/general" idtf="" shapeColor="0" id="105307612991056" parent="0" x="2691" y="975.027" haveBus="false" idtf_pos="0">
-            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Вот некоторые учебные заведения Беларуси где можно обучаться на официанта<br><ul style="list-style: decimal;">
-<li>Барановичский технологический колледж Белкоопсоюза</li>
-<li>Витебский государственный индустриально-технологический колледж</li>
-<li>Гомельский государственный ПТК кулинарии</li>
-<li>Гродненский государственный профессиональный технологический колледж</li>
-<li>Минский государственный ПТК кулинарии</li>
-</ul>]]></content>
-        </node>
         <node type="node/const/perm/relation" idtf="nrel_info" shapeColor="0" id="105307612969024" parent="0" left="0" top="0" right="61.4688" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2443.55" y="764.479" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
@@ -552,23 +573,11 @@
         <node type="node/const/perm/relation" idtf="nrel_info" shapeColor="0" id="105307612892384" parent="0" left="0" top="0" right="61.4688" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2173.28" y="110.402" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
-        <node type="node/const/perm/general" idtf="" shapeColor="0" id="105307612892176" parent="0" x="2047.46" y="322.646" haveBus="false" idtf_pos="0">
-            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[психолог]]></content>
-        </node>
         <node type="node/const/perm/group" idtf="lang_ru" shapeColor="0" id="105307612869696" parent="0" left="0" top="0" right="53.6406" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1969.56" y="360.805" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
         <node type="node/const/perm/general" idtf="" shapeColor="0" id="105307612865216" parent="0" x="2377.3" y="72.8032" haveBus="false" idtf_pos="0">
             <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[723 BYN]]></content>
-        </node>
-        <node type="node/const/perm/general" idtf="" shapeColor="0" id="105307612835968" parent="0" x="2636.76" y="169.237" haveBus="false" idtf_pos="0">
-            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Вот некоторые учебные заведения Беларуси где можно обучаться на психолога<br><ul style="list-style: decimal;">
-<li>Гомельский государственный университет им. Франциска Скорины</li>
-<li>Гродненский государственный университет имени Янки Купалы</li>
-<li>Белорусский государственный университет</li>
-<li>Могилевский государственный университет имени А.А.Кулешова</li>
-<li>Полоцкий государственный университет</li>
-</ul>]]></content>
         </node>
         <node type="node/const/perm/relation" idtf="nrel_education" shapeColor="0" id="105307612819728" parent="0" left="0" top="0" right="98.7344" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2335.36" y="170.998" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
@@ -643,18 +652,12 @@
         <node type="node/const/perm/group" idtf="lang_ru" shapeColor="0" id="105307612199600" parent="0" left="0" top="0" right="53.6406" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1638.9" y="1396.08" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
-        <node type="node/const/perm/general" idtf="" shapeColor="0" id="105307612178160" parent="0" x="2356.56" y="465.291" haveBus="false" idtf_pos="0">
-            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Вот некоторые учебные заведения Беларуси где можно обучаться на юриста<br><ul style="list-style: decimal;">
-<li>Белорусский торгово-экономический университет потребительской кооперации</li>
-<li>Гомельский государственный университет им. Франциска Скорины</li>
-<li>Гомельский филиал Международного университета "МИТСО"</li>
-<li>Академия Министерства внутренних дел Республики Беларусь</li>
-<li>Могилевский институт Министерства внутренних дел Республики Беларусь</li>
-</ul>]]></content>
-        </node>
         <node type="node/const/perm/group" idtf="lang_ru" shapeColor="0" id="105307609013632" parent="0" left="0" top="0" right="53.6406" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2649.59" y="400" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
+        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="105307615393584" parent="0" id_b="105307615156240" id_e="105307612991056" b_x="2209.39" b_y="1052.35" e_x="2691" e_y="975.027" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="105307614774928" parent="0" id_b="105307615058256" id_e="105307615181568" b_x="788.803" b_y="648.875" e_x="780.804" e_y="1251.66" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
@@ -724,7 +727,7 @@
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="105307615528416" parent="0" id_b="105307612246624" id_e="105307615527504" b_x="2196.81" b_y="300.985" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.363798">
             <points/>
         </pair>
-        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="105307615527504" parent="0" id_b="105307612223328" id_e="105307612892176" b_x="2218.01" b_y="254.773" e_x="2047.46" e_y="322.646" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="105307615527504" parent="0" id_b="105307612223328" id_e="105307612892176" b_x="2218.01" b_y="254.773" e_x="2057.74" e_y="332.926" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="105307615526528" parent="0" id_b="105307612892384" id_e="105307615530432" b_x="2173.28" b_y="110.402" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.517653">
@@ -838,7 +841,7 @@
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="105307615491392" parent="0" id_b="105307613388208" id_e="105307613425104" b_x="770.028" b_y="1508.33" e_x="587.36" e_y="1683.2" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="105307615490416" parent="0" id_b="105307613860864" id_e="105307613880080" b_x="-1348.75" b_y="991.864" e_x="-1596.59" e_y="1167.26" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="105307615490416" parent="0" id_b="105307613860864" id_e="105307613880080" b_x="-1348.75" b_y="991.864" e_x="-1597.52" e_y="1196.23" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="105307615489440" parent="0" id_b="105307614230272" id_e="105307614377200" b_x="626.539" b_y="535.534" e_x="-908.137" e_y="470.139" dotBBalance="0" dotEBalance="0">
@@ -946,7 +949,7 @@
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="105307615454032" parent="0" id_b="105307613966688" id_e="105307615450192" b_x="-1604.9" b_y="959.025" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.363798">
             <points/>
         </pair>
-        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="105307615453056" parent="0" id_b="105307614724608" id_e="105307613880080" b_x="-1288.69" b_y="891.422" e_x="-1596.59" e_y="1167.26" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="105307615453056" parent="0" id_b="105307614724608" id_e="105307613880080" b_x="-1288.69" b_y="891.422" e_x="-1597.52" e_y="1196.23" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
         <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="105307615452080" parent="0" id_b="105307614724608" id_e="105307613991648" b_x="-1288.69" b_y="891.422" e_x="-1231.56" e_y="747.588" dotBBalance="0" dotEBalance="0">
@@ -1081,7 +1084,7 @@
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="105307615410112" parent="0" id_b="105307612527568" id_e="105307615411152" b_x="896.465" b_y="-83.9594" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.70788">
             <points/>
         </pair>
-        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="105307615409200" parent="0" id_b="105307614209904" id_e="105307613501184" b_x="206.763" b_y="304.843" e_x="-325.5" e_y="218" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="105307615409200" parent="0" id_b="105307614209904" id_e="105307613501184" b_x="206.763" b_y="304.843" e_x="-335.222" e_y="220.778" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="105307615408160" parent="0" id_b="105307614085152" id_e="105307615409200" b_x="-28.7778" b_y="169.778" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.807934">
@@ -1105,7 +1108,7 @@
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="105307615402304" parent="0" id_b="105307613913248" id_e="105307615403344" b_x="-1547.97" b_y="874.893" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.634666">
             <points/>
         </pair>
-        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="105307615401392" parent="0" id_b="105307613626880" id_e="105307613599408" b_x="-709.105" b_y="1033.37" e_x="-399.491" e_y="1095.58" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="105307615401392" parent="0" id_b="105307613626880" id_e="105307613599408" b_x="-709.105" b_y="1033.37" e_x="-399.491" e_y="1094.33" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="105307615400352" parent="0" id_b="105307613749952" id_e="105307615401392" b_x="-706.448" b_y="1099.34" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.689435">
@@ -1129,13 +1132,10 @@
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="105307615394496" parent="0" id_b="105307613177824" id_e="105307615395536" b_x="1657.29" b_y="1236.33" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.415405">
             <points/>
         </pair>
-        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="105307615393584" parent="0" id_b="105307615156240" id_e="105307612991056" b_x="2209.39" b_y="1052.35" e_x="2691" e_y="975.027" dotBBalance="0" dotEBalance="0">
-            <points/>
-        </pair>
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="105307615392608" parent="0" id_b="105307613130736" id_e="105307615393584" b_x="2325.54" b_y="947.247" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.305037">
             <points/>
         </pair>
-        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="105307615391632" parent="0" id_b="105307612869696" id_e="105307612892176" b_x="1969.56" b_y="360.805" e_x="2047.46" e_y="322.646" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="105307615391632" parent="0" id_b="105307612869696" id_e="105307612892176" b_x="1969.56" b_y="360.805" e_x="2057.74" e_y="332.926" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="105307615390656" parent="0" id_b="105307612619040" id_e="105307615387664" b_x="2160.84" b_y="646.684" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.442002">
@@ -1150,7 +1150,7 @@
         <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="105307615387664" parent="0" id_b="105307615137712" id_e="105307612178160" b_x="2285.73" b_y="698.996" e_x="2356.56" e_y="465.291" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="105307615386752" parent="0" id_b="105307612223328" id_e="105307612835968" b_x="2218.01" b_y="254.773" e_x="2636.76" e_y="169.237" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="105307615386752" parent="0" id_b="105307612223328" id_e="105307612835968" b_x="2218.01" b_y="254.773" e_x="2635.83" e_y="169.237" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="105307615385776" parent="0" id_b="105307612819728" id_e="105307615386752" b_x="2335.36" b_y="170.998" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.60402">
@@ -1162,7 +1162,7 @@
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="105307615383824" parent="0" id_b="105307612264288" id_e="105307612463760" b_x="579.834" b_y="-358.023" e_x="837.267" e_y="-318.69" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="105307615382848" parent="0" id_b="105307612427248" id_e="105307613501184" b_x="-420.421" b_y="37.0591" e_x="-325.5" e_y="218" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="105307615382848" parent="0" id_b="105307612427248" id_e="105307613501184" b_x="-420.421" b_y="37.0591" e_x="-335.222" e_y="220.778" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="105307615381872" parent="0" id_b="105307612408736" id_e="105307613544320" b_x="-1466.88" b_y="237.846" e_x="-1341" e_y="420" dotBBalance="0" dotEBalance="0">
@@ -1171,7 +1171,7 @@
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="105307615380896" parent="0" id_b="105307612390464" id_e="105307613571440" b_x="-1850.34" b_y="472.492" e_x="-1770.9" e_y="690.921" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="105307608701312" parent="0" id_b="105307612372352" id_e="105307613599408" b_x="-144.755" b_y="1091.41" e_x="-399.491" e_y="1095.58" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="105307608701312" parent="0" id_b="105307612372352" id_e="105307613599408" b_x="-144.755" b_y="1091.41" e_x="-399.491" e_y="1094.33" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="105307608702352" parent="0" id_b="105307612354208" id_e="105307613360416" b_x="-633.053" b_y="1839.29" e_x="-564.105" e_y="1649.94" dotBBalance="0" dotEBalance="0">
@@ -1186,7 +1186,7 @@
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="105307609041344" parent="0" id_b="105307612299952" id_e="105307612991056" b_x="2959.5" b_y="990.351" e_x="2691" e_y="975.027" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="105307609041616" parent="0" id_b="105307612282128" id_e="105307612835968" b_x="2878.65" b_y="205.245" e_x="2636.76" e_y="169.237" dotBBalance="0" dotEBalance="0">
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="105307609041616" parent="0" id_b="105307612282128" id_e="105307612835968" b_x="2878.65" b_y="205.245" e_x="2635.83" e_y="169.237" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="105307615352032" parent="0" id_b="105307609013632" id_e="105307612178160" b_x="2649.59" b_y="400" e_x="2356.56" e_y="465.291" dotBBalance="0" dotEBalance="0">

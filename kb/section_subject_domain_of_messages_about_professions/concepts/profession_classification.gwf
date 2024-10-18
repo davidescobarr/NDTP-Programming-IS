@@ -426,11 +426,11 @@
                 <point x="687.544" y="85.7526"/>
             </points>
         </contour>
-        <node type="node/var/perm/general" idtf="" shapeColor="0" id="105307610178528" parent="140568709635728" x="-174.371" y="207.752" haveBus="false" idtf_pos="0">
-            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Кто такой архитектор?]]></content>
-        </node>
         <node type="node/const/perm/group" idtf="concept_message" shapeColor="0" id="105307606363680" parent="140568709635728" left="0" top="0" right="115.391" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-372.577" y="110.407" haveBus="false" idtf_pos="3">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/var/perm/general" idtf="" shapeColor="0" id="105307610178528" parent="140568709635728" x="-174.371" y="207.752" haveBus="false" idtf_pos="0">
+            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Кто такой архитектор?]]></content>
         </node>
         <node type="node/var/perm/general" idtf="_message" shapeColor="0" id="105307602417888" parent="140568709635728" left="0" top="0" right="67.125" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-372.312" y="207.688" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
