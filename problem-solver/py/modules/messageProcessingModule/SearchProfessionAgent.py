@@ -136,8 +136,6 @@ class SearchProfessionAgent(ScAgentClassic):
         sorted_dict_professions = sorted(dict_professions, key=dict_professions.__getitem__)
         profession = sorted_dict_professions[-1]
 
-        fireman = ScKeynodes.resolve(
-            "Architector", sc_types.NODE_CONST)
         profession_edge = create_edge(
             sc_types.EDGE_ACCESS_CONST_POS_PERM, message_addr, profession)
         create_action_answer(action_node, profession_edge)
