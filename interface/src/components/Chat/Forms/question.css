@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap');
+
+h1 {
+    font-family: "Advent Pro", sans-serif;
+    font-size: 32px;
+    color: #000;
+    text-align: center;
+}
+
+p {
+    font-family: "Advent Pro", sans-serif;
+    font-size: 24px;
+    color: #000;
+    text-align: center;
+}
+
+.button {
+    width: 200px;
+    height: 50px;
+    font-family: "Advent Pro", sans-serif;
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #4C3AEA;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+    font-weight: bold;
+    margin: 0 auto;
+    margin-top: 24px;
+  }
+  
+  .button:hover {
+    background-color: #4031c9;
+    color: #dadada;
+    transition: 0.2s;
+    transform: scale(0.95);
+  }
+
+  .block__answers {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: space-around;
+    
+  }
+
+  .question {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }

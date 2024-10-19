@@ -9,7 +9,7 @@ const { Component, Fragment } = React
 const rootNode = document.getElementById('app')
 
 export const FormPanel = ({active, setActive, onSend, children}) => {
-    const [test, startTest] = useState(false)
+    const [test, setTest] = useState(false)
 
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
@@ -120,7 +120,7 @@ export const FormPanel = ({active, setActive, onSend, children}) => {
 
             const finally_res = await client.createElements(construction)
 
-            startTest(true)
+            setTest(true)
         };
         
         const formElement = event.target as HTMLFormElement;
@@ -133,17 +133,17 @@ export const FormPanel = ({active, setActive, onSend, children}) => {
     };
 
     async function endTest() {
-        await onSend("Помоги мне выбрать профессию")
-        setActive(false)
+        await onSend("Помоги мне выбрать профессию", true);
+        setActive(false);
+        setTest(false);
     }
     
 
     return (
         (test ?
-            <div>
                 <Question endTest={endTest}>
+                    <p></p>
                 </Question>
-            </div>
             :
         <div className='form__traits'>
             <p className='text__about__trait'>Выберите свои черты характера</p>

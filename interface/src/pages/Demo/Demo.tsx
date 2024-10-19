@@ -14,13 +14,13 @@ export const Demo = () => {
     const [user, setUser] = useState<ScAddr | null>(null);
     const [isFormActivated, activateForm] = useState<boolean>(false);
     const [isLoading, setIsLoading] = useState(false);
-    const [modalActive, setModalActive] = useState(true);
+    const [modalActive, setModalActive] = useState(false);
 
     const { initChat, sendMessage, isAgentAnswer, onFetching, messages, chatRef } = useChat(user);
     const onSend = useCallback(
-        async (text: string) => {
+        async (text: string, emulate = false) => {
             if (!user) return;
-            if (text === "Выбери мне профессию") {
+            if (text === "Помоги мне выбрать профессию" && !emulate) {
                 setModalActive(true);
                 return;
             }

@@ -4,7 +4,7 @@ import * as React from 'react';
 import { ScAddr, ScConstruction, ScTemplate, ScType } from 'ts-sc-client';
 import { useCallback, useEffect, useState } from 'react';
 
-export const Question = ({endTest}) => {
+export const Question = ({endTest, children}) => {
     const [questionNumber, setQuestionNumber] = useState(1);
     const external_questions = new Map<String, String>();
 
@@ -22,12 +22,12 @@ export const Question = ({endTest}) => {
     external_questions.set("question12", "Вам интересны законы и правовые вопросы?");
     external_questions.set("question13", "Вы легко находите общий язык с разными людьми?");
 
-    const answerYes = async (event: React.FormEvent<HTMLFormElement>) => {
-        connectSkillByName("question" + questionNumber)
+    const answerYes = async (props: any) => {
+        await connectSkillByName("question" + questionNumber)
         nextQuestion()
     };
 
-    const answerNo = async (event: React.FormEvent<HTMLFormElement>) => {
+    const answerNo = async (props: any) => {
         nextQuestion()
     };
 
@@ -116,16 +116,20 @@ export const Question = ({endTest}) => {
     function nextQuestion() {
         setQuestionNumber(questionNumber + 1);
         if(questionNumber >= external_questions.size) {
-            setQuestionNumber(1)
+            setQuestionNumber(1);
             endTest();
         }
     };
 
     return (
-        <div>
+        <div className='question'>
+            <h1>Дайте ответ на вопрос</h1>
             <p>{external_questions.get("question" + questionNumber)}</p>
-            <button onClick={() => answerYes}>Да</button>
-            <button onClick={() => answerNo}>Нет</button>
+            <div className='block__answers'>
+                <button onClick={answerYes} className='button'>Да</button>
+                <button onClick={answerNo} className='button'>Нет</button>
+            </div>
+            {children}
         </div>
     );
 };
