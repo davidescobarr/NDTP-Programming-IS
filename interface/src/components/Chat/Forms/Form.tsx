@@ -1,14 +1,15 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useState, FormEvent } from 'react';
 import { client } from '@api/sc/client';
 import * as React from 'react';
 import './form.css';
 import { ScAddr, ScConstruction, ScTemplate, ScType } from 'ts-sc-client';
 import { number } from 'prop-types';
+import { Question } from './Question';
 const { Component, Fragment } = React
 const rootNode = document.getElementById('app')
 
 export const FormPanel = ({active, setActive, onSend, children}) => {
-    
+    const [test, startTest] = useState(false)
 
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
@@ -118,13 +119,32 @@ export const FormPanel = ({active, setActive, onSend, children}) => {
             );
 
             const finally_res = await client.createElements(construction)
-        };
 
-        await onSend("Помоги мне выбрать профессию")
-        setActive(false)
+            startTest(true)
+        };
+        
+        const formElement = event.target as HTMLFormElement;
+        const checkboxes = formElement.querySelectorAll('input[name="options"]');
+        checkboxes.forEach((checkbox) => {
+            if (checkbox instanceof HTMLInputElement) {
+                checkbox.checked = false;
+            }
+        });
     };
 
+    async function endTest() {
+        await onSend("Помоги мне выбрать профессию")
+        setActive(false)
+    }
+    
+
     return (
+        (test ?
+            <div>
+                <Question endTest={endTest}>
+                </Question>
+            </div>
+            :
         <div className='form__traits'>
             <p className='text__about__trait'>Выберите свои черты характера</p>
             <form onSubmit={handleSubmit}>
@@ -218,6 +238,6 @@ export const FormPanel = ({active, setActive, onSend, children}) => {
             </form>
             {children}
         </div>
-        
+        )
     );
 }
