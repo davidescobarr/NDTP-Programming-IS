@@ -7,24 +7,24 @@ import { Date } from '@components/Chat/Date';
 import { ScAddr } from 'ts-sc-client';
 import { resolveUserAgent } from '@agents/resolveUserAgent';
 import { useChat } from '@hooks/useChat';
-import * as React from "react";
 import { SC_WEB_URL } from "@constants";
+import { Modal } from '@components/Modal/Modal'
 
 export const Demo = () => {
     const [user, setUser] = useState<ScAddr | null>(null);
     const [isFormActivated, activateForm] = useState<boolean>(false);
     const [isLoading, setIsLoading] = useState(false);
+    const [modalActive, setModalActive] = useState(true);
 
     const { initChat, sendMessage, isAgentAnswer, onFetching, messages, chatRef } = useChat(user);
     const onSend = useCallback(
         async (text: string) => {
             if (!user) return;
+            if (text === "Выбери мне профессию") {
+                setModalActive(true);
+                return;
+            }
             await sendMessage(user, text);
-            if (text === "")
-                activateForm(true);
-            else if (text === "")
-                activateForm(false);
-
         },
         [user, sendMessage, activateForm],
     );
@@ -76,9 +76,11 @@ export const Demo = () => {
                     })}
                 </Chat>
             </ChatWrapper>
-            <FormPanel>
-
-            </FormPanel>
+            <Modal active={modalActive} setActive={setModalActive}>
+                <FormPanel active={modalActive} setActive={setModalActive} onSend={onSend}>
+                    <p></p>
+                </FormPanel>
+            </Modal>
             <SCgViewerWrapper>
                 <iframe src={url} style={{width: '100%', height: '100%', border: 0, borderRadius: '15px'}}/>
             </SCgViewerWrapper>

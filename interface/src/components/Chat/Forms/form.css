@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap');
+
+.text__about__trait {
+  font-family: "Advent Pro", sans-serif;
+  font-size: 32px;
+  color: #000;
+  text-align: center;
+}
+
+.button__next {
+  width: 200px;
+  height: 50px;
+  font-family: "Advent Pro", sans-serif;
+  font-size: 26px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #4C3AEA;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+  font-weight: bold;
+  margin: 0 auto;
+  margin-top: 24px;
+}
+
+.button__next:hover {
+  background-color: #4031c9;
+  color: #dadada;
+  transition: 0.2s;
+  transform: scale(0.95);
+}
+
+.form__traits {
+  display: flex;
+  flex-direction: column;
+  color: #000;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.in__form__block {
+  display: flex;
+  justify-content: space-around;
+}
+
+.in__form__block label {
+  margin-left: 5px;
+  font-family: "Advent Pro", sans-serif;
+  font-size: 26px;
+  text-align: center;
+}

@@ -1,8 +1,15 @@
+import { useCallback, useEffect, useState } from 'react';
 import { client } from '@api/sc/client';
 import * as React from 'react';
-import { ScAddr, ScConstruction, ScEventParams, ScEventType, ScLinkContent, ScTemplate, ScType } from 'ts-sc-client';
+import './form.css';
+import { ScAddr, ScConstruction, ScTemplate, ScType } from 'ts-sc-client';
+import { number } from 'prop-types';
+const { Component, Fragment } = React
+const rootNode = document.getElementById('app')
 
-export const FormPanel = (props:any) => {
+export const FormPanel = ({active, setActive, onSend, children}) => {
+    
+
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         const formData = new FormData(event.target as HTMLFormElement);
@@ -47,8 +54,6 @@ export const FormPanel = (props:any) => {
         );
 
         var res_skills = await client.templateSearch(template);
-
-        console.log(res_skills)
 
         for (const element of res_skills) {
             const res_delete = await client.deleteElements([element.get("_edge_common")]);
@@ -114,33 +119,105 @@ export const FormPanel = (props:any) => {
 
             const finally_res = await client.createElements(construction)
         };
+
+        await onSend("Помоги мне выбрать профессию")
+        setActive(false)
     };
 
     return (
-        <form onSubmit={handleSubmit}>
-            <select name="options" multiple={true}>
-            <option value="creative_thinking">Творческое мышление </option>
-<option value="attention_to_detail">Внимание к деталям </option>
-<option value="patience">Терпеливость</option>
-<option value="responsibility">Ответственность</option>
-<option value="communicativeness">Коммуникативность</option>
-<option value="physical_endurance">Физическая выносливость</option>
-<option value="accuracy">Точность</option>
-<option value="efficiency">Работоспособность</option>
-<option value="attention_to_safety">Внимание к безопасности</option>
-<option value="compassion">Сострадание</option>
-<option value="stress_resistance">Стрессоустойчивость</option>
-<option value="organization">Организованность</option>
-<option value="logical_thinking">Логическое мышление</option>
-<option value="bravery">Храбрость</option>
-<option value="team_spirit">Командный дух</option>
-<option value="analytical_thinking">Аналитическое мышление</option>
-<option value="creativity">Креативность</option>
-<option value="empathy">Эмпатия</option>
-<option value="polite">Вежливость</option>
-<option value="perseverance">Упорство</option>
-            </select>
-            <input type="submit"/>
-        </form>
+        <div className='form__traits'>
+            <p className='text__about__trait'>Выберите свои черты характера</p>
+            <form onSubmit={handleSubmit}>
+            <div className='in__form__block'>
+                <div>
+                    <div>
+                        <input type="checkbox" name="options" value="creative_thinking" id="creative_thinking" />
+                        <label htmlFor="creative_thinking">Творческое мышление</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="options" value="attention_to_detail" id="attention_to_detail" />
+                        <label htmlFor="attention_to_detail">Внимание к деталям</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="options" value="patience" id="patience" />
+                        <label htmlFor="patience">Терпеливость</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="options" value="responsibility" id="responsibility" />
+                        <label htmlFor="responsibility">Ответственность</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="options" value="communicativeness" id="communicativeness" />
+                        <label htmlFor="communicativeness">Коммуникативность</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="options" value="physical_endurance" id="physical_endurance" />
+                        <label htmlFor="physical_endurance">Физическая выносливость</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="options" value="accuracy" id="accuracy" />
+                        <label htmlFor="accuracy">Точность</label>
+                    </div>
+                    <div>        
+                        <input type="checkbox" name="options" value="efficiency" id="efficiency" />
+                        <label htmlFor="efficiency">Работоспособность</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="options" value="attention_to_safety" id="attention_to_safety" />
+                        <label htmlFor="attention_to_safety">Внимание к безопасности</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="options" value="compassion" id="compassion" />
+                        <label htmlFor="compassion">Сострадание</label>
+                    </div>
+               </div>
+                <div>
+                    <div>
+                        <input type="checkbox" name="options" value="stress_resistance" id="stress_resistance" />
+                        <label htmlFor="stress_resistance">Стрессоустойчивость</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="options" value="organization" id="organization" />
+                        <label htmlFor="organization">Организованность</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="options" value="logical_thinking" id="logical_thinking" />
+                        <label htmlFor="logical_thinking">Логическое мышление</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="options" value="bravery" id="bravery" />
+                        <label htmlFor="bravery">Храбрость</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="options" value="team_spirit" id="team_spirit" />
+                        <label htmlFor="team_spirit">Командный дух</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="options" value="analytical_thinking" id="analytical_thinking" />
+                        <label htmlFor="analytical_thinking">Аналитическое мышление</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="options" value="creativity" id="creativity" />
+                        <label htmlFor="creativity">Креативность</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="options" value="empathy" id="empathy" />
+                        <label htmlFor="empathy">Эмпатия</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="options" value="polite" id="polite" />
+                        <label htmlFor="polite">Вежливость</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="options" value="perseverance" id="perseverance" />
+                        <label htmlFor="perseverance">Упорство</label>
+                    </div>
+                </div>
+            </div>
+            <input type="submit" className='button__next' value={'Далее'}/>
+            </form>
+            {children}
+        </div>
+        
     );
 }
