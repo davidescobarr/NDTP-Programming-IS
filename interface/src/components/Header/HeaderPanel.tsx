@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 export const HeaderPanel = () => {
     return (
         <div className="header">
-            <h1 className="header-logo-text">NIKA</h1>
+            <h1 className="header-logo-text">MIKO</h1>
             <div className="nav-container">
                 <ul className="nav">
                     <li>

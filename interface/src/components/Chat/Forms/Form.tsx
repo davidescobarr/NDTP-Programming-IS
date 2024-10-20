@@ -133,11 +133,10 @@ export const FormPanel = ({active, setActive, onSend, children}) => {
     };
 
     async function endTest() {
-        await onSend("Помоги мне выбрать профессию", true);
         setActive(false);
+        await onSend("Помоги мне выбрать профессию", true);
         setTest(false);
     }
-    
 
     return (
         (test ?
