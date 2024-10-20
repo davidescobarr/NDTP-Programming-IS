@@ -32,9 +32,9 @@ const AboutRoutes = () => (
 );
 
 export const App = () => {
-        const [headerBgColor, setHeaderBgColor] = useState<string>('#39494C');
+        const [headerBgColor, setHeaderBgColor] = useState<string>('#3a394c');
         const [mainBgColor, setMainBgColor] = useState<string>('#fcfafa');
-        const [footerBgColor, setFooterBgColor] = useState<string>('#39494C');
+        const [footerBgColor, setFooterBgColor] = useState<string>('#3a394c');
         
         const funcChange = [setHeaderBgColor, setMainBgColor, setFooterBgColor]
 
@@ -107,14 +107,14 @@ export const App = () => {
 
     return (
         <Layout>
-            <Header style={ headerStyles }>
+            <Header>
                 <HeaderPanel />
             </Header>
             <Content style={ mainStyles }>
                 <DemoRoutes />
                 <AboutRoutes />
             </Content>
-            <Footer style={ footerStyles }>
+            <Footer>
                 <FooterPanel />
             </Footer>
         </Layout>
