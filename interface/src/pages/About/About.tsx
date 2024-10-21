@@ -18,9 +18,9 @@ export const About = () => {
 
                 <h1 className="about-page-text">
                     Разработано{' '}
-                        <a href="https://sem.systems/" className="text">
-                          Intelligent Semantic Systems LLC
-                        </a>
+                        <a href="https://github.com/davidescobarr" className="text">
+                          DavidEscobarr
+                        </a> и <a href='https://github.com/Junk02' className='text'>Jun_k01</a>
                     , Все права защищены.{' '}
                 </h1>
             </div>
