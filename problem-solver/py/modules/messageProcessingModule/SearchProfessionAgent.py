@@ -52,6 +52,7 @@ class SearchProfessionAgent(ScAgentClassic):
 
         try:
             message_addr = get_action_arguments(action_node, 1)[0]
+            concept = ScKeynodes.reion_arguments(action_node, 1)[0]
             concept = ScKeynodes.resolve(
                 "concept_profession", sc_types.NODE_CONST_CLASS)
             nrel_profession = ScKeynodes.resolve(
