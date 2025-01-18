@@ -9,7 +9,7 @@ import { App } from './App';
 
 const GlobalStyle = createGlobalStyle`
   body {
-    margin: 0;
+    margin: 0;padding: 0;
     display: flex;
     font-family: 'Roboto', sans-serif;
     /* For firefox full height */
@@ -18,9 +18,6 @@ const GlobalStyle = createGlobalStyle`
   #content {
     flex-grow: 1;
     display: flex;
-  }
-  * {
-    box-sizing: border-box;
   }
 `;
 
