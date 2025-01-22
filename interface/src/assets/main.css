@@ -1,11 +1,21 @@
 body {
     margin: 0;
     padding: 0;
+    display: block !important;
 }
 
 .ant-layout-header {
+    z-index: 1;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#content {
+    min-height: 100%;
+}
+
+.ant-layout-content {
+    height: 100%;
 }
 
 .header-logo-text {
@@ -32,21 +42,194 @@ body {
 }
 
 .main {
-    width: 1366px;
     margin: 0 auto;
-    background-color: #fff;
 }
 
 .main .banner {
+    width: 100%;
+    background-color: #fff;
+}
+
+.section-content {
     display: flex;
     justify-content: space-between;
 }
 
-.main .banner .photo {
+.main .section-content {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.main .banner .photo .photo2 {
+    position: relative;
 }
 
 .ant-layout-footer {
     background-color: #303030;
+}
+
+.main .banner {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 50px 0;
+}
+
+.main .banner .about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main .banner .about h1 {
+    color: #F86F03;
+    font-size: 40px;
+    max-width: 400px;
+    margin-top: 24px;
+}
+
+.main .banner .about p {
+    font-size: 24px;
+    margin: 0;
+}
+
+.main .banner .photo img:first-child {
+    position: relative;
+    left: 50%;
+}
+
+.main .ourbest {
+    background-color: #FAFAFA;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.main .ourbest .section-content {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 92px;
+    padding-top: 24px;
+}
+
+.main .ourbest .ourbest-points {
+    display: flex;
+}
+
+.main .ourbest .ourbest-points div {
+    text-align: center;
+}
+
+.main .ourbest .ourbest-points div p {
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+.main .registration {
+    background-color: #FFF;
+}
+
+.main .registration aside {
+    width: 100%;
+}
+
+.main .registration .registration-description {
+    width: 100%;
+}
+
+.main .registration .registration-description p {
+    font-size: 24px;
+}
+
+.main .registration .registration-description p b {
+    font-size: 32px;
+}
+
+.main .registration .registration-description button {
+
+}
+
+main .establishments {
+    height: 100%;
+}
+
+.main .establishments .section-content {
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    height: 100%;
+}
+
+.main .establishments .section-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.main .establishments .section-content .title {
+    color: #F86F03;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.main .establishments .section-content .establishments-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 32px;
+    column-gap: 100px;
+    justify-content: center;
+    margin-bottom: 64px;
+}
+
+.main .establishments .section-content .establishments-list .card_establishment {
+    width: 474px;
+    height: 315px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+main .establishments .section-content {
+    max-width: 1280px;
+}
+
+main .establishments .section-content .establishments-list .card_establishment h2 {
+    color: #717BE6;
+    font-size: 20px;
+    margin: 0;
+}
+
+main .establishments .section-content .establishments-list .card_establishment img {
+    width: 100%;
+    max-height: 150px;
+}
+
+main .establishments .section-content .establishments-list .card_establishment .establishment-description {
+    padding: 6px;
+}
+
+main .establishments .section-content .establishments-list .card_establishment p {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.75);
+    margin: 0;
+    line-height: 1.2;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+main .establishments .section-content .establishments-list .card_establishment button {
+    width: 132px;
+    height: 32px;
+    background-color: #F86F03;
+    color: #fff;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    float: right;
+    margin-top: 8px;
+}
+
+.ourbest h1 {
+    font-size: 32px;
+}
+
+.ourbest hr {
+    border: 2px solid #F86F03;
 }
 
 .footer {
