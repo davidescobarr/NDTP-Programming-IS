@@ -5,6 +5,9 @@ from .GetEstablishmentsWithDescriptionsAgent import GetEstablishmentsWithDescrip
 from .AddFeedbackToEstablishmentAgent import AddFeedbackToEstablishmentAgent
 from .CreateQuestionAboutEstablishmentAgent import CreateQuestionAboutEstablishmentAgent
 from .CreateAnswerToQuestionAgent import CreateAnswerToQuestionAgent
+from .GetEstablishmentsByProfessionAgent import GetEstablishmentsByProfessionAgent
+from .UserRegistrationAgent import UserRegistrationAgent
+from .UserAuthorizationAgent import UserAuthorizationAgent
 
 
 class MessageProcessingModule(ScModule):
@@ -14,5 +17,8 @@ class MessageProcessingModule(ScModule):
                          GetEstablishmentsWithDescriptionsAgent(),
                          AddFeedbackToEstablishmentAgent(),
                          CreateQuestionAboutEstablishmentAgent(),
-                         CreateAnswerToQuestionAgent()
+                         CreateAnswerToQuestionAgent(),
+                         GetEstablishmentsByProfessionAgent(),
+                         UserRegistrationAgent(),
+                         UserAuthorizationAgent()
                          )

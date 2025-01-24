@@ -48,8 +48,8 @@ const describeAgent = async (
 
     const template = new ScTemplate();
 
-    template.triple(keynodes[question], ScType.EdgeAccessVarPosPerm, [ScType.NodeVar, actionNodeAlias]);
-    template.triple(keynodes[actionReplyToMessage], ScType.EdgeAccessVarPosPerm, actionNodeAlias);
+    template.triple(keynodes[question], ScType.EdgeAccessVarPosPerm, [ScType.NodeVar, actionNodeAlias]); //
+    template.triple(keynodes[actionReplyToMessage], ScType.EdgeAccessVarPosPerm, actionNodeAlias); //
 
     template.tripleWithRelation(
         actionNodeAlias,

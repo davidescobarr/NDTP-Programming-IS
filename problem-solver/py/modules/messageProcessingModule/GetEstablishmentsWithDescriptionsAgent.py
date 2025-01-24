@@ -103,35 +103,15 @@ class GetEstablishmentsWithDescriptionsAgent(ScAgentClassic):
                     establishments[establishment_idtf] = info_content
                     temp.append(establishment_node)
                     temp.append(info_link)
+                    
 
-        # Create an answer for the action
-        
-        #if not answer_node:
-            #self.logger.error("Failed to create answer node")
-            #return ScResult.ERROR
+        json_answer = json.dumps(establishments)
 
-        # for establishment, description in establishments.items():
-        #     # Add establishment and description to the answer structure
-        #     create_edge(
-        #         sc_types.EDGE_ACCESS_CONST_POS_PERM,
-        #         answer_node,
-        #         establishment
-        #     )
-        #     description_link = create_link(ScLinkContentType.STRING, description)
-        #     create_edge(
-        #         sc_types.EDGE_ACCESS_CONST_POS_PERM,
-        #         answer_node,
-        #         description_link
-        #     )
+        self.logger.info(json_answer)
 
+        json_link = create_link(json_answer)
 
-        #json_answer = json.dumps(establishments)
-
-        #self.logger.info(json_answer)
-
-        #json_link = create_link(ScLinkContentType.STRING, str(json_answer))
-
-        create_action_answer(action_node, *temp)
+        create_action_answer(action_node, json_link)
 
         self.logger.info("Establishments found and answer created")
         return ScResult.OK

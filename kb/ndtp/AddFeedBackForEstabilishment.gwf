@@ -48,7 +48,7 @@
                 <point x="354.264" y="330.233"/>
             </points>
         </contour>
-        <node type="node/const/perm/general" idtf="" shapeColor="0" id="108440947142256" parent="0" x="594.01" y="605.356" haveBus="false" idtf_pos="0">
+        <node type="node/const/perm/general" idtf="" shapeColor="193" id="108440947142256" parent="0" x="594.01" y="605.356" haveBus="false" idtf_pos="0">
             <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[text]]></content>
         </node>
         <node type="node/const/perm/role" idtf="rrel_2" shapeColor="0" id="108440947277328" parent="0" left="0" top="0" right="42.1094" bottom="26" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="404.074" y="539.733" haveBus="false" idtf_pos="0">
