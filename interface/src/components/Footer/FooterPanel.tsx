@@ -24,7 +24,7 @@ export const FooterPanel = () => {
             <hr/>
             <div className="about-container">
                 <p>
-                    Copyright © 2024-2025 OSTIS
+                    Copyright © 2005-2025 OSTIS
                 </p>
                 <p>
                     Developed by DavidEscobarr and Jun_k01

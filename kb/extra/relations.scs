@@ -1,0 +1,39 @@
+nrel_nickname
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+    [Имя пользователя]
+    (* <- lang_ru;; *);
+    [Nickname]
+    (* <- lang_en;; *);;
+
+nrel_firstname
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+    [Имя]
+    (* <- lang_ru;; *);
+    [Name]
+    (* <- lang_en;; *);;
+
+nrel_surname
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+    [Фамилия]
+    (* <- lang_ru;; *);
+    [Surname]
+    (* <- lang_en;; *);;
+
+nrel_patronymic
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+    [Отчество]
+    (* <- lang_ru;; *);
+    [Patronymic]
+    (* <- lang_en;; *);;
+
+nrel_password
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+    [Пароль]
+    (* <- lang_ru;; *);
+    [Password]
+    (* <- lang_en;; *);;

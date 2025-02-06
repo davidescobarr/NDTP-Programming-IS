@@ -44,12 +44,16 @@ export const getAgentAnswer = async (circuitAddr: ScAddr) => {
     // ищет связь с узлом ответа и структурой ответа, далее работает с resultNode
     template.triple(circuitAddr, ScType.EdgeAccessVarPosPerm, [ScType.LinkVar, link_with_json]);
     const resultNode = await client.templateSearch(template);
+    console.log(resultNode);
 
     if (resultNode.length) {
-        const linkContent = resultNode[0].get(link_with_json);
-        if (linkContent && typeof linkContent === 'string') {
+        const link = resultNode[0].get(link_with_json);
+        console.log(link);
+        if (link) {
+            const linkContent = (await client.getLinkContents([link]))[0];
+            console.log(linkContent);
             try {
-                return JSON.parse(linkContent);
+                 return JSON.parse(String(linkContent.data));
             } catch (error) {
                 console.error('Failed to parse JSON content:', error);
             }
@@ -61,10 +65,14 @@ export const getAgentAnswer = async (circuitAddr: ScAddr) => {
 // Вызывать при необходимости вызвать агента
 export const getEstablishmentsWithDescriptionsAgent = async () => {
     const keynodes = await client.resolveKeynodes(baseKeynodes);
+    console.log("Resolve call");
 
     const [template, userActionNodeAlias] = await describeAgent(keynodes);
+    console.log("DescribeAgent call");
 
     const circuitAddr = await makeAgent(template, userActionNodeAlias);
+    console.log("Make call");
+    console.log(circuitAddr);
 
     if (!circuitAddr) return null;
 

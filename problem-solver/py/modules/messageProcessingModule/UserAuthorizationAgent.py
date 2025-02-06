@@ -52,29 +52,32 @@ class UserAuthorizationAgent(ScAgentClassic):
             return ScResult.ERROR
 
         # Get action arguments (login and password)
-        arguments = get_action_arguments(action_node)
+        arguments = get_action_arguments(action_node, 2)
         if len(arguments) != 2:
             self.logger.error("Invalid number of arguments provided")
             return ScResult.ERROR_INVALID_PARAMS
 
         login, password = arguments
+        login = get_link_content_data(login)
+        password = get_link_content_data(password)
+        self.logger.info(login)
+        self.logger.info(password)
+
 
         # Search for a user with matching login and password
         template = ScTemplate()
-        template.triple_with_relation(
+        template.triple(
             concept_user,
             sc_types.EDGE_ACCESS_VAR_POS_PERM,
             sc_types.NODE_VAR >> "_user",
-            sc_types.EDGE_ACCESS_VAR_POS_PERM,
-            nrel_login
         )
-        template.triple_with_relation(
-            "_user",
-            sc_types.EDGE_D_COMMON_VAR,
-            sc_types.LINK_VAR >> "_login_link",
-            sc_types.EDGE_ACCESS_VAR_POS_PERM,
-            nrel_login
-        )
+        # template.triple_with_relation(
+        #     "_user",
+        #     sc_types.EDGE_D_COMMON_VAR,
+        #     sc_types.LINK_VAR >> "_login_link",
+        #     sc_types.EDGE_ACCESS_VAR_POS_PERM,
+        #     nrel_login
+        # )
         template.triple_with_relation(
             "_user",
             sc_types.EDGE_D_COMMON_VAR,
@@ -83,19 +86,45 @@ class UserAuthorizationAgent(ScAgentClassic):
             nrel_password
         )
 
+        # template.triple_with_relation(
+        #     entity_profession,
+        #     sc_types.EDGE_D_COMMON_VAR,
+        #     sc_types.NODE_VAR >> "_node",
+        #     sc_types.EDGE_ACCESS_VAR_POS_PERM,
+        #     nrel_skills
+        # )
+
         search_result = template_search(template)
+        self.logger.warning(search_result)
         if not search_result:
-            self.logger.warning("No users found with the provided login and password")
+            self.logger.warning("No users found with the provided password")
             return ScResult.ERROR_NOT_FOUND
 
         for item in search_result:
             user_node = item.get("_user")
-            login_link = item.get("_login_link")
+            # login_link = item.get("_login_link")
             password_link = item.get("_password_link")
+
+            template = ScTemplate()
+            template.triple_with_relation(
+                user_node,
+                sc_types.EDGE_D_COMMON_VAR,
+                sc_types.LINK_VAR >> "_login_link",
+                sc_types.EDGE_ACCESS_VAR_POS_PERM,
+                nrel_login
+            )
+
+            search_result2 = template_search(template)
+
+            if not search_result2:
+                self.logger.warning("No users found with the provided login")
+                return ScResult.ERROR_NOT_FOUND
+
+            login_link = search_result2[0].get("_login_link")
 
             login_value = get_link_content_data(login_link)
             password_value = get_link_content_data(password_link)
-
+                        
             if login_value == login and password_value == password:
                 create_action_answer(action_node, user_node)
                 self.logger.info("User successfully authorized")

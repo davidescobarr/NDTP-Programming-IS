@@ -17,7 +17,9 @@ import { FooterPanel } from "@components/Footer";
 const Main = loadingComponent(lazy(() => import('@pages/Main')));
 const EstablishmentsLazy = loadingComponent(lazy(() => import('@pages/Establishments')));
 const ProfessionsLazy = loadingComponent(lazy(() => import('@pages/Professions')));
-const About = loadingComponent(lazy(() => import('@pages/About')));
+const LoginLazy = loadingComponent(lazy(() => import('@pages/Login')));
+const RegistrationLazy = loadingComponent(lazy(() => import('@pages/Registration')));
+const ProfileLazy = loadingComponent(lazy(() => import('@pages/Profile')));
 
 const MainRoutes = () => (
     <>
@@ -37,6 +39,25 @@ const ProfessionsRoutes = () => (
     </>
 );
 
+const LoginRoutes = () => (
+    <>
+        <Route path={routes.LOGIN} component={LoginLazy} />
+    </>
+);
+
+const RegistrationRoutes = () => (
+    <>
+        <Route path={routes.REGISTRATION} component={RegistrationLazy} />
+    </>
+);
+
+const ProfileRoutes = () => (
+    <>
+        <Route path={routes.PROFILE} component={ProfileLazy} />
+    </>
+);
+
+
 
 export const App = () => {
     return (
@@ -48,6 +69,9 @@ export const App = () => {
                 <MainRoutes />
                 <EstablishmentsRoutes />
                 <ProfessionsRoutes />
+                <LoginRoutes />
+                <RegistrationRoutes />
+                <ProfileRoutes />
             </Content>
             <Footer>
                 <FooterPanel />
