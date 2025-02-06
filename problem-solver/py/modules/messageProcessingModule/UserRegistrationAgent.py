@@ -11,6 +11,7 @@ from sc_kpm.utils import (
     get_link_content_data,
     check_edge, create_edge,
     delete_edges,
+    create_node,
     get_element_by_role_relation,
     get_element_by_norole_relation,
     get_system_idtf,
@@ -55,23 +56,26 @@ class UserRegistrationAgent(ScAgentClassic):
             return ScResult.ERROR
 
         # Get action arguments (nickname, firstname, surname, patronymic, password)
-        arguments = get_action_arguments(action_node)
+        arguments = get_action_arguments(action_node, 5)
         if len(arguments) != 5:
             self.logger.error("Invalid number of arguments provided")
             return ScResult.ERROR_INVALID_PARAMS
 
         nickname, firstname, surname, patronymic, password = arguments
+        print(nickname, firstname, surname, patronymic, password)
 
         # Create a new user node
         user_node = ScAddr()
         try:
-            user_node = ScAddr.create_node(sc_types.NODE_CONST)
+            user_node = create_node(sc_types.NODE_CONST)
+
             create_edge(sc_types.EDGE_ACCESS_CONST_POS_PERM, concept_user, user_node)
 
             # Add attributes to the user node
             self._create_user_attribute(user_node, nickname, nrel_nickname)
             self._create_user_attribute(user_node, firstname, nrel_firstname)
             self._create_user_attribute(user_node, surname, nrel_surname)
+
             self._create_user_attribute(user_node, patronymic, nrel_patronymic)
             self._create_user_attribute(user_node, password, nrel_password)
         except Exception as e:
@@ -83,8 +87,7 @@ class UserRegistrationAgent(ScAgentClassic):
         self.logger.info("User successfully registered")
         return ScResult.OK
 
-    def _create_user_attribute(self, user_node: ScAddr, value: ScAddr, relation: ScAddr):
+    def _create_user_attribute(self, user_node: ScAddr, link: ScAddr, relation: ScAddr):
         """Helper method to create an attribute for the user node"""
-        link = create_link(value)
-        create_edge(sc_types.EDGE_D_COMMON_CONST, user_node, link)
-        create_edge(sc_types.EDGE_ACCESS_CONST_POS_PERM, relation, link)
+        edge = create_edge(sc_types.EDGE_D_COMMON_CONST, user_node, link)
+        create_edge(sc_types.EDGE_ACCESS_CONST_POS_PERM, relation, edge)

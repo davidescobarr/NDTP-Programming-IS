@@ -22,7 +22,7 @@ export const Professions = () => {
                     <div className="professions-list">
                         {
                             Object.entries(professions).map(([key, value]) => {
-                                return <Profession idProfession={key} name={key} description={value} photo={bsuir} />
+                                return <Profession idProfession={key} name={value.name} description={value.info} photo={bsuir} />
                             })
                         }
                     </div>

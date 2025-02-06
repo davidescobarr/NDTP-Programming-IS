@@ -8,6 +8,8 @@ from .CreateAnswerToQuestionAgent import CreateAnswerToQuestionAgent
 from .GetEstablishmentsByProfessionAgent import GetEstablishmentsByProfessionAgent
 from .UserRegistrationAgent import UserRegistrationAgent
 from .UserAuthorizationAgent import UserAuthorizationAgent
+from .UserInfoAgent import UserInfoAgent
+from .GetProfessionsWIthDescriptions import GetProfessionsWithDescriptions;
 
 
 class MessageProcessingModule(ScModule):
@@ -15,10 +17,12 @@ class MessageProcessingModule(ScModule):
         super().__init__(WeatherAgent(),
                          SearchProfessionAgent(),
                          GetEstablishmentsWithDescriptionsAgent(),
+                         GetProfessionsWithDescriptions(),
                          AddFeedbackToEstablishmentAgent(),
                          CreateQuestionAboutEstablishmentAgent(),
                          CreateAnswerToQuestionAgent(),
                          GetEstablishmentsByProfessionAgent(),
                          UserRegistrationAgent(),
-                         UserAuthorizationAgent()
+                         UserAuthorizationAgent(),
+                         UserInfoAgent()
                          )

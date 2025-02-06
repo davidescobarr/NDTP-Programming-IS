@@ -3,6 +3,7 @@ import {Profession} from "@components/Profession";
 
 const avatar = require('@assets/img/avatar.png')
 const settings = require('@assets/icon/settings.png')
+const bsuir = require('@assets/img/establishment_bsuir.png')
 
 export const Profile = () => {
     return (
