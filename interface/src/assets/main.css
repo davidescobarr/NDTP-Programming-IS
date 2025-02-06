@@ -1,7 +1,26 @@
+@font-face {
+    font-family: 'Fascinate Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Fascinate Regular'), url('@assets/fonts/Fascinate-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Finlandica';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Finlandica'), url('@assets/fonts/Finlandica.ttf') format('truetype');
+}
+
 body {
     margin: 0;
     padding: 0;
     display: block !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 .ant-layout-header {
@@ -18,8 +37,16 @@ body {
     height: 100%;
 }
 
-.header-logo-text {
+.header-logo-text a {
+    text-decoration: none;
     color: #717BE6;
+    font-size: 48px;
+    font-family: 'Fascinate Regular', serif;
+    transition: 0.3s;
+}
+
+.header-logo-text a:hover {
+    color: #6067c5;
 }
 
 .header {
@@ -38,11 +65,20 @@ body {
 .header .nav li a {
     color: #000;
     font-size: 20px;
+    text-decoration: none;
     margin-left: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+    font-family: 'Finlandica', serif;
+}
+
+.header .nav li a:hover {
+    color: #454545;
 }
 
 .main {
     margin: 0 auto;
+    height: 100%;
 }
 
 .main .banner {
@@ -84,11 +120,15 @@ body {
     font-size: 40px;
     max-width: 400px;
     margin-top: 24px;
+    font-weight: bold;
+    font-family: 'Finlandica', serif;
 }
 
 .main .banner .about p {
     font-size: 24px;
     margin: 0;
+    font-weight: 500;
+    font-family: 'Finlandica', serif;
 }
 
 .main .banner .photo img:first-child {
@@ -108,6 +148,11 @@ body {
     padding-top: 24px;
 }
 
+.main .ourbest .section-content h1 {
+    font-weight: bold;
+    font-family: 'Finlandica', serif;
+}
+
 .main .ourbest .ourbest-points {
     display: flex;
 }
@@ -119,14 +164,20 @@ body {
 .main .ourbest .ourbest-points div p {
     margin-top: 8px;
     margin-bottom: 0;
+    font-size: 20px;
+    font-family: 'Finlandica', serif;
 }
 
 .main .registration {
     background-color: #FFF;
+    padding: 48px 0;
 }
 
 .main .registration aside {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main .registration .registration-description {
@@ -135,18 +186,55 @@ body {
 
 .main .registration .registration-description p {
     font-size: 24px;
+    margin-bottom: 12px;
+    font-family: 'Finlandica', serif;
 }
 
 .main .registration .registration-description p b {
     font-size: 32px;
+    color: #F86F03;
 }
 
 .main .registration .registration-description button {
+    border-radius: 5px;
+    background-color: #717BE6;
+    width: 252px;
+    height: 50px;
+    color: #fff;
+    border: none;
+    font-size: 24px;
+    font-family: 'Finlandica', serif;
+    cursor: pointer;
+    transition: 0.3s;
+}
 
+.main .registration .registration-description button:hover {
+    background-color: #6b73d5;
+    color: #fff;
+    transform: translate(0, 3px);
+}
+
+.main .registration aside .circle_users {
+    width: 125px;
+    height: 125px;
+    border-radius: 75px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #717BE6;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+    right: 280px;
+    bottom: 90px;
+    font-family: 'Finlandica', serif;
 }
 
 main .establishments {
     height: 100%;
+    font-family: 'Finlandica', serif;
 }
 
 .main .establishments .section-content {
@@ -166,6 +254,7 @@ main .establishments {
     font-size: 32px;
     text-align: center;
     margin-top: 24px;
+    font-weight: bold;
 }
 
 .main .establishments .section-content .establishments-list {
@@ -191,6 +280,7 @@ main .establishments .section-content .establishments-list .card_establishment h
     color: #717BE6;
     font-size: 20px;
     margin: 0;
+    font-weight: bold;
 }
 
 main .establishments .section-content .establishments-list .card_establishment img {
@@ -199,7 +289,7 @@ main .establishments .section-content .establishments-list .card_establishment i
 }
 
 main .establishments .section-content .establishments-list .card_establishment .establishment-description {
-    padding: 6px;
+    padding: 12px;
 }
 
 main .establishments .section-content .establishments-list .card_establishment p {
@@ -222,6 +312,78 @@ main .establishments .section-content .establishments-list .card_establishment b
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     float: right;
     margin-top: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+main .establishments .section-content .establishments-list .card_establishment button:hover {
+    background-color: #c55806;
+    color: #e1e1e1;
+    transform: translate(0, 3px);
+}
+
+/**/
+
+.main .establishments .section-content .professions-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 32px;
+    column-gap: 100px;
+    justify-content: center;
+    margin-bottom: 64px;
+}
+
+.main .establishments .section-content .professions-list .card_profession {
+    width: 474px;
+    height: 315px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+}
+
+main .establishments .section-content .professions-list .card_profession h2 {
+    color: #717BE6;
+    font-size: 20px;
+    margin: 0;
+    font-weight: bold;
+}
+
+main .establishments .section-content .professions-list .card_profession img {
+    height: 100%;
+    max-width: 164px;
+    object-fit: cover;
+}
+
+main .establishments .section-content .professions-list .card_profession .profession-description {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+main .establishments .section-content .professions-list .card_profession p {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.75);
+    margin: 0;
+    line-height: 1.2;
+    height: 100%;
+}
+
+main .establishments .section-content .professions-list .card_profession button {
+    width: 132px;
+    height: 32px;
+    background-color: #F86F03;
+    color: #fff;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-top: 8px;
+    align-self: end;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+main .establishments .section-content .professions-list .card_profession button:hover {
+    background-color: #c55806;
+    color: #e1e1e1;
+    transform: translate(0, 3px);
 }
 
 .ourbest h1 {
@@ -230,6 +392,8 @@ main .establishments .section-content .establishments-list .card_establishment b
 
 .ourbest hr {
     border: 2px solid #F86F03;
+    width: 75px;
+    margin-bottom: 16px;
 }
 
 .footer {
@@ -252,6 +416,12 @@ main .establishments .section-content .establishments-list .card_establishment b
     color: rgba(255, 255, 255, 0.75);
     font-size: 16px;
     margin-right: 32px;
+    font-family: 'Finlandica', serif;
+    transition: 0.3s;
+}
+
+.footer .nav li a:hover {
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .footer .about-container {
@@ -259,4 +429,255 @@ main .establishments .section-content .establishments-list .card_establishment b
     justify-content: space-between;
     color: rgba(255, 255, 255, 0.5);
     font-size: 16px;
+    font-family: 'Finlandica', serif;
+}
+
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.main-auth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.auth {
+    margin: auto;
+    max-width: 425px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 12px 20px;
+}
+
+.auth .auth-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.auth .auth-top button {
+    font-family: 'Finlandica', serif;
+    font-size: 32px;
+    text-decoration: none;
+    border: none;
+    border-radius: 52px;
+    background: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.auth .auth-top button:hover {
+    color: #979797;
+}
+
+.auth .auth-top .active {
+    background-color: #F86F03;
+    color: #fff;
+}
+
+.auth .auth-top .active:hover {
+    color: #fff;
+}
+
+.auth form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6px;
+}
+
+.auth form label {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth form label {
+    font-size: 24px;
+    font-family: 'Finlandica', serif;
+}
+
+.auth form input[type=text], input[type=password] {
+    height: 33px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: #F1F1F1;
+}
+
+.auth form input[type=submit] {
+    min-width: 307px;
+    background-color: #F86F03;
+    border: none;
+    border-radius: 52px;
+    font-size: 32px;
+    font-family: 'Finlandica', serif;
+    color: #fff;
+    margin-top: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.auth form input[type=submit]:hover {
+    color: #a8a8a8;
+    background-color: #c55806;
+}
+
+.main-profile {
+    display: flex;
+    height: 100%;
+}
+
+.main .profile {
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    max-height: 650px;
+    height: 100%;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 12px;
+    gap: 12px;
+}
+
+.main .profile-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.main .profile-tests {
+    max-width: 250px;
+    padding: 12px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Finlandica', serif;
+    font-weight: bold;
+    overflow-y: auto;
+}
+
+.main .profile-tests ul {
+    list-style: none;
+}
+
+.main .profile-tests ul li {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 6px;
+    align-items: center;
+    margin-top: 12px;
+    cursor: pointer;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+.main .profile-tests ul li:hover {
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.main .profile-tests ul li p {
+    margin: 0;
+}
+
+.main .profile-main {
+    height: 100%;
+}
+
+.main .profile-main .avatar {
+    display: flex;
+    align-items: center;
+}
+
+.main .profile-main .avatar img {
+    width: 75px;
+    height: 75px;
+    margin-right: 16px;
+}
+
+.main .profile-main .avatar h1 {
+    color: #F86F03;
+    font-size: 32px;
+    font-family: 'Finlandica', serif;
+    margin: 0;
+}
+
+.main .profile-main .avatar p {
+    font-family: 'Finlandica', serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0;
+}
+
+.main .profile-friends {
+    max-height: 160px;
+    height: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 12px;
+}
+
+.main .profile-friends h3 {
+    font-size: 16px;
+    font-family: 'Finlandica', serif;
+    font-weight: bold;
+}
+
+.main .profile-friends ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    list-style: none;
+    row-gap: 6px;
+    column-gap: 24px;
+    overflow-y: auto;
+    max-height: 108px;
+}
+
+.main .profile-friends ul li {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.main .profile-friends ul li:hover p {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.main .profile-friends ul li img {
+    width: 50px;
+    height: 50px;
+}
+
+.main .profile-friends ul li p {
+    margin: 0 0 0 8px;
+    transition: 0.3s;
+}
+
+.main .profile-main button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.main .profile-main button p {
+    font-family: 'Finlandica', serif;
+    font-size: 16px;
+    margin-left: 16px;
+    margin-bottom: 0;
+    transition: 0.3s;
+}
+
+.main .profile-main button:hover p {
+    color: rgba(0, 0, 0, 0.5);
 }

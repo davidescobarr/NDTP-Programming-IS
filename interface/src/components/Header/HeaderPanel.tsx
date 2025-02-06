@@ -5,11 +5,11 @@ import { NavLink } from 'react-router-dom';
 export const HeaderPanel = () => {
     return (
         <div className="header">
-            <h1 className="header-logo-text">MIKO</h1>
+            <h1 className="header-logo-text"><NavLink to={routes.MAIN}>MIKO</NavLink></h1>
             <div className="nav-container">
                 <ul className="nav">
                     <li>
-                        <NavLink to={routes.MAIN}>Тесты</NavLink>
+                        <NavLink to={routes.TESTS}>Тесты</NavLink>
                     </li>
                     <li>
                         <NavLink to={routes.ESTABLISHMENTS}>Учебные заведения</NavLink>

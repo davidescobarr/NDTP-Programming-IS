@@ -1,4 +1,5 @@
 import * as React from 'react';
+import {App} from "@pages/../App";
 
 export const Establishment = ({ idEstablishment, name, description, photo }) => {
     return (
@@ -8,6 +9,7 @@ export const Establishment = ({ idEstablishment, name, description, photo }) => 
                 <h2>{name}</h2>
                 <p>{description}</p>
                 <button className="btn_establishment" onClick={() => {
+
                 }}>Подробнее
                 </button>
             </div>

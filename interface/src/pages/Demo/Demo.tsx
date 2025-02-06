@@ -8,7 +8,6 @@ import { ScAddr } from 'ts-sc-client';
 import { resolveUserAgent } from '@agents/resolveUserAgent';
 import { useChat } from '@hooks/useChat';
 import { SC_WEB_URL } from "@constants";
-import { Modal } from '@components/Modal/Modal'
 
 export const Demo = () => {
     const [user, setUser] = useState<ScAddr | null>(null);
@@ -76,11 +75,7 @@ export const Demo = () => {
                     })}
                 </Chat>
             </ChatWrapper>
-            <Modal active={modalActive} setActive={setModalActive}>
-                <FormPanel active={modalActive} setActive={setModalActive} onSend={onSend}>
-                    <p></p>
-                </FormPanel>
-            </Modal>
+
             <SCgViewerWrapper>
                 <iframe src={url} style={{width: '100%', height: '100%', border: 0, borderRadius: '15px'}}/>
             </SCgViewerWrapper>

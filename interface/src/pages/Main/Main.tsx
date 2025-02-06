@@ -1,4 +1,6 @@
 import * as React from 'react';
+import Counter from "@components/Counter/Counter";
+import FadeInSection from "@components/FadeInSection/FadeInSection";
 
 const banner1 = require('@assets/img/banner1.png'); // with require
 const banner2 = require('@assets/img/banner2.png'); // with require
@@ -24,44 +26,67 @@ export const Main = () => {
             </section>
             <section className="ourbest">
                 <div className="section-content">
-                    <h1>Наши преимущества</h1>
+                    <FadeInSection>
+                        <h1>Наши преимущества</h1>
+                    </FadeInSection>
                     <hr />
                     <section className="ourbest-points">
-                        <div>
-                            <img src={icon_modern} alt="icon-modern" />
-                            <p>
-                                <b>Современные технологии</b>
-                            </p>
-                            <p>Мы используем современные методы и технологии для проведения тестирования</p>
-                        </div>
-                        <div>
-                            <img src={icon_cogwheel} alt="icon-modern" />
-                            <p>
-                                <b>Большой функционал</b>
-                            </p>
-                            <p>У нас есть большое количество инструментов для проведения тестов</p>
-                        </div>
-                        <div>
-                            <img src={icon_question} alt="icon-modern"/>
-                            <p><b>Возможность вопросов</b></p>
-                            <p>На сайте можно задавать вопросы касаемо учебных заведений и профессий</p>
-                        </div>
+                        <FadeInSection>
+                            <div>
+                                <img src={icon_modern} alt="icon-modern" />
+                                <p>
+                                    <b>Современные технологии</b>
+                                </p>
+                                <p>Мы используем современные методы и технологии для проведения тестирования</p>
+                            </div>
+                        </FadeInSection>
+                        <FadeInSection>
+                            <div>
+                                <img src={icon_cogwheel} alt="icon-modern" />
+                                <p>
+                                    <b>Большой функционал</b>
+                                </p>
+                                <p>У нас есть большое количество инструментов для проведения тестов</p>
+                            </div>
+                        </FadeInSection>
+                        <FadeInSection>
+                            <div>
+                                <img src={icon_question} alt="icon-modern" />
+                                <p>
+                                    <b>Возможность вопросов</b>
+                                </p>
+                                <p>На сайте можно задавать вопросы касаемо учебных заведений и профессий</p>
+                            </div>
+                        </FadeInSection>
                     </section>
                 </div>
             </section>
             <section className="registration">
                 <div className="section-content">
-                    <aside>
-                        <img src={icon_people_example} alt="people_example" />
-                        <div className="circle_users">
-                            <p>253 пользователей</p>
+                    <FadeInSection>
+                        <aside>
+                            <img src={icon_people_example} alt="people_example" />
+                            <div className="circle_users">
+                                <div>
+                                    <Counter targetNumber={253} duration={500}>
+                                        <p>пользователей</p>
+                                    </Counter>
+                                </div>
+                            </div>
+                        </aside>
+                    </FadeInSection>
+                    <FadeInSection>
+                        <div className="registration-description">
+                            <p>Не знаешь куда поступить?</p>
+                            <p>
+                                <b>
+                                    Пройди профориентационный тест и просмотри информацию о профессии и об учебном
+                                    заведении
+                                </b>
+                            </p>
+                            <button>Зарегистрироваться</button>
                         </div>
-                    </aside>
-                    <div className="registration-description">
-                        <p>Не знаешь куда поступить?</p>
-                        <p><b>Пройди профориентационный тест и просмотри информацию о профессии и об учебном заведении</b></p>
-                        <button>Зарегистрироваться</button>
-                    </div>
+                    </FadeInSection>
                 </div>
             </section>
         </div>
