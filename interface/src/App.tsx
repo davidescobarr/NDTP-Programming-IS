@@ -23,6 +23,7 @@ const ProfessionsLazy = loadingComponent(lazy(() => import('@pages/Professions')
 const LoginLazy = loadingComponent(lazy(() => import('@pages/Login')));
 const RegistrationLazy = loadingComponent(lazy(() => import('@pages/Registration')));
 const ProfileLazy = loadingComponent(lazy(() => import('@pages/Profile')));
+const TestsLazy = loadingComponent(lazy(() => import('@pages/Tests')));
 
 const MainRoutes = () => (
     <>
@@ -60,6 +61,12 @@ const ProfileRoutes = () => (
     </>
 );
 
+const TestsRoutes = () => (
+    <>
+        <Route path={routes.TESTS} component={TestsLazy} />
+    </>
+);
+
 export const App = () => {
     return (
         <Layout>
@@ -74,6 +81,7 @@ export const App = () => {
                     <LoginRoutes />
                     <RegistrationRoutes />
                     <ProfileRoutes />
+                    <TestsRoutes />
                 </Content>
                 <Footer>
                     <FooterPanel />
