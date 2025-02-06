@@ -7,8 +7,6 @@ import {FooterPanel} from "@components/Footer";
 export const Profession = ({ idProfession, name, description, photo }) => {
     const { openModal } = useModal();
 
-
-export const Profession = ({ idProfession, name, description, photo }) => {
     return (
         <div className="card_profession" id={idProfession}>
             <img src={photo} alt="profession" />
