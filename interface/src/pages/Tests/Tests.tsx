@@ -12,7 +12,7 @@ export const Tests = () => {
                 <div className="section-content">
                     <h1 className="title">Тесты</h1>
                     <div className="professions-list">
-                        <Test name="test" description="description" idProfession="test" photo={bsuir}/>
+                        <Test name="test" description="description" idTest="test" photo={bsuir}/>
                     </div>
                 </div>
             </section>
