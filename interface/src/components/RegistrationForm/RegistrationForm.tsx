@@ -16,7 +16,6 @@ export class RegistrationForm extends React.Component {
     }
 
     handleSubmit(event) {
-        alert('Отправленное имя: ' + this.login);
         event.preventDefault();
     }
 

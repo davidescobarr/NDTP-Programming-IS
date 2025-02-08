@@ -14,7 +14,7 @@ export const Profession = ({ idProfession, name, description, photo }) => {
                 <h2>{name}</h2>
                 <p>{description}</p>
                 <button className="btn_profession" onClick={() => {
-                    openModal(FooterPanel, null)
+                    openModal(FooterPanel, null);
                 }}>Подробнее
                 </button>
             </div>

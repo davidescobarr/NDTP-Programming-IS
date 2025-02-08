@@ -1,7 +1,5 @@
 import * as React from 'react';
 import {useModal} from "@model/ModalContext";
-import Registration from "@pages/Registration";
-import {HeaderPanel} from "@components/Header";
 import {FooterPanel} from "@components/Footer";
 
 export const Test = ({ idTest, name, description, photo }) => {
@@ -14,7 +12,7 @@ export const Test = ({ idTest, name, description, photo }) => {
                 <h2>{name}</h2>
                 <p>{description}</p>
                 <button className="btn_profession" onClick={() => {
-                    openModal(FooterPanel, null)
+                    openModal(FooterPanel, null);
                 }}>Пройти тест
                 </button>
             </div>

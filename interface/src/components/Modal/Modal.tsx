@@ -8,13 +8,13 @@ const Modal: React.FC = () => {
     return (
         <div className={isOpen ? "modal active" : "modal"} onClick={() => {closeModal();}}>
             <div className={isOpen ? "modal__content active" : "modal__content"} onClick={e => e.stopPropagation()}>
-                {content}
                 <button
-                    className="absolute top-2 right-2 text-xl"
+                    className="close__button"
                     onClick={closeModal}
                 >
                     ❌
                 </button>
+                {content}
             </div>
         </div>
     );
