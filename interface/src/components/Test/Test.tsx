@@ -1,8 +1,7 @@
 import * as React from 'react';
 import {useModal} from "@model/ModalContext";
-import {FooterPanel} from "@components/Footer";
 
-export const Test = ({ idTest, name, description, photo }) => {
+export const Test = ({ idTest, name, description, photo, componentTest, propsTest }) => {
     const { openModal } = useModal();
 
     return (
@@ -12,7 +11,7 @@ export const Test = ({ idTest, name, description, photo }) => {
                 <h2>{name}</h2>
                 <p>{description}</p>
                 <button className="btn_profession" onClick={() => {
-                    openModal(FooterPanel, null);
+                    openModal(componentTest, propsTest);
                 }}>Пройти тест
                 </button>
             </div>

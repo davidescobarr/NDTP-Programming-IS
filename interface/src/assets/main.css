@@ -706,3 +706,22 @@ main .establishments .section-content .professions-list .card_profession button:
 .main .profile-main button:hover p {
     color: rgba(0, 0, 0, 0.5);
 }
+
+.test-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.test-content button {
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: #F86F03;
+    color: #FFF;
+    min-height: 35px;
+    min-width: 400px;
+    margin-top: 16px;
+}
