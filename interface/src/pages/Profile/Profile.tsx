@@ -29,35 +29,6 @@ export const Profile = () => {
                                 <img src={settings} alt="settings"/>
                                 <p>Настройки пользователя</p>
                             </button>
-                            <button>
-                                <img src={settings} alt="settings"/>
-                                <p>Чёрный список пользователей</p>
-                            </button>
-                        </div>
-                        <div className="profile-friends">
-                            <h3>Друзья</h3>
-                            <ul>
-                                <li>
-                                    <img src={avatar} alt="logo"/>
-                                    <p>Имя пользователя</p>
-                                </li>
-                                <li>
-                                    <img src={avatar} alt="logo"/>
-                                    <p>Имя пользователя</p>
-                                </li>
-                                <li>
-                                    <img src={avatar} alt="logo"/>
-                                    <p>Имя пользователя</p>
-                                </li>
-                                <li>
-                                    <img src={avatar} alt="logo"/>
-                                    <p>Имя пользователя</p>
-                                </li>
-                                <li>
-                                    <img src={avatar} alt="logo"/>
-                                    <p>Имя пользователя</p>
-                                </li>
-                            </ul>
                         </div>
                     </div>
                     <aside className="profile-tests">
