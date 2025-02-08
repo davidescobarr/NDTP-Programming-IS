@@ -1,11 +1,32 @@
 import * as React from 'react';
 import {Profession} from "@components/Profession";
+import {searchAllUserInfo} from "@api/sc/search/searchUserInfo";
+import {useParams} from "react-router";
 
 const avatar = require('@assets/img/avatar.png')
 const settings = require('@assets/icon/settings.png')
 const bsuir = require('@assets/img/establishment_bsuir.png')
 
 export const Profile = () => {
+    const params = useParams();
+    const userId = params["userId"];
+    const [userNickname, setUserNickname] = React.useState<string>();
+    const [userPassword, setUserPassword] = React.useState<string>();
+    const [userFirstName, setUserFirstName] = React.useState<string>();
+    const [userSurname, setUserSurname] = React.useState<string>();
+    const [userPatronymic, setUserPatronymic] = React.useState<string>();
+
+    
+    React.useEffect(() => {
+        (async () => {
+            const [nickname, password, first_name, surname, patronymic] = await searchAllUserInfo(userId);
+            setUserNickname(nickname);
+            setUserPassword(password);
+            setUserFirstName(first_name);
+            setUserSurname(surname);
+            setUserPatronymic(patronymic);
+        })();
+    }, []);
     return (
         <div className="main">
             <div className="main-profile">
@@ -13,18 +34,20 @@ export const Profile = () => {
                     <div className="profile-content">
                         <div className="profile-main">
                             <article className="avatar">
-                                <img src={avatar} alt="logo"/>
+                                <img src={avatar} alt="logo" />
                                 <div>
-                                    <h1>Фамилия Имя Отчество</h1>
-                                    <p>Имя пользователя</p>
+                                    <h1>
+                                        {userSurname} {userFirstName} {userPatronymic}
+                                    </h1>
+                                    <p>{userNickname}</p>
                                 </div>
                             </article>
                             <button>
-                                <img src={settings} alt="settings"/>
+                                <img src={settings} alt="settings" />
                                 <p>Настройки пользователя</p>
                             </button>
                             <button>
-                                <img src={settings} alt="settings"/>
+                                <img src={settings} alt="settings" />
                                 <p>Чёрный список пользователей</p>
                             </button>
                         </div>
@@ -32,23 +55,23 @@ export const Profile = () => {
                             <h3>Друзья</h3>
                             <ul>
                                 <li>
-                                    <img src={avatar} alt="logo"/>
+                                    <img src={avatar} alt="logo" />
                                     <p>Имя пользователя</p>
                                 </li>
                                 <li>
-                                    <img src={avatar} alt="logo"/>
+                                    <img src={avatar} alt="logo" />
                                     <p>Имя пользователя</p>
                                 </li>
                                 <li>
-                                    <img src={avatar} alt="logo"/>
+                                    <img src={avatar} alt="logo" />
                                     <p>Имя пользователя</p>
                                 </li>
                                 <li>
-                                    <img src={avatar} alt="logo"/>
+                                    <img src={avatar} alt="logo" />
                                     <p>Имя пользователя</p>
                                 </li>
                                 <li>
-                                    <img src={avatar} alt="logo"/>
+                                    <img src={avatar} alt="logo" />
                                     <p>Имя пользователя</p>
                                 </li>
                             </ul>
