@@ -11,9 +11,9 @@ chmod +x "$SCRIPT2"
 
 chmod +x "$SCRIPT3"
 
-cd "../"
+cd "../Рабочий стол"
 source .venv/bin/activate
-cd "nika"
+cd "../nika"
 
 bash "$SCRIPT1"
 bash "$SCRIPT2"
