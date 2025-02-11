@@ -1,61 +1,59 @@
-import React from "react";
-import { registerUser } from "@api/sc/agents/userRegistrationAgent";
+import React, {useState} from "react";
+import {registerUser} from "@agents/userRegistrationAgent";
 import {PROFILE} from "../../constants/routes";
+import {useNavigate} from "react-router-dom";
 
-export class RegistrationForm extends React.Component {
-    firstname = '';
-    surname = '';
-    patronymic = '';
-    login = '';
-    password = '';
+export function RegistrationForm () {
+    const [login, setLogin] = useState("");
+    const [password, setPassword] = useState("");
+    const [firstname, setFirstname] = useState("");
+    const [surname, setSurname] = useState("");
+    const [patronymic, setPatronymic] = useState("");
+    const navigate = useNavigate();
 
-    constructor(props) {
-        super(props);
-
-        this.handleSubmit = this.handleSubmit.bind(this);
-    }
-
-    handleSubmit(event) {
-        alert('Отправленное имя: ' + this.login);
+    const handleSubmit = (event) => {
+        alert('Отправленное имя: ' + login);
         event.preventDefault();
     }
 
-    userRegistrationCallBack = async () => {
-        const user = await registerUser(this.login, this.firstname, this.surname, this.patronymic, this.password);
+    const userRegistrationCallBack = async () => {
+        const user = await registerUser(login, firstname, surname, patronymic, password);
         if (user !== null){
-            this.goToProfilePage(user.value);
+            goToProfilePage(user.value);
+        }
+        else{
+            console.log("user doesn't exist or password is uncorrected");
         }
     }
 
-    goToProfilePage = (userId : number) => {
+    const goToProfilePage = (userId : number) => {
         window.history.pushState({userId}, '', PROFILE);
+        navigate(`/Profile/${userId}`);
     };
 
-    render() {
-        return (
-            <form onSubmit={this.handleSubmit}>
-                <label>
-                    Фамилия:
-                    <input type="text" onChange={event => this.surname = event.target.value} />
-                </label>
-                <label>
-                    Имя:
-                    <input type="text" onChange={event => this.firstname = event.target.value}/>
-                </label>
-                <label>
-                    Отчество:
-                    <input type="text" onChange={event => this.patronymic = event.target.value}/>
-                </label>
-                <label>
-                    Имя пользователя:
-                    <input type="text" onChange={event => this.login = event.target.value}/>
-                </label>
-                <label>
-                    Пароль:
-                    <input type="password" onChange={event => this.password = event.target.value}/>
-                </label>
-                <input type="submit" value="Зарегистрироваться" onClick={() => {this.userRegistrationCallBack()}}/>
-            </form>
-        );
-    }
+    return (
+        <form onSubmit={handleSubmit}>
+            <label>
+                Фамилия:
+                <input type="text" onChange={event => setSurname(event.target.value)} />
+            </label>
+            <label>
+                Имя:
+                <input type="text" onChange={event => setFirstname(event.target.value)} />
+            </label>
+            <label>
+                Отчество:
+                <input type="text" onChange={event => setPatronymic(event.target.value)} />
+            </label>
+            <label>
+                Имя пользователя:
+                <input type="text" onChange={event => setLogin(event.target.value)} />
+            </label>
+            <label>
+                Пароль:
+                <input type="password" onChange={event => setPassword(event.target.value)} />
+            </label>
+            <input type="submit" value="Зарегистрироваться" onClick={() => {userRegistrationCallBack()}}/>
+        </form>
+    );
 }
