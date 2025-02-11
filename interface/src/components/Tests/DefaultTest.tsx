@@ -1,6 +1,7 @@
 import * as React from 'react';
 import {useState} from "react";
 import {useModal} from "@model/ModalContext";
+import './test.css';
 
 export const DefaultTest = ({questions}) => {
     const [numberQuestions, setNumberQuestions] = useState(0);

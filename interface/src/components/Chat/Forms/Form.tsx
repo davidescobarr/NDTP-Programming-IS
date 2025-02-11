@@ -156,88 +156,88 @@ export const FormPanel = ({closeModal}) => {
             <form onSubmit={handleSubmit}>
             <div className='in__form__block'>
                 <div>
-                    <div>
+                    <article>
                         <input type="checkbox" name="options" value="creative_thinking" id="creative_thinking" />
                         <label htmlFor="creative_thinking">Творческое мышление</label>
-                    </div>
-                    <div>
+                    </article>
+                    <article>
                         <input type="checkbox" name="options" value="attention_to_detail" id="attention_to_detail" />
                         <label htmlFor="attention_to_detail">Внимание к деталям</label>
-                    </div>
-                    <div>
+                    </article>
+                    <article>
                         <input type="checkbox" name="options" value="patience" id="patience" />
                         <label htmlFor="patience">Терпеливость</label>
-                    </div>
-                    <div>
+                    </article>
+                    <article>
                         <input type="checkbox" name="options" value="responsibility" id="responsibility" />
                         <label htmlFor="responsibility">Ответственность</label>
-                    </div>
-                    <div>
+                    </article>
+                    <article>
                         <input type="checkbox" name="options" value="communicativeness" id="communicativeness" />
                         <label htmlFor="communicativeness">Коммуникативность</label>
-                    </div>
-                    <div>
+                    </article>
+                    <article>
                         <input type="checkbox" name="options" value="physical_endurance" id="physical_endurance" />
                         <label htmlFor="physical_endurance">Физическая выносливость</label>
-                    </div>
-                    <div>
+                    </article>
+                    <article>
                         <input type="checkbox" name="options" value="accuracy" id="accuracy" />
                         <label htmlFor="accuracy">Точность</label>
-                    </div>
-                    <div>        
+                    </article>
+                    <article>
                         <input type="checkbox" name="options" value="efficiency" id="efficiency" />
                         <label htmlFor="efficiency">Работоспособность</label>
-                    </div>
-                    <div>
+                    </article>
+                    <article>
                         <input type="checkbox" name="options" value="attention_to_safety" id="attention_to_safety" />
                         <label htmlFor="attention_to_safety">Внимание к безопасности</label>
-                    </div>
-                    <div>
+                    </article>
+                    <article>
                         <input type="checkbox" name="options" value="compassion" id="compassion" />
                         <label htmlFor="compassion">Сострадание</label>
-                    </div>
+                    </article>
                </div>
                 <div>
-                    <div>
+                    <article>
                         <input type="checkbox" name="options" value="stress_resistance" id="stress_resistance" />
                         <label htmlFor="stress_resistance">Стрессоустойчивость</label>
-                    </div>
-                    <div>
+                    </article>
+                    <article>
                         <input type="checkbox" name="options" value="organization" id="organization" />
                         <label htmlFor="organization">Организованность</label>
-                    </div>
-                    <div>
+                    </article>
+                    <article>
                         <input type="checkbox" name="options" value="logical_thinking" id="logical_thinking" />
                         <label htmlFor="logical_thinking">Логическое мышление</label>
-                    </div>
-                    <div>
+                    </article>
+                    <article>
                         <input type="checkbox" name="options" value="bravery" id="bravery" />
                         <label htmlFor="bravery">Храбрость</label>
-                    </div>
-                    <div>
+                    </article>
+                    <article>
                         <input type="checkbox" name="options" value="team_spirit" id="team_spirit" />
                         <label htmlFor="team_spirit">Командный дух</label>
-                    </div>
-                    <div>
+                    </article>
+                    <article>
                         <input type="checkbox" name="options" value="analytical_thinking" id="analytical_thinking" />
                         <label htmlFor="analytical_thinking">Аналитическое мышление</label>
-                    </div>
-                    <div>
+                    </article>
+                    <article>
                         <input type="checkbox" name="options" value="creativity" id="creativity" />
                         <label htmlFor="creativity">Креативность</label>
-                    </div>
-                    <div>
+                    </article>
+                    <article>
                         <input type="checkbox" name="options" value="empathy" id="empathy" />
                         <label htmlFor="empathy">Эмпатия</label>
-                    </div>
-                    <div>
+                    </article>
+                    <article>
                         <input type="checkbox" name="options" value="polite" id="polite" />
                         <label htmlFor="polite">Вежливость</label>
-                    </div>
-                    <div>
+                    </article>
+                    <article>
                         <input type="checkbox" name="options" value="perseverance" id="perseverance" />
                         <label htmlFor="perseverance">Упорство</label>
-                    </div>
+                    </article>
                 </div>
             </div>
             <input type="submit" className='button__next' value={'Далее'}/>

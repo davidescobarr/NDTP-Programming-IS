@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap');
 
-h1 {
+.modal h1 {
     font-family: "Advent Pro", sans-serif;
     font-size: 32px;
     color: #000;
     text-align: center;
 }
 
-p {
+.modal p {
     font-family: "Advent Pro", sans-serif;
     font-size: 24px;
     color: #000;
     text-align: center;
 }
 
-.button {
+.modal .button {
     width: 200px;
     height: 50px;
     font-family: "Advent Pro", sans-serif;
@@ -27,18 +27,17 @@ p {
     cursor: pointer;
     transition: 0.2s;
     font-weight: bold;
-    margin: 0 auto;
-    margin-top: 24px;
-  }
-  
-  .button:hover {
+    margin: 24px 16px 0;
+}
+
+.modal .button:hover {
     background-color: #4031c9;
     color: #dadada;
     transition: 0.2s;
     transform: scale(0.95);
   }
 
-  .block__answers {
+.modal .block__answers {
     display: flex;
     width: 100%;
     flex-direction: row;
@@ -47,7 +46,7 @@ p {
     
   }
 
-  .question {
+.modal .question {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
