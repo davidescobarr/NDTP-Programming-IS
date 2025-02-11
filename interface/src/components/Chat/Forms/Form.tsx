@@ -5,10 +5,17 @@ import './form.css';
 import { ScAddr, ScConstruction, ScTemplate, ScType } from 'ts-sc-client';
 import { number } from 'prop-types';
 import { Question } from './Question';
+import {useModal} from "@model/ModalContext";
 const { Component, Fragment } = React
 const rootNode = document.getElementById('app')
 
-export const FormPanel = ({active, setActive, onSend, children}) => {
+export const FormPanelComponent = () => {
+    const { closeModal } = useModal();
+
+    return FormPanel({closeModal});
+}
+
+export const FormPanel = ({closeModal}) => {
     const [test, setTest] = useState(false)
 
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
@@ -133,8 +140,8 @@ export const FormPanel = ({active, setActive, onSend, children}) => {
     };
 
     async function endTest() {
-        setActive(false);
-        await onSend("Помоги мне выбрать профессию", true);
+        closeModal();
+
         setTest(false);
     }
 
@@ -235,7 +242,6 @@ export const FormPanel = ({active, setActive, onSend, children}) => {
             </div>
             <input type="submit" className='button__next' value={'Далее'}/>
             </form>
-            {children}
         </div>
         )
     );

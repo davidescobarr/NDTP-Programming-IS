@@ -3,6 +3,7 @@ import {Profession} from "@components/Profession";
 import {getProfessionsWithDescriptionsAgent} from "@agents/getProfessionsAndDescriptionsAgent";
 import {Test} from "@components/Test";
 import {DefaultTest} from "@components/Tests/DefaultTest";
+import {FormPanelComponent} from "@components/Chat/Forms/Form";
 
 const bsuir = require('@assets/img/establishment_bsuir.png')
 
@@ -54,6 +55,7 @@ export const Tests = () => {
                                     ]}
                             ]
                         }}/>
+                        <Test name="test" description="description" idTest="test" photo={bsuir} componentTest={FormPanelComponent} propsTest={{}}/>
                     </div>
                 </div>
             </section>
