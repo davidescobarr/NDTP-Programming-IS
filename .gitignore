@@ -22,5 +22,5 @@ sc-server.log
 
 .DS_Store
 build.sh
-start.sh
 stop.sh
+start.sh
