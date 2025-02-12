@@ -1,5 +1,6 @@
 import * as React from "react";
 import {registerUser} from "@agents/userRegistrationAgent";
+import './settings.css';
 
 export const ProfileSettingsDOM = () => {
     return <ProfileSettings />

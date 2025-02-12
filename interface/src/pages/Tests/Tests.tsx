@@ -23,7 +23,7 @@ export const Tests = () => {
                     <h1 className="title">Тесты</h1>
                     <div className="professions-list">
                         {
-                            Object.entries(tests).map(([key, value]) => {
+                            tests !== null && Object.entries(tests).map(([key, value]) => {
                                 return <Test name={value.name} description={value.info} idTest={key} photo={bsuir} componentTest={DefaultTest} propsTest={{}}/>
                             })
                         }

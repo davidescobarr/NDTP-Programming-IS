@@ -83,6 +83,7 @@ body {
 
 .nav {
     display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
     padding: 0;
 }
@@ -180,10 +181,14 @@ body {
 
 .main .ourbest .ourbest-points {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 32px;
 }
 
 .main .ourbest .ourbest-points div {
     text-align: center;
+    max-width: 310px;
 }
 
 .main .ourbest .ourbest-points div p {
@@ -437,6 +442,12 @@ main .establishments .section-content .professions-list .card_profession button:
     margin: auto;
 }
 
+.footer .nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .footer .nav li a {
     color: rgba(255, 255, 255, 0.75);
     font-size: 16px;
@@ -451,10 +462,15 @@ main .establishments .section-content .professions-list .card_profession button:
 
 .footer .about-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     color: rgba(255, 255, 255, 0.5);
     font-size: 16px;
     font-family: 'Finlandica', serif;
+}
+
+.footer .about-container p:last-child {
+    text-align: right;
 }
 
 .fade-in-section {
@@ -724,4 +740,56 @@ main .establishments .section-content .professions-list .card_profession button:
     min-height: 35px;
     min-width: 400px;
     margin-top: 16px;
+}
+
+@media screen and (max-width: 1100px) {
+    .main .banner .photo img {
+        display: none;
+    }
+
+    .registration .section-content aside {
+        display: none;
+    }
+
+    .main section {
+        padding: 0 64px;
+    }
+
+    .main .banner {
+        padding: 50px 64px;
+    }
+
+    .main .registration {
+        padding: 48px 64px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .main .profile {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .main {
+        padding: 32px;
+    }
+
+    .main .profile-tests {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main section {
+        padding: 0 16px;
+    }
+
+    .main .banner {
+        padding: 50px 16px;
+    }
+
+    .main .registration {
+        padding: 48px 16px;
+    }
 }
