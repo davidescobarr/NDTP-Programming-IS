@@ -1,19 +1,28 @@
 import * as React from 'react';
-import {Test} from "@components/Test";
-import {DefaultTest} from "@components/Tests/DefaultTest";
-import {FormPanelComponent} from "@components/Chat/Forms/Form";
-import {getTestsWithDescriptionsAgent} from "@agents/getTestsAndDescriptionsAgent";
-import {Establishment} from "@components/Establishment";
+import { Test } from "@components/Test";
+import { DefaultTest } from "@components/Tests/DefaultTest";
+import { FormPanelComponent } from "@components/Chat/Forms/Form";
+import { getTestsWithDescriptionsAgent } from "@agents/getTestsAndDescriptionsAgent";
+import { getHolandTestAgent } from "@agents/getHolandTestAgent"; // Импорт агента
 
-const bsuir = require('@assets/img/establishment_bsuir.png')
+const bsuir = require('@assets/img/establishment_bsuir.png');
 
 export const Tests = () => {
     const [tests, setTests] = React.useState<Map<string, string>>(new Map());
+    const [holandTestData, setHolandTestData] = React.useState(null);
+
     React.useEffect(() => {
         (async () => {
-            const tests = await getTestsWithDescriptionsAgent();
-            console.log(tests);
-            setTests(tests);
+            const testsData = await getTestsWithDescriptionsAgent();
+            console.log(testsData);
+            setTests(testsData);
+
+            // Если тест Холланда есть в списке, запрашиваем его JSON-данные
+            if (testsData["test_holand"]) {
+                const holandData = await getHolandTestAgent();
+                console.log("Holand Test Data:", holandData);
+                setHolandTestData(holandData);
+            }
         })();
     }, []);
     return (
@@ -23,8 +32,22 @@ export const Tests = () => {
                     <h1 className="title">Тесты</h1>
                     <div className="professions-list">
                         {
+                            //Object.entries(tests).map(([key, value]) => {
+                                //return <Test name={value.name} description={value.info} idTest={key} photo={bsuir} componentTest={DefaultTest} propsTest={{}}/>
+                            //})
+                        }
+                        {
                             Object.entries(tests).map(([key, value]) => {
-                                return <Test name={value.name} description={value.info} idTest={key} photo={bsuir} componentTest={DefaultTest} propsTest={{}}/>
+                                return (
+                                    <Test
+                                        name={value.name}
+                                        description={value.info}
+                                        idTest={key}
+                                        photo={bsuir}
+                                        componentTest={DefaultTest}
+                                        propsTest={key === "test_holand" ? { questions: holandTestData } : {}}
+                                    />
+                                );
                             })
                         }
                         <Test name="test" description="description" idTest="test" photo={bsuir} componentTest={DefaultTest} propsTest={{

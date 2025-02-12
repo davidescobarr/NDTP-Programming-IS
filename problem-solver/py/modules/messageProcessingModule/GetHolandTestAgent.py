@@ -52,9 +52,10 @@ class GetHolandTestAgent(ScAgentClassic):
 
         # Resolve required keynodes
         nrel_name = ScKeynodes.resolve("nrel_name", sc_types.NODE_NOROLE)
+        nrel_questions_json = ScKeynodes.resolve("nrel_questions_json", sc_types.NODE_NOROLE)
         concept_test = ScKeynodes.resolve("concept_test", sc_types.NODE_CONST_CLASS)
 
-        if not nrel_name or not concept_test:
+        if not nrel_name or not concept_test or not nrel_questions_json:
             self.logger.error("Required keynodes not found")
             return ScResult.ERROR
 
@@ -89,15 +90,44 @@ class GetHolandTestAgent(ScAgentClassic):
             if not name_result:
                 continue
 
+            self.logger.info("WE ARE HERE!1!!!!1111!1")
+
             for name_item in name_result:
                 name_link = name_item.get("_name_link")
                 test_name = get_link_content_data(name_link)
 
-                if test_name == "test_holand":
+                if test_name == "Тест Холланда":
                     self.logger.info("Found Holland Test: %s", test_name)
 
-                    
-                    return ScResult.OK
+                    # Search for the JSON questions link
+                    json_template = ScTemplate()
+                    json_template.triple_with_relation(
+                        test_node,
+                        sc_types.EDGE_D_COMMON_VAR,
+                        sc_types.LINK_VAR >> "_json_link",
+                        sc_types.EDGE_ACCESS_VAR_POS_PERM,
+                        nrel_questions_json
+                    )
+
+                    json_result = template_search(json_template)
+                    if not json_result:
+                        self.logger.warning("No JSON questions link found for Holland Test")
+                        return ScResult.ERROR_NOT_FOUND
+
+                    for json_item in json_result:
+                        json_link = json_item.get("_json_link")
+                        json_content = get_link_content_data(json_link)
+
+                        if json_content:
+                            self.logger.info("Found JSON questions: %s", json_content)
+
+                            # Create answer link and attach JSON
+                            json_answer_link = create_link(json_content)
+                            create_action_answer(action_node, json_answer_link)
+
+                            self.logger.info("Holland Test JSON returned successfully")
+                            return ScResult.OK
 
         self.logger.warning("Holland Test not found")
         return ScResult.ERROR_NOT_FOUND
+
