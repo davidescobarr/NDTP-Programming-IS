@@ -91,7 +91,7 @@ export const Tests = () => {
                                     ]}
                             ]
                         }}/>
-                        <Test name="test" description="description" idTest="test" photo={bsuir} componentTest={FormPanelComponent} propsTest={{}}/>
+                        <Test name="Профориентационный тест" description="Пройдя данный тест вы сможете определить свою профессию." idTest="test" photo={bsuir} componentTest={FormPanelComponent} propsTest={{}}/>
                     </div>
                 </div>
             </section>
