@@ -7,17 +7,12 @@ export const DefaultTest = (array) => {
     const [numberQuestions, setNumberQuestions] = useState(0);
     const { closeModal, openModal } = useModal();
 
-    if(array.length === 0) {
-        return (
-          <h1>
-              ошибка
-          </h1>
-        );
-    }
     const questions = array[0].questions;
     let functionEndTest = ({questions, closeModal, openModal}) => {};
-    if(array.length > 1) {
+    try {
         functionEndTest = array[1];
+    } catch (error) {
+        console.error(error);
     }
 
     return (
