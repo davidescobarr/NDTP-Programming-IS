@@ -5,30 +5,38 @@ import { FormPanelComponent } from "@components/Chat/Forms/Form";
 import { getTestsWithDescriptionsAgent } from "@agents/getTestsAndDescriptionsAgent";
 import { getHolandTestAgent } from "@agents/getHolandTestAgent";
 import {useModal} from "@model/ModalContext"; // Импорт агента
+import { analyzeHolandTestAgent } from "@agents/analyzeHolandTestAgent";
+
 
 const bsuir = require('@assets/img/establishment_bsuir.png');
 
-export const endTestTestComponent = ({text, closeModal}) => {
+export const endTestTestComponent = ({ text, closeModal }) => {
     return (
-        <div className="test-content">
-            <h1>
-                Ваши итоги теста
-            </h1>
-            <p>
-                {text}
-            </p>
-            <button onClick={() => {closeModal();}}>
+        <div>
+            <h1>Ваши итоги теста</h1>
+            <p>{text}</p>
+            <button onClick={() => closeModal()}>
                 Закрыть
             </button>
         </div>
     );
-}
+};
 
-const endTestTest = ({questions, closeModal, openModal}) => {
-    closeModal();
-    const text = "тест";
-    openModal(endTestTestComponent, {text, closeModal});
-}
+
+const endTestTest = async ({ questions, closeModal, openModal }) => {
+    closeModal(); // Закрываем текущий модал
+    console.log("okay");
+
+    try {
+        const resultText = await analyzeHolandTestAgent(questions);
+
+        openModal(endTestTestComponent, { text: resultText, closeModal });
+    } catch (error) {
+        console.error("Ошибка при анализе теста Холланда:", error);
+        openModal(endTestTestComponent, { text: "Ошибка при обработке теста", closeModal });
+    }
+};
+
 
 export const Tests = () => {
     const [tests, setTests] = React.useState<Map<string, string>>(new Map());
@@ -40,12 +48,11 @@ export const Tests = () => {
             console.log(testsData);
             setTests(testsData);
 
-            // Если тест Холланда есть в списке, запрашиваем его JSON-данные
-            /*if (testsData["test_holand"]) {
+            if (testsData["test_holand"]) {
                 const holandData = await getHolandTestAgent();
                 console.log("Holand Test Data:", holandData);
                 setHolandTestData(holandData);
-            }*/
+            }
         })();
     }, []);
     return (
@@ -56,11 +63,11 @@ export const Tests = () => {
                     <div className="professions-list">
                         {
                             //Object.entries(tests).map(([key, value]) => {
-                                //return <Test name={value.name} description={value.info} idTest={key} photo={bsuir} componentTest={DefaultTest} propsTest={{}}/>
+                            //return <Test name={value.name} description={value.info} idTest={key} photo={bsuir} componentTest={DefaultTest} propsTest={{}}/>
                             //})
                         }
                         {
-                            /*Object.entries(tests).map(([key, value]) => {
+                            Object.entries(tests).map(([key, value]) => {
                                 return (
                                     <Test
                                         name={value.name}
@@ -68,10 +75,10 @@ export const Tests = () => {
                                         idTest={key}
                                         photo={bsuir}
                                         componentTest={DefaultTest}
-                                        propsTest={key === "test_holand" ? [ {questions: holandTestData} ] : []}
+                                        propsTest={key === "test_holand" ? [ {questions: holandTestData}, endTestTest ] : []}
                                     />
                                 );
-                            })*/
+                            })
                         }
                         <Test name="test" description="description" idTest="test" photo={bsuir} componentTest={DefaultTest} propsTest={[{
                             questions: [

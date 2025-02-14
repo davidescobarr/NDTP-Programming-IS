@@ -30,7 +30,7 @@ const baseKeynodes = [
 
 export const createLinkText = async (messageText: string) => {
     const constructionLink = new ScConstruction();
-    constructionLink.createLink(ScType.LinkConst, new ScLinkContent(messageText, ScLinkContentType.String));
+    constructionLink.createLink(ScType.LinkConst, new ScLinkContent(messageText, ScLinkContentType.String)); // use this to make link
     const resultLinkNode = await client.createElements(constructionLink);
     if (resultLinkNode.length) {
         return resultLinkNode[0];

@@ -50,7 +50,6 @@ class GetHolandTestAgent(ScAgentClassic):
     def run(self, action_node: ScAddr) -> ScResult:
         self.logger.info("GetHolandTestAgent started")
 
-        # Resolve required keynodes
         nrel_name = ScKeynodes.resolve("nrel_name", sc_types.NODE_NOROLE)
         nrel_questions_json = ScKeynodes.resolve("nrel_questions_json", sc_types.NODE_NOROLE)
         concept_test = ScKeynodes.resolve("concept_test", sc_types.NODE_CONST_CLASS)
@@ -59,7 +58,6 @@ class GetHolandTestAgent(ScAgentClassic):
             self.logger.error("Required keynodes not found")
             return ScResult.ERROR
 
-        # Search for all tests
         template = ScTemplate()
         template.triple(
             concept_test,
@@ -72,11 +70,9 @@ class GetHolandTestAgent(ScAgentClassic):
             self.logger.warning("No tests found")
             return ScResult.ERROR_NOT_FOUND
 
-        # Iterate over found tests and check their name
         for item in search_result:
             test_node = item.get("_test")
 
-            # Search for the name of the test
             name_template = ScTemplate()
             name_template.triple_with_relation(
                 test_node,
@@ -99,7 +95,6 @@ class GetHolandTestAgent(ScAgentClassic):
                 if test_name == "Тест Холланда":
                     self.logger.info("Found Holland Test: %s", test_name)
 
-                    # Search for the JSON questions link
                     json_template = ScTemplate()
                     json_template.triple_with_relation(
                         test_node,
@@ -119,9 +114,6 @@ class GetHolandTestAgent(ScAgentClassic):
                         json_content = get_link_content_data(json_link)
 
                         if json_content:
-                            self.logger.info("Found JSON questions: %s", json_content)
-
-                            # Create answer link and attach JSON
                             json_answer_link = create_link(json_content)
                             create_action_answer(action_node, json_answer_link)
 

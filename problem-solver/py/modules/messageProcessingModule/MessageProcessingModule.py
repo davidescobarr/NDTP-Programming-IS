@@ -12,6 +12,7 @@ from .UserInfoAgent import UserInfoAgent
 from .GetProfessionsWIthDescriptions import GetProfessionsWithDescriptions
 from .GetTestsWithDescriptionsAgent import GetTestsWithDescriptionsAgent
 from .GetHolandTestAgent import GetHolandTestAgent
+from .AnalyzeHolandTestAgent import AnalyzeHolandTestAgent
 
 
 class MessageProcessingModule(ScModule):
@@ -28,5 +29,6 @@ class MessageProcessingModule(ScModule):
                          UserAuthorizationAgent(),
                          UserInfoAgent(),
                          GetTestsWithDescriptionsAgent(),
-                         GetHolandTestAgent()
+                         GetHolandTestAgent(),
+                         AnalyzeHolandTestAgent()
                          )

@@ -9,7 +9,6 @@ const baseKeynodes = [
     { id: actionGetHolandTestAgent, type: ScType.NodeConstClass },
 ];
 
-// Функция, создающая действие для агента
 const describeAgent = async (keynodes: Record<string, ScAddr>) => {
     const actionNodeAlias = '_action_node';
 
@@ -20,7 +19,6 @@ const describeAgent = async (keynodes: Record<string, ScAddr>) => {
     return [template, actionNodeAlias] as const;
 };
 
-// Функция, получающая JSON-ответ агента
 export const getAgentAnswer = async (circuitAddr: ScAddr) => {
     const link_with_json = '_link';
     const template = new ScTemplate();
@@ -42,7 +40,6 @@ export const getAgentAnswer = async (circuitAddr: ScAddr) => {
     return null;
 };
 
-// Функция для вызова агента
 export const getHolandTestAgent = async () => {
     const keynodes = await client.resolveKeynodes(baseKeynodes);
     console.log("Resolved keynodes");

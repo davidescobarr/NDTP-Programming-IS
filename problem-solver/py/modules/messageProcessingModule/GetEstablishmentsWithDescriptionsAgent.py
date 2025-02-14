@@ -50,7 +50,6 @@ class GetEstablishmentsWithDescriptionsAgent(ScAgentClassic):
     def run(self, action_node: ScAddr) -> ScResult:
         self.logger.info("GetEstablishmentsWithDescriptionsAgent started")
 
-        # Resolve required keynodes
         nrel_full_info = ScKeynodes.resolve(
             "nrel_full_info", sc_types.NODE_NOROLE)
         concept_establishment = ScKeynodes.resolve(
@@ -60,7 +59,6 @@ class GetEstablishmentsWithDescriptionsAgent(ScAgentClassic):
             self.logger.error("Required keynodes not found")
             return ScResult.ERROR
 
-        # Search for establishments
         template = ScTemplate()
         template.triple(
             concept_establishment,
@@ -80,7 +78,6 @@ class GetEstablishmentsWithDescriptionsAgent(ScAgentClassic):
         for item in search_result:
             establishment_node = item.get("_establishment")
 
-            # Search for full info related to the establishment
             info_template = ScTemplate()
             info_template.triple_with_relation(
                 establishment_node,

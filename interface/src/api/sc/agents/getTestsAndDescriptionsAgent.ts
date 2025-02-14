@@ -22,7 +22,6 @@ const baseKeynodes = [
     { id: questionFinished, type: ScType.NodeConstClass },
 ];
 
-// вызывает работу агента путём создания двух классов необходимых для запуска(33, 34 строки)
 const describeAgent = async (
     keynodes: Record<string, ScAddr>,
 ) => {
@@ -36,12 +35,10 @@ const describeAgent = async (
     return [template, actionNodeAlias] as const;
 };
 
-// получает адресс ответа, находит структуру ответа(ссылку в нашем случае) и пытается вернуть преобразованный json
 export const getAgentAnswer = async (circuitAddr: ScAddr) => {
     const link_with_json = '_link';
     const template = new ScTemplate();
 
-    // ищет связь с узлом ответа и структурой ответа, далее работает с resultNode
     template.triple(circuitAddr, ScType.EdgeAccessVarPosPerm, [ScType.LinkVar, link_with_json]);
     const resultNode = await client.templateSearch(template);
     console.log(resultNode);
@@ -62,7 +59,6 @@ export const getAgentAnswer = async (circuitAddr: ScAddr) => {
     return null;
 };
 
-// Вызывать при необходимости вызвать агента
 export const getTestsWithDescriptionsAgent = async () => {
     const keynodes = await client.resolveKeynodes(baseKeynodes);
     console.log("Resolve call");
