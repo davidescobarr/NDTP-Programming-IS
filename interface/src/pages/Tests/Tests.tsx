@@ -3,9 +3,31 @@ import { Test } from "@components/Test";
 import { DefaultTest } from "@components/Tests/DefaultTest";
 import { FormPanelComponent } from "@components/Chat/Forms/Form";
 import { getTestsWithDescriptionsAgent } from "@agents/getTestsAndDescriptionsAgent";
-import { getHolandTestAgent } from "@agents/getHolandTestAgent"; // Импорт агента
+import { getHolandTestAgent } from "@agents/getHolandTestAgent";
+import {useModal} from "@model/ModalContext"; // Импорт агента
 
 const bsuir = require('@assets/img/establishment_bsuir.png');
+
+export const endTestTestComponent = ({questions, closeModal}) => {
+    return (
+        <div>
+            <h1>
+                Ваши итоги теста
+            </h1>
+            <p>
+                {JSON.stringify(questions)}
+            </p>
+            <button onClick={() => {closeModal();}}>
+                Закрыть
+            </button>
+        </div>
+    );
+}
+
+const endTestTest = ({questions, closeModal, openModal}) => {
+    closeModal();
+    openModal(endTestTestComponent, {questions, closeModal});
+}
 
 export const Tests = () => {
     const [tests, setTests] = React.useState<Map<string, string>>(new Map());
@@ -50,7 +72,7 @@ export const Tests = () => {
                                 );
                             })
                         }
-                        <Test name="test" description="description" idTest="test" photo={bsuir} componentTest={DefaultTest} propsTest={{
+                        <Test name="test" description="description" idTest="test" photo={bsuir} componentTest={DefaultTest} propsTest={[{
                             questions: [
                                 {
                                     'display_name': 'Как вы относитесь к животным?',
@@ -90,7 +112,7 @@ export const Tests = () => {
                                         }
                                     ]}
                             ]
-                        }}/>
+                        }, endTestTest]}/>
                         <Test name="Профориентационный тест" description="Пройдя данный тест вы сможете определить свою профессию." idTest="test" photo={bsuir} componentTest={FormPanelComponent} propsTest={{}}/>
                     </div>
                 </div>
