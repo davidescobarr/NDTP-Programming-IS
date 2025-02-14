@@ -67,7 +67,7 @@ export const Tests = () => {
                                         idTest={key}
                                         photo={bsuir}
                                         componentTest={DefaultTest}
-                                        propsTest={key === "test_holand" ? { questions: holandTestData } : {}}
+                                        propsTest={key === "test_holand" ? [ {questions: holandTestData} ] : []}
                                     />
                                 );
                             })
