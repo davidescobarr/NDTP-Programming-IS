@@ -8,14 +8,14 @@ import {useModal} from "@model/ModalContext"; // Импорт агента
 
 const bsuir = require('@assets/img/establishment_bsuir.png');
 
-export const endTestTestComponent = ({questions, closeModal}) => {
+export const endTestTestComponent = ({text, closeModal}) => {
     return (
         <div>
             <h1>
                 Ваши итоги теста
             </h1>
             <p>
-                {JSON.stringify(questions)}
+                {text}
             </p>
             <button onClick={() => {closeModal();}}>
                 Закрыть
@@ -26,7 +26,8 @@ export const endTestTestComponent = ({questions, closeModal}) => {
 
 const endTestTest = ({questions, closeModal, openModal}) => {
     closeModal();
-    openModal(endTestTestComponent, {questions, closeModal});
+    const text = "итог";
+    openModal(endTestTestComponent, {text, closeModal});
 }
 
 export const Tests = () => {
