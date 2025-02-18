@@ -30,7 +30,8 @@ const endTestTest = async ({ questions, closeModal, openModal }) => {
     try {
         const resultText = await analyzeHolandTestAgent(questions);
 
-        openModal(endTestTestComponent, { text: resultText, closeModal });
+        console.log("dasdasd", resultText);
+        openModal(endTestTestComponent, { text: resultText.text, closeModal });
     } catch (error) {
         console.error("Ошибка при анализе теста Холланда:", error);
         openModal(endTestTestComponent, { text: "Ошибка при обработке теста", closeModal });
