@@ -9,7 +9,10 @@ from .GetEstablishmentsByProfessionAgent import GetEstablishmentsByProfessionAge
 from .UserRegistrationAgent import UserRegistrationAgent
 from .UserAuthorizationAgent import UserAuthorizationAgent
 from .UserInfoAgent import UserInfoAgent
-from .GetProfessionsWIthDescriptions import GetProfessionsWithDescriptions;
+from .GetProfessionsWIthDescriptions import GetProfessionsWithDescriptions
+from .GetTestsWithDescriptionsAgent import GetTestsWithDescriptionsAgent
+from .GetHolandTestAgent import GetHolandTestAgent
+from .AnalyzeHolandTestAgent import AnalyzeHolandTestAgent
 
 
 class MessageProcessingModule(ScModule):
@@ -24,5 +27,8 @@ class MessageProcessingModule(ScModule):
                          GetEstablishmentsByProfessionAgent(),
                          UserRegistrationAgent(),
                          UserAuthorizationAgent(),
-                         UserInfoAgent()
+                         UserInfoAgent(),
+                         GetTestsWithDescriptionsAgent(),
+                         GetHolandTestAgent(),
+                         AnalyzeHolandTestAgent()
                          )

@@ -21,3 +21,6 @@ __pycache__
 sc-server.log
 
 .DS_Store
+build.sh
+stop.sh
+start.sh

@@ -68,8 +68,8 @@ export const Main = () => {
                             <img src={icon_people_example} alt="people_example" />
                             <div className="circle_users">
                                 <div>
-                                    <Counter targetNumber={253} duration={500}>
-                                        <p>пользователей</p>
+                                    <Counter targetNumber={253} duration={2500}>
+                                        <p>пользователя</p>
                                     </Counter>
                                 </div>
                             </div>

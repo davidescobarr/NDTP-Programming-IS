@@ -6,7 +6,7 @@ const question = 'question';
 const questionInitiated = 'question_initiated';
 const questionFinished = 'question_finished';
 const nrelAnswer = 'nrel_answer';
-const actionGetProfessionsWithDescriptionsAgent = 'action_get_professions_with_descriptions_agent';
+const actionGetTestsWithDescriptionsAgent = 'action_get_tests_with_descriptions_agent';
 
 const rrel1 = 'rrel_1';
 const rrel2 = 'rrel_2';
@@ -18,7 +18,7 @@ const answer = 'nrel_answer';
 const baseKeynodes = [
     { id: question, type: ScType.NodeConstClass },
     { id: questionInitiated, type: ScType.NodeConstClass },
-    { id: actionGetProfessionsWithDescriptionsAgent, type: ScType.NodeConstClass },
+    { id: actionGetTestsWithDescriptionsAgent, type: ScType.NodeConstClass },
     { id: questionFinished, type: ScType.NodeConstClass },
 ];
 
@@ -30,7 +30,7 @@ const describeAgent = async (
     const template = new ScTemplate();
 
     template.triple(keynodes[question], ScType.EdgeAccessVarPosPerm, [ScType.NodeVar, actionNodeAlias]); //
-    template.triple(keynodes[actionGetProfessionsWithDescriptionsAgent], ScType.EdgeAccessVarPosPerm, actionNodeAlias); //
+    template.triple(keynodes[actionGetTestsWithDescriptionsAgent], ScType.EdgeAccessVarPosPerm, actionNodeAlias); //
 
     return [template, actionNodeAlias] as const;
 };
@@ -50,7 +50,7 @@ export const getAgentAnswer = async (circuitAddr: ScAddr) => {
             const linkContent = (await client.getLinkContents([link]))[0];
             console.log(linkContent);
             try {
-                 return JSON.parse(String(linkContent.data));
+                return JSON.parse(String(linkContent.data));
             } catch (error) {
                 console.error('Failed to parse JSON content:', error);
             }
@@ -59,7 +59,7 @@ export const getAgentAnswer = async (circuitAddr: ScAddr) => {
     return null;
 };
 
-export const getProfessionsWithDescriptionsAgent = async () => {
+export const getTestsWithDescriptionsAgent = async () => {
     const keynodes = await client.resolveKeynodes(baseKeynodes);
     console.log("Resolve call");
 

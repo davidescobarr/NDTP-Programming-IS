@@ -35,52 +35,55 @@ logging.basicConfig(
     level=logging.INFO, format="%(asctime)s | %(name)s | %(message)s", datefmt="[%d-%b-%y %H:%M:%S]"
 )
 
-class GetEstablishmentsWithDescriptionsAgent(ScAgentClassic):
+class GetTestsWithDescriptionsAgent(ScAgentClassic):
     def __init__(self):
-        super().__init__("action_get_estabilishments_with_descriptions_agent")
+        super().__init__("action_get_tests_with_descriptions_agent")
 
     def on_event(self, event_element: ScAddr, event_edge: ScAddr, action_element: ScAddr) -> ScResult:
         result = self.run(action_element)
         is_successful = result == ScResult.OK
         finish_action_with_status(action_element, is_successful)
-        self.logger.info("GetEstabilishmentsWithDescriptionsAgent finished %s",
+        self.logger.info("GetTestsWithDescriptionsAgent finished %s",
                          "successfully" if is_successful else "unsuccessfully")
         return result
 
     def run(self, action_node: ScAddr) -> ScResult:
-        self.logger.info("GetEstablishmentsWithDescriptionsAgent started")
+        self.logger.info("GetTestsWithDescriptionsAgent started")
 
+        # Resolve required keynodes
         nrel_full_info = ScKeynodes.resolve(
             "nrel_full_info", sc_types.NODE_NOROLE)
-        concept_establishment = ScKeynodes.resolve(
-            "concept_establishment", sc_types.NODE_CONST_CLASS)
+        concept_test = ScKeynodes.resolve(
+            "concept_test", sc_types.NODE_CONST_CLASS)
+        nrel_name = ScKeynodes.resolve(
+            "nrel_name", sc_types.NODE_NOROLE)
 
-        if not nrel_full_info or not concept_establishment:
+        if not nrel_full_info or not concept_test:
             self.logger.error("Required keynodes not found")
             return ScResult.ERROR
 
+        # Search for tests
         template = ScTemplate()
         template.triple(
-            concept_establishment,
+            concept_test,
             sc_types.EDGE_ACCESS_VAR_POS_PERM,
-            sc_types.NODE_VAR >> "_establishment"
+            sc_types.NODE_VAR >> "_test"
         )
 
         search_result = template_search(template)
         if not search_result:
-            self.logger.warning("No establishments found")
+            self.logger.warning("No tests found")
             return ScResult.ERROR_NOT_FOUND
 
-        establishments = {}
-
-        temp = []
+        tests = {}
 
         for item in search_result:
-            establishment_node = item.get("_establishment")
+            test_node = item.get("_test")
 
+            # Search for full info related to the test
             info_template = ScTemplate()
             info_template.triple_with_relation(
-                establishment_node,
+                test_node,
                 sc_types.EDGE_D_COMMON_VAR,
                 sc_types.LINK_VAR >> "_info_link",
                 sc_types.EDGE_ACCESS_VAR_POS_PERM,
@@ -91,18 +94,42 @@ class GetEstablishmentsWithDescriptionsAgent(ScAgentClassic):
             if not info_result:
                 continue
 
+
+
             for info_item in info_result:
                 info_link = info_item.get("_info_link")
                 info_content = get_link_content_data(info_link)
 
                 if info_content:
-                    establishment_idtf = get_system_idtf(establishment_node)
-                    establishments[establishment_idtf] = info_content
-                    temp.append(establishment_node)
-                    temp.append(info_link)
+
+                    name_template = ScTemplate()
+                    name_template.triple_with_relation(
+                        test_node,
+                        sc_types.EDGE_D_COMMON_VAR,
+                        sc_types.LINK_VAR >> "_name_link",
+                        sc_types.EDGE_ACCESS_VAR_POS_PERM,
+                        nrel_name
+                    )
+
+                    name_result = template_search(name_template)
+                    if not name_result:
+                        continue
+
+                    for name_item in name_result:
+                        name_link = name_item.get("_name_link")
+                        name_content = get_link_content_data(name_link)
+
+                        if name_content:
+                            test_idtf = get_system_idtf(test_node)
+                            test_desc = {}
+                            test_desc["name"] = name_content
+                            test_desc["info"] = info_content
+                            tests[test_idtf] = test_desc
                     
 
-        json_answer = json.dumps(establishments)
+        json_answer = json.dumps(tests)
+
+
 
         self.logger.info(json_answer)
 
@@ -110,5 +137,5 @@ class GetEstablishmentsWithDescriptionsAgent(ScAgentClassic):
 
         create_action_answer(action_node, json_link)
 
-        self.logger.info("Establishments found and answer created")
+        self.logger.info("Tests found and answer created")
         return ScResult.OK

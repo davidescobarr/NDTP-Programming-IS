@@ -1,0 +1,42 @@
+.hamburger-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+}
+
+.hamburger {
+    display: none;
+    margin: auto 0;
+    transition: 0.3s;
+}
+
+.hamburger .hamburger-react:hover {
+    filter: invert(0.5);
+}
+
+.hamburger-close {
+    position: absolute;
+    background: none;
+    border: none;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+}
+
+.hamburger-close:hover img {
+    filter: invert(0.7);
+}
+
+.hamburger-close img {
+    width: 50px;
+    height: 50px;
+    filter: invert(1);
+    transition: 0.3s;
+}
+
+.hamburger .hamburger-content .content {
+    margin: auto;
+}

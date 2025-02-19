@@ -24,12 +24,20 @@
     padding: 20px;
     border-radius: 12px;
     background-color: white;
-    height: 600px;
-    width: 700px;
     transform: scale(0.5);
     transition: 0.2s;
 }
 
 .modal__content.active {
     transform: scale(1);
+}
+
+.close__button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
 }

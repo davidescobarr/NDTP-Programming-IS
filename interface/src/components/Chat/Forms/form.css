@@ -20,8 +20,7 @@
   cursor: pointer;
   transition: 0.2s;
   font-weight: bold;
-  margin: 0 auto;
-  margin-top: 24px;
+  margin: 24px auto 0;
 }
 
 .button__next:hover {
@@ -53,4 +52,10 @@ form {
   font-family: "Advent Pro", sans-serif;
   font-size: 26px;
   text-align: center;
+}
+
+.in__form__block div article {
+  display: flex;
+  column-gap: 16px;
+  padding: 0 12px;
 }

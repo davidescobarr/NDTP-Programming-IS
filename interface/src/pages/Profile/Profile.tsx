@@ -2,6 +2,8 @@ import * as React from 'react';
 import {Profession} from "@components/Profession";
 import {searchAllUserInfo} from "@api/sc/search/searchUserInfo";
 import {useParams} from "react-router-dom";
+import {useModal} from "@model/ModalContext";
+import {ProfileSettings, ProfileSettingsDOM} from "@components/ProfileSettings";
 
 const avatar = require('@assets/img/avatar.png')
 const settings = require('@assets/icon/settings.png')
@@ -14,7 +16,7 @@ export const Profile = () => {
     const [userFirstName, setUserFirstName] = React.useState<string>();
     const [userSurname, setUserSurname] = React.useState<string>();
     const [userPatronymic, setUserPatronymic] = React.useState<string>();
-
+    const { openModal } = useModal();
 
     React.useEffect(() => {
         (async () => {
@@ -26,6 +28,7 @@ export const Profile = () => {
             setUserPatronymic(patronymic);
         })();
     }, [userId]);
+
     return (
         <div className="main">
             <div className="main-profile">
@@ -41,39 +44,12 @@ export const Profile = () => {
                                     <p>{userNickname}</p>
                                 </div>
                             </article>
-                            <button>
-                                <img src={settings} alt="settings" />
+                            <button onClick={() => {
+                                openModal(ProfileSettingsDOM, null);
+                            }}>
+                                <img src={settings} alt="settings"/>
                                 <p>Настройки пользователя</p>
                             </button>
-                            <button>
-                                <img src={settings} alt="settings" />
-                                <p>Чёрный список пользователей</p>
-                            </button>
-                        </div>
-                        <div className="profile-friends">
-                            <h3>Друзья</h3>
-                            <ul>
-                                <li>
-                                    <img src={avatar} alt="logo" />
-                                    <p>Имя пользователя</p>
-                                </li>
-                                <li>
-                                    <img src={avatar} alt="logo" />
-                                    <p>Имя пользователя</p>
-                                </li>
-                                <li>
-                                    <img src={avatar} alt="logo" />
-                                    <p>Имя пользователя</p>
-                                </li>
-                                <li>
-                                    <img src={avatar} alt="logo" />
-                                    <p>Имя пользователя</p>
-                                </li>
-                                <li>
-                                    <img src={avatar} alt="logo" />
-                                    <p>Имя пользователя</p>
-                                </li>
-                            </ul>
                         </div>
                     </div>
                     <aside className="profile-tests">

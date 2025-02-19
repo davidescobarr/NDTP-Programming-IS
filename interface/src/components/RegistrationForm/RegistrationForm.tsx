@@ -11,8 +11,13 @@ export function RegistrationForm () {
     const [patronymic, setPatronymic] = useState("");
     const navigate = useNavigate();
 
-    const handleSubmit = (event) => {
-        alert('Отправленное имя: ' + login);
+    constructor(props) {
+        super(props);
+
+        this.handleSubmit = this.handleSubmit.bind(this);
+    }
+
+    handleSubmit(event) {
         event.preventDefault();
     }
 
