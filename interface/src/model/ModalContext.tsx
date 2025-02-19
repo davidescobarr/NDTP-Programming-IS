@@ -36,4 +36,5 @@ export const useModal = (): ModalContextType => {
         throw new Error("useModal must be used within a ModalProvider");
     }
     return context;
+
 };

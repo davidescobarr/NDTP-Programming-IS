@@ -1,9 +1,7 @@
 import React, { lazy, useEffect, useState } from "react";
-import { Route, Redirect } from "react-router-dom";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 import { loadingComponent } from '@components/LoadingComponent';
 import { routes } from '@constants';
-import { client } from "@api";
-import { ScAddr, ScEventParams, ScEventType, ScTemplate, ScType } from "ts-sc-client";
 
 import 'antd/dist/antd.css';
 import './assets/main.css';
@@ -16,6 +14,7 @@ import { FooterPanel } from "@components/Footer";
 import {FormPanel} from "@components/Chat/Forms/Form";
 import {ModalProvider} from "@model/ModalContext";
 import Modal from "@components/Modal/Modal";
+import {DefaultLayout} from "./Layout";
 
 const Main = loadingComponent(lazy(() => import('@pages/Main')));
 const EstablishmentsLazy = loadingComponent(lazy(() => import('@pages/Establishments')));
@@ -25,69 +24,20 @@ const RegistrationLazy = loadingComponent(lazy(() => import('@pages/Registration
 const ProfileLazy = loadingComponent(lazy(() => import('@pages/Profile')));
 const TestsLazy = loadingComponent(lazy(() => import('@pages/Tests')));
 
-const MainRoutes = () => (
-    <>
-        <Route exact path={routes.MAIN} component={Main} />
-    </>
-);
-
-const EstablishmentsRoutes = () => (
-    <>
-        <Route path={routes.ESTABLISHMENTS} component={EstablishmentsLazy} />
-    </>
-);
-
-const ProfessionsRoutes = () => (
-    <>
-        <Route path={routes.PROFESSIONS} component={ProfessionsLazy} />
-    </>
-);
-
-const LoginRoutes = () => (
-    <>
-        <Route path={routes.LOGIN} component={LoginLazy} />
-    </>
-);
-
-const RegistrationRoutes = () => (
-    <>
-        <Route path={routes.REGISTRATION} component={RegistrationLazy} />
-    </>
-);
-
-const ProfileRoutes = () => (
-    <>
-        <Route path={routes.PROFILE} component={ProfileLazy} />
-    </>
-);
-
-const TestsRoutes = () => (
-    <>
-        <Route path={routes.TESTS} component={TestsLazy} />
-    </>
-);
-
 export const App = () => {
     return (
-        <Layout>
-            <ModalProvider>
-                <Header>
-                    <HeaderPanel />
-                </Header>
-                <Content>
-                    <MainRoutes />
-                    <EstablishmentsRoutes />
-                    <ProfessionsRoutes />
-                    <LoginRoutes />
-                    <RegistrationRoutes />
-                    <ProfileRoutes />
-                    <TestsRoutes />
-                </Content>
-                <Footer>
-                    <FooterPanel />
-                </Footer>
-                <Modal />
-            </ModalProvider>
-        </Layout>
+        <ModalProvider>
+            <BrowserRouter>
+                <Routes>
+                    <Route path={routes.MAIN} element={<DefaultLayout><Main/></DefaultLayout>} />
+                    <Route path={routes.PROFESSIONS} element={<DefaultLayout><ProfessionsLazy/></DefaultLayout>} />
+                    <Route path={routes.LOGIN} element={<DefaultLayout><LoginLazy/></DefaultLayout>} />
+                    <Route path={routes.ESTABLISHMENTS} element={<DefaultLayout><EstablishmentsLazy/></DefaultLayout>} />
+                    <Route path={routes.REGISTRATION} element={<DefaultLayout><RegistrationLazy/></DefaultLayout>} />
+                    <Route path={routes.PROFILE} element={<DefaultLayout><ProfileLazy/></DefaultLayout>} />
+                    <Route path={routes.TESTS} element={<DefaultLayout><TestsLazy/></DefaultLayout>} />
+                </Routes>
+            </BrowserRouter>
+        </ModalProvider>
     );
 };

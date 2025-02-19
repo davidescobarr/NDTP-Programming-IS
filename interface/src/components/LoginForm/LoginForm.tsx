@@ -1,50 +1,45 @@
-import React from "react";
+import React, {useState} from "react";
 import {registerUser} from "@agents/userRegistrationAgent";
 import {PROFILE} from "../../constants/routes";
 import {authenticateUser} from "@agents/userAuthorizationAgent";
+import {useNavigate} from "react-router-dom";
 
-export class LoginForm extends React.Component {
-    login = '';
-    password = '';
+export function LoginForm () {
+    const [login, setLogin] = useState("");
+    const [password, setPassword] = useState("");
+    const navigate = useNavigate();
 
-    constructor(props) {
-        super(props);
-
-        this.handleSubmit = this.handleSubmit.bind(this);
-    }
-
-    handleSubmit(event) {
-        alert('Отправленное имя: ' + this.login);
+    const handleSubmit = (event) => {
+        alert('Отправленное имя: ' + login);
         event.preventDefault();
     }
 
-    userAuthorizationCallBack = async () => {
-        const user = authenticateUser(this.login, this.password);
+    const userAuthorizationCallBack = async () => {
+        const user = await authenticateUser(login, password);
         if (user !== null){
-            this.goToProfilePage();
+            goToProfilePage(user.value);
         }
         else{
-            console.log("user isn't exist or password is wrong")
+            console.log("user doesn't exist or password is uncorrect");
         }
     }
 
-    goToProfilePage = () => {
-        window.history.pushState({}, '', PROFILE);
+    const goToProfilePage = (userId : number) => {
+        window.history.pushState({userId}, '', PROFILE);
+        navigate(`/Profile/${userId}`);
     };
 
-    render() {
-        return (
-            <form onSubmit={this.handleSubmit}>
-                <label>
-                    Имя пользователя:
-                    <input type="text" onChange={event => this.login = event.target.value} />
-                </label>
-                <label>
-                    Пароль:
-                    <input type="password" onChange={event => this.password = event.target.value}/>
-                </label>
-                <input type="submit" value="Войти" onClick={() => {this.userAuthorizationCallBack()}}/>
-            </form>
-        );
-    }
+    return (
+        <form onSubmit={handleSubmit}>
+            <label>
+                Имя пользователя:
+                <input type="text" onChange={event => setLogin(event.target.value)}/>
+            </label>
+            <label>
+                Пароль:
+                <input type="password" onChange={event => setPassword(event.target.value)}/>
+            </label>
+            <input type="submit" value="Войти" onClick={() => {userAuthorizationCallBack()}}/>
+        </form>
+    );
 }
