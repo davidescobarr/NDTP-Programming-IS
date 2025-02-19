@@ -11,16 +11,6 @@ export function RegistrationForm () {
     const [patronymic, setPatronymic] = useState("");
     const navigate = useNavigate();
 
-    constructor(props) {
-        super(props);
-
-        this.handleSubmit = this.handleSubmit.bind(this);
-    }
-
-    handleSubmit(event) {
-        event.preventDefault();
-    }
-
     const userRegistrationCallBack = async () => {
         const user = await registerUser(login, firstname, surname, patronymic, password);
         if (user !== null){
@@ -37,7 +27,7 @@ export function RegistrationForm () {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={userRegistrationCallBack}>
             <label>
                 Фамилия:
                 <input type="text" onChange={event => setSurname(event.target.value)} />
