@@ -23,8 +23,10 @@ const GlobalStyle = createGlobalStyle`
 
 ReactDOM.render(
     <Provider store={store}>
-        <GlobalStyle />
-        <App />
+        <BrowserRouter>
+            <GlobalStyle />
+            <App />
+        </BrowserRouter>
     </Provider>,
     document.getElementById('content'),
 );

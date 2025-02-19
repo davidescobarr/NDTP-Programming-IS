@@ -76,7 +76,7 @@ export const registerUser = async (nickname, firstname, surname, patronymic, pas
     console.log(circuitAddr);
     const user_data = "user_data";
 
-    if (!circuitAddr) return null;
+    if (!circuitAddr) return;
 
     template.triple(circuitAddr, ScType.EdgeAccessVarPosPerm, [ScType.NodeVar, user_data]);
     const resultNode = await client.templateSearch(template);
