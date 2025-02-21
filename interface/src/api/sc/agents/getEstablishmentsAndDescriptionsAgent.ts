@@ -6,7 +6,7 @@ const question = 'question';
 const questionInitiated = 'question_initiated';
 const questionFinished = 'question_finished';
 const nrelAnswer = 'nrel_answer';
-const actionGetEstablishmentsWithDescriptionsAgent = 'action_get_estabilishments_with_descriptions_agent';
+const actionGetEstablishmentsWithDescriptionsAgent = 'action_get_establishments_with_descriptions_agent';
 
 const rrel1 = 'rrel_1';
 const rrel2 = 'rrel_2';

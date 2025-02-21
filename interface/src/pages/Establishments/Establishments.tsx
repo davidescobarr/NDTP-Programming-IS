@@ -24,7 +24,7 @@ export const Establishments = () => {
                     <div className="establishments-list">
                         {
                             establishments !== null && Object.entries(establishments).map(([key, value]) => {
-                                return <Establishment idEstablishment={key} name={key} description={value} photo={bsuir} />
+                                return <Establishment idEstablishment={key} name={value.name} description={value.info} photo={bsuir} />
                             })
                         }
                     </div>
