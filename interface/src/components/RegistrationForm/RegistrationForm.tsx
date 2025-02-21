@@ -1,8 +1,13 @@
 import React from "react";
 import { registerUser } from "@api/sc/agents/userRegistrationAgent";
 import {PROFILE} from "../../constants/routes";
+import { NavigateFunction } from "react-router-dom";
 
-export class RegistrationForm extends React.Component {
+interface RegistrationFormProps {
+    navigate: NavigateFunction; // Указываем тип для navigate
+}
+
+export class RegistrationForm extends React.Component<RegistrationFormProps> {
     firstname = '';
     surname = '';
     patronymic = '';
@@ -27,7 +32,7 @@ export class RegistrationForm extends React.Component {
     }
 
     goToProfilePage = () => {
-        window.history.pushState({}, '', PROFILE);
+        this.props.navigate(PROFILE);
     };
 
     render() {

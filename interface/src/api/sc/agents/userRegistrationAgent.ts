@@ -86,6 +86,8 @@ export const registerUser = async (nickname, firstname, surname, patronymic, pas
         const user = resultNode[0].get(user_data);
         console.log(user);
         if (user) {
+            localStorage.setItem("nickname", nickname);
+            localStorage.setItem("password", password);
             return user;
         }
     }

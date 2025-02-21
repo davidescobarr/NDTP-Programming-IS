@@ -4,6 +4,10 @@ import {useModal} from "@model/ModalContext";
 import {ProfileSettings, ProfileSettingsDOM} from "@components/ProfileSettings";
 import {HistoryTest} from "@components/HistoryTest";
 import FadeInSection from "@components/FadeInSection/FadeInSection";
+import {useNavigate} from "react-router-dom";
+import {useEffect, useState} from "react";
+import {authenticateUser} from "@agents/userAuthorizationAgent";
+import {LOGIN, PROFILE} from "../../constants/routes";
 
 const avatar = require('@assets/img/avatar.png')
 const settings = require('@assets/icon/settings.png')
@@ -11,6 +15,21 @@ const bsuir = require('@assets/img/establishment_bsuir.png')
 
 export const Profile = () => {
     const { openModal } = useModal();
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        const nickname = localStorage.getItem("nickname");
+        const password = localStorage.getItem("password");
+        if(nickname === null || password === null) {
+            navigate(LOGIN);
+        } else {
+            const user = authenticateUser(nickname, password);
+            if (user === null) {
+                navigate(LOGIN);
+                localStorage.clear();
+            }
+        }
+    });
 
     return (
         <div className="main">
