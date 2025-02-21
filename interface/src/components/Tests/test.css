@@ -4,6 +4,12 @@
     margin: auto;
 }
 
+.modal__content {
+    max-width: 50%;
+    min-width: 300px;
+}
+
+
 .modal__content form label {
     display: flex;
     flex-direction: column;
@@ -20,7 +26,7 @@
     background-color: #F1F1F1;
 }
 
-.modal__content form input[type=submit] {
+.modal__content form input[type=submit], .modal__content div button {
     min-width: 307px;
     background-color: #F86F03;
     border: none;
@@ -31,9 +37,10 @@
     margin-top: 16px;
     cursor: pointer;
     transition: 0.3s;
+    width: 100%;
 }
 
-.modal__content form input[type=submit]:hover {
+.modal__content form input[type=submit]:hover, .modal__content div button:hover {
     color: #a8a8a8;
     background-color: #c55806;
 }

@@ -2,6 +2,7 @@ import * as React from 'react';
 import {Profession} from "@components/Profession";
 import {useModal} from "@model/ModalContext";
 import {ProfileSettings, ProfileSettingsDOM} from "@components/ProfileSettings";
+import {HistoryTest} from "@components/HistoryTest";
 
 const avatar = require('@assets/img/avatar.png')
 const settings = require('@assets/icon/settings.png')
@@ -35,20 +36,16 @@ export const Profile = () => {
                         <p>История тестов</p>
                         <ul>
                             <li>
-                                <p>Тест №1</p>
-                                <p>04.01.25</p>
+                                <HistoryTest nameTest="Тест №1" dateTest="04.01.25" resultTest="Итоги теста 1"/>
                             </li>
                             <li>
-                                <p>Тест №2</p>
-                                <p>16.01.25</p>
+                                <HistoryTest nameTest="Тест №2" dateTest="13.01.25" resultTest="Итоги теста 2"/>
                             </li>
                             <li>
-                                <p>Тест №3</p>
-                                <p>21.01.25</p>
+                                <HistoryTest nameTest="Тест №3" dateTest="16.02.25" resultTest="Итоги теста 3"/>
                             </li>
                             <li>
-                                <p>Тест №3</p>
-                                <p>21.01.25</p>
+                                <HistoryTest nameTest="Тест №4" dateTest="21.03.25" resultTest="Итоги теста 4"/>
                             </li>
                         </ul>
                     </aside>
