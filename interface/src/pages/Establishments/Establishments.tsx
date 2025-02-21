@@ -1,6 +1,7 @@
 import * as React from 'react';
 import {Establishment} from "@components/Establishment";
 import {getEstablishmentsWithDescriptionsAgent} from "@agents/getEstablishmentsAndDescriptionsAgent";
+import FadeInSection from "@components/FadeInSection/FadeInSection";
 
 const bsuir = require('@assets/img/establishment_bsuir.png')
 
@@ -16,17 +17,19 @@ export const Establishments = () => {
 
 
     return (
-        
         <div className="main">
             <section className="establishments">
                 <div className="section-content">
-                    <h1 className="title">Учебные заведения</h1>
+                    <FadeInSection>
+                        <h1 className="title">Учебные заведения</h1>
+                    </FadeInSection>
                     <div className="establishments-list">
-                        {
-                            establishments !== null && Object.entries(establishments).map(([key, value]) => {
-                                return <Establishment idEstablishment={key} name={key} description={value} photo={bsuir} />
-                            })
-                        }
+                        {establishments !== null &&
+                            Object.entries(establishments).map(([key, value]) => {
+                                return (
+                                    <Establishment idEstablishment={key} name={key} description={value} photo={bsuir} />
+                                );
+                            })}
                     </div>
                 </div>
             </section>

@@ -1,8 +1,9 @@
 import {useModal} from "@model/ModalContext";
+import './history-test.css';
 
 export const modalHistoryTest = ({ resultTest }) => {
     return (
-        <p>{resultTest}</p>
+        <p className="history-test-modal">{resultTest}</p>
     );
 }
 
