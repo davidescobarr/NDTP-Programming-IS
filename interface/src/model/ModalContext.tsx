@@ -14,13 +14,13 @@ export const ModalProvider: React.FC<{ children: ReactNode }> = ({ children }) =
     const [content, setContent] = useState<ReactNode | null>(null);
 
     const openModal = <T,>(Component: React.FC<T>, props: T) => {
+        setContent(null);
         setContent(<Component {...props} />);
         setIsOpen(true);
     };
 
     const closeModal = () => {
         setIsOpen(false);
-        setContent(null);
     };
 
     return (

@@ -504,18 +504,20 @@ main .establishments .section-content .professions-list .card_profession button:
     justify-content: space-between;
 }
 
-.auth .auth-top button {
+.auth .auth-top a {
     font-family: 'Finlandica', serif;
-    font-size: 32px;
+    font-size: 28px;
     text-decoration: none;
     border: none;
     border-radius: 52px;
     background: none;
     cursor: pointer;
+    padding: 0 8px;
     transition: 0.3s;
+    color: #000;
 }
 
-.auth .auth-top button:hover {
+.auth .auth-top a:hover {
     color: #979797;
 }
 
