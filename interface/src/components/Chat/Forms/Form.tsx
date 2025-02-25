@@ -139,9 +139,8 @@ export const FormPanel = ({closeModal}) => {
         });
     };
 
-    async function endTest() {
-        closeModal();
-
+    function endTest() {
+        console.log("it works"); // to do calling agent ts and py
         setTest(false);
     }
 
