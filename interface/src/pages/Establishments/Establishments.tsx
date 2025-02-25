@@ -26,7 +26,6 @@ export const Establishments = () => {
                     <div className="establishments-list">
                         {
                             establishments !== null && Object.entries(establishments).map(([key, value]) => {
-                                console.log(key);
                                 return <Establishment idEstablishment={key} name={value.name} description={value.info} photo={bsuir} />
                             })
                         }
