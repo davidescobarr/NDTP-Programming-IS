@@ -1,9 +1,14 @@
-import React from "react";
+import React, {ReactNode} from "react";
 import {registerUser} from "@agents/userRegistrationAgent";
-import {PROFILE} from "../../constants/routes";
+import {LOGIN, PROFILE} from "../../constants/routes";
 import {authenticateUser} from "@agents/userAuthorizationAgent";
+import { NavigateFunction } from "react-router-dom";
 
-export class LoginForm extends React.Component {
+interface LoginFormProps {
+    navigate: NavigateFunction; // Указываем тип для navigate
+}
+
+export class LoginForm extends React.Component<LoginFormProps> {
     login = '';
     password = '';
 
@@ -14,7 +19,6 @@ export class LoginForm extends React.Component {
     }
 
     handleSubmit(event) {
-        alert('Отправленное имя: ' + this.login);
         event.preventDefault();
     }
 
@@ -29,7 +33,7 @@ export class LoginForm extends React.Component {
     }
 
     goToProfilePage = () => {
-        window.history.pushState({}, '', PROFILE);
+        this.props.navigate(PROFILE);
     };
 
     render() {
