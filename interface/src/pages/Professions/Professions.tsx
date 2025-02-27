@@ -29,7 +29,7 @@ export const Professions = () => {
                                         idProfession={key}
                                         name={value.name}
                                         description={value.info}
-                                        photo={bsuir}
+                                        photo={require(`@assets/image/${key}/image.png`)}
                                     />
                                 );
                             })}
