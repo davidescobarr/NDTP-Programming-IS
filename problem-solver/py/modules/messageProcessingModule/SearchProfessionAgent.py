@@ -5,6 +5,7 @@ For this we wait for SIGINT.
 import logging
 from re import template
 from typing import List, Optional
+import json
 
 from sc_client.models import ScAddr, ScLinkContentType, ScTemplate, ScConstruction
 from sc_client.constants import sc_types
@@ -30,11 +31,6 @@ from sc_kpm.utils.action_utils import (
 )
 from sc_kpm import ScKeynodes
 
-logging.basicConfig(
-    level=logging.INFO, format="%(asctime)s | %(name)s | %(message)s", datefmt="[%d-%b-%y %H:%M:%S]"
-)
-
-
 class SearchProfessionAgent(ScAgentClassic):
     def __init__(self):
         super().__init__("action_search_profession")
@@ -43,150 +39,119 @@ class SearchProfessionAgent(ScAgentClassic):
         result = self.run(action_element)
         is_successful = result == ScResult.OK
         finish_action_with_status(action_element, is_successful)
-        self.logger.info("SearchProfessionAgent finished %s",
+        self.logger.info("GetHolandTestAgent finished %s",
                          "successfully" if is_successful else "unsuccessfully")
         return result
+
 
     def run(self, action_node: ScAddr) -> ScResult:
         self.logger.info("SearchProfessionAgent started")
 
-        try:
-            message_addr = get_action_arguments(action_node, 1)[0]
-            concept = ScKeynodes.reion_arguments(action_node, 1)[0]
-            concept = ScKeynodes.resolve(
-                "concept_profession", sc_types.NODE_CONST_CLASS)
-            nrel_profession = ScKeynodes.resolve(
-                "nrel_profession", sc_types.NODE_NOROLE)
-            nrel_skills = ScKeynodes.resolve(
-                "nrel_skills", sc_types.NODE_NOROLE)
-            message_type = ScKeynodes.resolve('concept_message_about_test', sc_types.NODE_CONST_CLASS)
+        # Получаем необходимые ключевые узлы
+        concept_profession = ScKeynodes.resolve("concept_profession", sc_types.NODE_CONST_CLASS)
+        nrel_skills = ScKeynodes.resolve("nrel_skills", sc_types.NODE_NOROLE)
 
-            if not check_edge(sc_types.EDGE_ACCESS_VAR_POS_PERM, message_type, message_addr):
-                self.logger.info(
-                    f"SearchProfessionAgent: the message isn’t about profession")
-                return ScResult.OK
-
-        except:
-            self.logger.info(f"SearchProfessionAgent: finished with an error")
-            return ScResult.ERROR
-
+        # Получаем навыки человека из базы знаний
         human_skills = self.get_human_skills()
-
-        if human_skills is None:
-            self.logger.info(f"SearchProfessionAgent: human skills is none")
+        if not human_skills:
+            self.logger.info("SearchProfessionAgent: human skills not found")
             return ScResult.ERROR_NOT_FOUND
 
-        if not len(human_skills) > 0:
-            self.logger.info(f"SearchProfessionAgent: human skills not found")
-            return ScResult.OK
-
-        concept_profession = ScKeynodes.resolve(
-            "concept_profession", sc_types.NODE_CONST_CLASS)
+        # Ищем все профессии
         template = ScTemplate()
-        # entity node or link
-
         template.triple(
             concept_profession,
             sc_types.EDGE_ACCESS_VAR_POS_PERM,
-            sc_types.NODE_VAR >> "_node"
+            sc_types.NODE_VAR >> "_profession"
         )
-
-        result = template_search(template)
-
-        if not len(result) > 0:
-            self.logger.info(
-                f"SearchProfessionAgent: the professions not found")
+        professions_result = template_search(template)
+        if not professions_result:
+            self.logger.info("SearchProfessionAgent: no professions found")
             return ScResult.ERROR_NOT_FOUND
 
+        # Подсчитываем для каждой профессии количество совпадающих навыков
         dict_professions = {}
+        for res in professions_result:
+            profession_node = res.get("_profession")
+            dict_professions[profession_node] = 0
 
-        for addr in result:
-            entity_profession = addr.get("_node")
-            dict_professions[entity_profession] = 0
-
+            # Получаем навыки конкретной профессии
             template = ScTemplate()
-            # entity node or link
-
             template.triple_with_relation(
-                entity_profession,
+                profession_node,
                 sc_types.EDGE_D_COMMON_VAR,
-                sc_types.NODE_VAR >> "_node",
+                sc_types.NODE_VAR >> "_skill",
                 sc_types.EDGE_ACCESS_VAR_POS_PERM,
                 nrel_skills
             )
-
-            result_skills = template_search(template)
-
-            if not len(result_skills) > 0:
+            skills_result = template_search(template)
+            if not skills_result:
                 continue
 
-            for addr_skill in result_skills:
-                skill = addr_skill.get("_node")
-                if not skill:
-                    continue
-                if skill in human_skills:
-                    dict_professions[entity_profession] += 1
+            for skill_res in skills_result:
+                skill_node = skill_res.get("_skill")
+                if skill_node and skill_node in human_skills:
+                    dict_professions[profession_node] += 1
 
-        if not len(dict_professions) > 0:
-            self.logger.info(
-                f"SearchProfessionAgent: the professions not found with generals skills")
+        if not dict_professions:
+            self.logger.info("SearchProfessionAgent: no matching professions found")
             return ScResult.ERROR_NOT_FOUND
 
-        self.logger.info(dict_professions)
+        self.logger.info("Professions scores: %s", dict_professions)
 
-        sorted_dict_professions = sorted(dict_professions, key=dict_professions.__getitem__)
-        profession = sorted_dict_professions[-1]
+        # Выбираем профессию с максимальным числом совпадений
+        sorted_professions = sorted(dict_professions, key=dict_professions.get)
+        best_profession = sorted_professions[-1]
 
-        profession_edge = create_edge(
-            sc_types.EDGE_ACCESS_CONST_POS_PERM, message_addr, profession)
-        create_action_answer(action_node, profession_edge)
+        # Получаем название выбранной профессии (например, системный идентификатор)
+        profession_name = get_system_idtf(best_profession)
+        self.logger.info("Selected profession: %s", profession_name)
+
+        # Формируем JSON-объект с названием профессии
+        result_data = {
+            "profession": profession_name
+        }
+        result_json = json.dumps(result_data)
+        self.logger.info(result_json)
+
+        # Создаём Sc-ссылку с JSON-текстом и отправляем её как ответ
+        result_link = create_link(result_json)
+        self.logger.info(create_link)
+        create_action_answer(action_node, result_link)
 
         return ScResult.OK
 
-    def get_human_skills(self):
+    def get_human_skills(self) -> List[ScAddr]:
+        # Разрешаем узел "concept_human"
         concept_human = ScKeynodes.resolve("concept_human", sc_types.NODE_CONST_CLASS)
+        nrel_skills = ScKeynodes.resolve("nrel_skills", sc_types.NODE_NOROLE)
 
-        nrel_skills = ScKeynodes.resolve(
-            "nrel_skills", sc_types.NODE_NOROLE)
-
+        # Находим узел, представляющий человека
         template = ScTemplate()
-
         template.triple(
             concept_human,
             sc_types.EDGE_ACCESS_VAR_POS_PERM,
-            sc_types.NODE_VAR >> "_node"
+            sc_types.NODE_VAR >> "_human"
         )
+        human_result = template_search(template)
+        if not human_result:
+            self.logger.info("SearchProfessionAgent: human node not found")
+            return []
 
-        result = template_search(template)
+        human_node = human_result[0].get("_human")
 
-        if not len(result) > 0:
-            self.logger.info(
-                f"SearchProfessionAgent: the human not found")
-            return None
-
-        human = result[0].get("_node")
-
+        # Извлекаем навыки человека
         template = ScTemplate()
-        # entity node or link
-
         template.triple_with_relation(
-            human,
+            human_node,
             sc_types.EDGE_D_COMMON_VAR,
-            sc_types.NODE_VAR >> "_node",
+            sc_types.NODE_VAR >> "_skill",
             sc_types.EDGE_ACCESS_VAR_POS_PERM,
             nrel_skills
         )
+        skills_result = template_search(template)
+        if not skills_result:
+            self.logger.info("SearchProfessionAgent: no human skills found")
+            return []
 
-        result_human_skills = template_search(template)
-
-        if not len(result_human_skills) > 0:
-            self.logger.info(
-                f"SearchProfessionAgent: the skills human not found")
-            return None
-
-        human_skills = []
-
-        for human_skill_addr in result_human_skills:
-            human_skills.append(human_skill_addr.get("_node"))
-
-        return human_skills
+        return [res.get("_skill") for res in skills_result if res.get("_skill")]

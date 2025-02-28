@@ -6,6 +6,7 @@ import { ScAddr, ScConstruction, ScTemplate, ScType } from 'ts-sc-client';
 import { number } from 'prop-types';
 import { Question } from './Question';
 import {useModal} from "@model/ModalContext";
+import {SearchProfession} from "@agents/searchProfessionAgent";
 const { Component, Fragment } = React
 const rootNode = document.getElementById('app')
 
@@ -139,8 +140,20 @@ export const FormPanel = ({closeModal}) => {
         });
     };
 
-    function endTest() {
+    async function endTest() {
+        closeModal();
         console.log("it works"); // to do calling agent ts and py
+
+        try {
+            const resultText = await SearchProfession();
+
+            console.log("Всё в порядке", resultText);
+            //openModal(endTestTestComponent, { text: resultText.text, closeModal });
+        } catch (error) {
+            console.error("Ошибка при анализе профориентацинного теста:", error);
+            //openModal(endTestTestComponent, { text: "Ошибка при обработке теста", closeModal });
+        }
+
         setTest(false);
     }
 

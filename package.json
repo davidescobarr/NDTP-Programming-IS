@@ -5,6 +5,7 @@
     "grunt-contrib-watch": "^1.1.0"
   },
   "dependencies": {
-    "prop-types": "^15.8.1"
+    "prop-types": "^15.8.1",
+    "screen": "^0.2.10"
   }
 }
