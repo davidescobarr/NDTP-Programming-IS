@@ -56,7 +56,6 @@ class GetEstablishmentsByProfessionAgent(ScAgentClassic):
     def run(self, action_node: ScAddr) -> ScResult:
         self.logger.info("GetEstablishmentsByProfessionAgent started")
 
-        # Проверка аргумента
         arguments = get_action_arguments(action_node)
         if not arguments or len(arguments) != 1:
             self.logger.error("Invalid arguments. Expected 1 argument: profession name.")
@@ -64,34 +63,29 @@ class GetEstablishmentsByProfessionAgent(ScAgentClassic):
 
         profession_name_link = arguments[0]
 
-        # Получение содержимого ссылки
         profession_name = set_content(profession_name_link)
         if not profession_name:
             self.logger.error("Failed to retrieve profession name from link.")
             return ScResult.ERROR_INVALID_STATE
-
-        # Поиск профессии по названию
+        
         concept_profession = ScKeynodes.resolve("concept_profession", sc_types.NODE_CONST_CLASS)
         profession_node = self.find_profession_by_name(profession_name, concept_profession)
         if not profession_node:
             self.logger.error("No profession found with the name: %s", profession_name)
             return ScResult.ERROR_NOT_FOUND
 
-        # Поиск специальностей, связанных с профессией
         nrel_set_required_specialities = ScKeynodes.resolve("nrel_set_required_specialities", sc_types.NODE_NOROLE)
         specialities = self.find_related_nodes(profession_node, nrel_set_required_specialities)
         if not specialities:
             self.logger.error("No specialities found for profession: %s", profession_name)
             return ScResult.ERROR_NOT_FOUND
 
-        # Поиск учебных заведений для каждой специальности
         concept_establishment = ScKeynodes.resolve("concept_establishment", sc_types.NODE_CONST_CLASS)
         establishments = self.find_establishments_for_specialities(specialities, concept_establishment)
         if not establishments:
             self.logger.error("No establishments found for the specialities of profession: %s", profession_name)
             return ScResult.ERROR_NOT_FOUND
 
-        # Формирование результата
         self.logger.info("Found establishments for profession '%s': %s", profession_name, establishments)
         return ScResult.OK
 

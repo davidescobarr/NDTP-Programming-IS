@@ -38,7 +38,6 @@ class GetEstablishmentsWithDescriptionsAgent(ScAgentClassic):
     def run(self, action_node: ScAddr) -> ScResult:
         self.logger.info("GetEstablishmentsWithDescriptionsAgent started")
 
-        # Разрешение ключевых узлов
         nrel_full_info = ScKeynodes.resolve("nrel_full_info", sc_types.NODE_NOROLE)
         concept_establishment = ScKeynodes.resolve("concept_establishment", sc_types.NODE_CONST_CLASS)
         nrel_main_idtf = ScKeynodes.resolve("nrel_main_idtf", sc_types.NODE_NOROLE)
@@ -47,7 +46,6 @@ class GetEstablishmentsWithDescriptionsAgent(ScAgentClassic):
             self.logger.error("Required keynodes not found")
             return ScResult.ERROR
 
-        # Поиск всех учебных заведений
         template = ScTemplate()
         template.triple(
             concept_establishment,
@@ -65,7 +63,6 @@ class GetEstablishmentsWithDescriptionsAgent(ScAgentClassic):
         for item in search_result:
             establishment_node = item.get("_establishment")
 
-            # Поиск информации (описания) через nrel_full_info
             info_template = ScTemplate()
             info_template.triple_with_relation(
                 establishment_node,
@@ -85,12 +82,11 @@ class GetEstablishmentsWithDescriptionsAgent(ScAgentClassic):
                 info_link = info_item.get("_info_link")
                 info_content = get_link_content_data(info_link)
                 if info_content:
-                    break  # Берём первый найденный результат
+                    break
 
             if not info_content:
-                continue  # Пропускаем заведение без описания
+                continue
 
-            # Поиск названия через nrel_main_idtf
             name_template = ScTemplate()
             name_template.triple_with_relation(
                 establishment_node,
@@ -113,7 +109,7 @@ class GetEstablishmentsWithDescriptionsAgent(ScAgentClassic):
                     break
 
             if not name_content:
-                continue  # Пропускаем заведение без названия
+                continue
 
             establishment_idtf = get_system_idtf(establishment_node)
             if establishment_idtf.strip().lower() == "info":

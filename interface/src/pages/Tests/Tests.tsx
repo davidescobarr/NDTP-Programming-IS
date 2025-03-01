@@ -11,7 +11,7 @@ import { analyzeIovaishiTestAgent } from "@agents/analyzeIovaishiTestAgent";
 import FadeInSection from "@components/FadeInSection/FadeInSection";
 
 
-const bsuir = require('@assets/img/establishment_bsuir.png');
+const bsuir = require('@assets/img/proftest.png');
 export const endTestTestComponent = ({ text, closeModal }) => {
     return (
         <div>
@@ -93,12 +93,13 @@ export const Tests = () => {
                             //})
                         }
                         {Object.entries(tests).map(([key, value]) => {
+                            console.log(key);
                             return (
                                 <Test
                                     name={value.name}
                                     description={value.info}
                                     idTest={key}
-                                    photo={bsuir}
+                                    photo={require(`@assets/image/${key}/image.png`)}
                                     componentTest={DefaultTest}
                                     propsTest={
                                         key === 'test_holand' ? [{ questions: holandTestData }, endTestTest] : key === "test_iovaishi" ? [{ questions: iovaishiTestData }, endTestIovaishi] : [{ questions: holandTestData}, endTestTest]
