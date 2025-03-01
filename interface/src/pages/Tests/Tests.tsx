@@ -4,8 +4,10 @@ import { DefaultTest } from "@components/Tests/DefaultTest";
 import { FormPanelComponent } from "@components/Chat/Forms/Form";
 import { getTestsWithDescriptionsAgent } from "@agents/getTestsAndDescriptionsAgent";
 import { getHolandTestAgent } from "@agents/getHolandTestAgent";
+import { getIovaishiTestAgent } from "@agents/getIovaishiTestAgent";
 import {useModal} from "@model/ModalContext"; // Импорт агента
 import { analyzeHolandTestAgent } from "@agents/analyzeHolandTestAgent";
+import { analyzeIovaishiTestAgent } from "@agents/analyzeIovaishiTestAgent";
 import FadeInSection from "@components/FadeInSection/FadeInSection";
 
 
@@ -39,10 +41,26 @@ const endTestTest = async ({ questions, closeModal, openModal }) => {
     }
 };
 
+const endTestIovaishi = async ({ questions, closeModal, openModal }) => {
+    closeModal(); // Закрываем текущий модал
+    console.log("okay");
+
+    try {
+        const resultText = await analyzeIovaishiTestAgent(questions);
+
+        console.log("dasdasd", resultText);
+        openModal(endTestTestComponent, { text: resultText.text, closeModal });
+    } catch (error) {
+        console.error("Ошибка при анализе теста Йовайши:", error);
+        openModal(endTestTestComponent, { text: "Ошибка при обработке теста", closeModal });
+    }
+};
+
 
 export const Tests = () => {
     const [tests, setTests] = React.useState<Map<string, string>>(new Map());
     const [holandTestData, setHolandTestData] = React.useState(null);
+    const [iovaishiTestData, setIovaishiTestData] = React.useState(null);
 
     React.useEffect(() => {
         (async () => {
@@ -54,6 +72,11 @@ export const Tests = () => {
                 const holandData = await getHolandTestAgent();
                 console.log("Holand Test Data:", holandData);
                 setHolandTestData(holandData);
+            }
+            if (testsData["test_iovaishi"]) {
+                const iovaishiData = await getIovaishiTestAgent();
+                console.log("Iovaishi Test Data:", iovaishiData);
+                setIovaishiTestData(iovaishiData);
             }
         })();
     }, []);
@@ -79,7 +102,8 @@ export const Tests = () => {
                                     photo={bsuir}
                                     componentTest={DefaultTest}
                                     propsTest={
-                                        key === 'test_holand' ? [{ questions: holandTestData }, endTestTest] : []
+                                        key === 'test_holand' ? [{ questions: holandTestData }, endTestTest] : key === "test_iovaishi" ? [{ questions: iovaishiTestData }, endTestIovaishi] : []
+
                                     }
                                 />
                             );

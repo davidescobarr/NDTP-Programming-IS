@@ -101,6 +101,8 @@ class SearchProfessionAgent(ScAgentClassic):
 
         # Выбираем профессию с максимальным числом совпадений
         sorted_professions = sorted(dict_professions, key=dict_professions.get)
+        for i in sorted_professions:
+            self.logger.info(get_system_idtf(i))
         best_profession = sorted_professions[-1]
 
         # Получаем название выбранной профессии (например, системный идентификатор)

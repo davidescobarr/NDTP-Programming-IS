@@ -13,6 +13,8 @@ from .GetProfessionsWIthDescriptions import GetProfessionsWithDescriptions
 from .GetTestsWithDescriptionsAgent import GetTestsWithDescriptionsAgent
 from .GetHolandTestAgent import GetHolandTestAgent
 from .AnalyzeHolandTestAgent import AnalyzeHolandTestAgent
+from .GetIovaishiTestAgent import GetIovaishiTestAgent
+from .AnalyzeIovaishiTestAgent import AnalyzeIovaishiTestAgent
 
 
 class MessageProcessingModule(ScModule):
@@ -30,5 +32,7 @@ class MessageProcessingModule(ScModule):
                          UserInfoAgent(),
                          GetTestsWithDescriptionsAgent(),
                          GetHolandTestAgent(),
-                         AnalyzeHolandTestAgent()
+                         AnalyzeHolandTestAgent(),
+                         GetIovaishiTestAgent(),
+                         AnalyzeIovaishiTestAgent()
                          )
