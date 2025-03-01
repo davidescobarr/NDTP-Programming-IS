@@ -147,9 +147,29 @@ export const FormPanel = ({closeModal, openModal}) => {
     function getNameByProfession(profession) {
         switch (profession) {
             case "Waiter":
-                return "официант";
+                return "официант"
             case "Plumber":
-                return "Сантехник"
+                return "сантехник"
+            case "Architector":
+                return "архитектор"
+            case "Builder":
+                return "строитель"
+            case "Doctor":
+                return "врач"
+            case "Cooker":
+                return "повар"
+            case "Electric":
+                return "электрик"
+            case "Fireman":
+                return "пожарный"
+            case "Programmer":
+                return "программист"
+            case "Teacher":
+                return "учитель"
+            case "Lawyer":
+                return "юрист"
+            case "Psychologist":
+                return "психолог"
             default:
                 return "Неизвестно";
         }

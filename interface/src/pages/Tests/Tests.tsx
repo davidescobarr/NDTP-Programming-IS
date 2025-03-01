@@ -101,64 +101,12 @@ export const Tests = () => {
                                     photo={bsuir}
                                     componentTest={DefaultTest}
                                     propsTest={
-                                        key === 'test_holand' ? [{ questions: holandTestData }, endTestTest] : key === "test_iovaishi" ? [{ questions: iovaishiTestData }, endTestIovaishi] : []
+                                        key === 'test_holand' ? [{ questions: holandTestData }, endTestTest] : key === "test_iovaishi" ? [{ questions: iovaishiTestData }, endTestIovaishi] : [{ questions: holandTestData}, endTestTest]
 
                                     }
                                 />
                             );
                         })}
-                        <Test
-                            name="test"
-                            description="description"
-                            idTest="test"
-                            photo={bsuir}
-                            componentTest={DefaultTest}
-                            propsTest={[
-                                {
-                                    questions: [
-                                        {
-                                            display_name: 'Как вы относитесь к животным?',
-                                            answers: [
-                                                {
-                                                    name: 'Хорошо',
-                                                    id: 0,
-                                                },
-                                                {
-                                                    name: 'Нормально',
-                                                    id: 1,
-                                                },
-                                                {
-                                                    name: 'Плохо',
-                                                    id: 2,
-                                                },
-                                            ],
-                                        },
-                                        {
-                                            display_name: 'Как часто вы занимаетесь спортом?',
-                                            answers: [
-                                                {
-                                                    name: 'Часто',
-                                                    id: 0,
-                                                },
-                                                {
-                                                    name: 'Достаточно',
-                                                    id: 1,
-                                                },
-                                                {
-                                                    name: 'Иногда',
-                                                    id: 2,
-                                                },
-                                                {
-                                                    name: 'Редко',
-                                                    id: 3,
-                                                },
-                                            ],
-                                        },
-                                    ],
-                                },
-                                endTestTest,
-                            ]}
-                        />
                         <Test
                             name="Профориентационный тест"
                             description="Пройдя данный тест вы сможете определить свою профессию."
