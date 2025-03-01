@@ -41,8 +41,8 @@ export const Profile = () => {
                                 <article className="avatar">
                                     <img src={avatar} alt="logo"/>
                                     <div>
-                                        <h1>Фамилия Имя Отчество</h1>
-                                        <p>Имя пользователя</p>
+                                        <h1>{localStorage.getItem("firstname")} {localStorage.getItem("surname")} {localStorage.getItem("patronymic")}</h1>
+                                        <p>{localStorage.getItem("nickname")}</p>
                                     </div>
                                 </article>
                                 <button onClick={() => {

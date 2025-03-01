@@ -25,7 +25,7 @@ export class RegistrationForm extends React.Component<RegistrationFormProps> {
     }
 
     userRegistrationCallBack = async () => {
-        const user = registerUser(this.login, this.firstname, this.surname, this.patronymic, this.password);
+        const user = await registerUser(this.login, this.firstname, this.surname, this.patronymic, this.password);
         if (user !== null){
             this.goToProfilePage();
         }
