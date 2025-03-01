@@ -11,12 +11,16 @@ const { Component, Fragment } = React
 const rootNode = document.getElementById('app')
 
 export const FormPanelComponent = () => {
-    const { closeModal } = useModal();
+    const { closeModal, openModal } = useModal();
 
-    return FormPanel({closeModal});
+    return FormPanel({closeModal, openModal});
 }
 
-export const FormPanel = ({closeModal}) => {
+export const ResultTestModalComponent = ({text}) => {
+    return <p>{text}</p>;
+}
+
+export const FormPanel = ({closeModal, openModal}) => {
     const [test, setTest] = useState(false)
 
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
@@ -140,6 +144,17 @@ export const FormPanel = ({closeModal}) => {
         });
     };
 
+    function getNameByProfession(profession) {
+        switch (profession) {
+            case "Waiter":
+                return "официант";
+            case "Plumber":
+                return "Сантехник"
+            default:
+                return "Неизвестно";
+        }
+    }
+
     async function endTest() {
         closeModal();
         console.log("it works"); // to do calling agent ts and py
@@ -148,6 +163,7 @@ export const FormPanel = ({closeModal}) => {
             const resultText = await SearchProfession();
 
             console.log("Всё в порядке", resultText);
+            openModal(ResultTestModalComponent, {text: `Ваша профессия - ${getNameByProfession(resultText.profession)}`});
             //openModal(endTestTestComponent, { text: resultText.text, closeModal });
         } catch (error) {
             console.error("Ошибка при анализе профориентацинного теста:", error);
