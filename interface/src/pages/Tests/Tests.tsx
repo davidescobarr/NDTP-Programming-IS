@@ -12,7 +12,6 @@ import FadeInSection from "@components/FadeInSection/FadeInSection";
 
 
 const bsuir = require('@assets/img/establishment_bsuir.png');
-
 export const endTestTestComponent = ({ text, closeModal }) => {
     return (
         <div>
