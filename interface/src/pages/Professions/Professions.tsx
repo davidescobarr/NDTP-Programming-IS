@@ -1,12 +1,22 @@
 import * as React from 'react';
-import {Profession} from "@components/Profession";
-import {getProfessionsWithDescriptionsAgent} from "@agents/getProfessionsAndDescriptionsAgent";
+import { Profession } from "@components/Profession";
+import { getProfessionsWithDescriptionsAgent } from "@agents/getProfessionsAndDescriptionsAgent";
 import FadeInSection from "@components/FadeInSection/FadeInSection";
 
-const bsuir = require('@assets/img/establishment_bsuir.png')
+const bsuir = require('@assets/img/establishment_bsuir.png');
+
+// Функция для безопасной загрузки изображения
+const getProfessionImage = (key: string) => {
+    try {
+        return require(`@assets/image/${key}/image.png`);
+    } catch (e) {
+        return require(`@assets/image/default_profession.png`);
+    }
+};
 
 export const Professions = () => {
     const [professions, setProfessions] = React.useState<Map<string, string>>(new Map());
+
     React.useEffect(() => {
         (async () => {
             const professions = await getProfessionsWithDescriptionsAgent();
@@ -20,7 +30,9 @@ export const Professions = () => {
             <section className="establishments">
                 <div className="section-content">
                     <FadeInSection>
-                        <h1 className="title">Профессии</h1></FadeInSection>
+                        <h1 className="title">Профессии</h1>
+                    </FadeInSection>
+
                     <div className="professions-list">
                         {professions !== null &&
                             Object.entries(professions).map(([key, value]) => {
@@ -29,7 +41,7 @@ export const Professions = () => {
                                         idProfession={key}
                                         name={value.name}
                                         description={value.info}
-                                        photo={require(`@assets/image/${key}/image.png`)}
+                                        photo={getProfessionImage(key)}
                                     />
                                 );
                             })}
@@ -38,4 +50,4 @@ export const Professions = () => {
             </section>
         </div>
     );
-}
+};
