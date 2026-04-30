@@ -5,7 +5,6 @@ import FadeInSection from "@components/FadeInSection/FadeInSection";
 
 const bsuir = require('@assets/img/establishment_bsuir.png');
 
-// Функция для безопасной загрузки изображения
 const getProfessionImage = (key: string) => {
     try {
         return require(`@assets/image/${key}/image.png`);
