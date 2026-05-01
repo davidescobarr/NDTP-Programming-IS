@@ -15,6 +15,8 @@ from .GetHolandTestAgent import GetHolandTestAgent
 from .AnalyzeHolandTestAgent import AnalyzeHolandTestAgent
 from .GetIovaishiTestAgent import GetIovaishiTestAgent
 from .AnalyzeIovaishiTestAgent import AnalyzeIovaishiTestAgent
+from .GetMotivationalTestAgent import GetMotivationalTestAgent
+from .AnalyzeMotivationalTestAgent import AnalyzeMotivationalTestAgent
 
 
 class MessageProcessingModule(ScModule):
@@ -34,5 +36,7 @@ class MessageProcessingModule(ScModule):
                          GetHolandTestAgent(),
                          AnalyzeHolandTestAgent(),
                          GetIovaishiTestAgent(),
-                         AnalyzeIovaishiTestAgent()
+                         AnalyzeIovaishiTestAgent(),
+                         GetMotivationalTestAgent(),
+                         AnalyzeMotivationalTestAgent()
                          )

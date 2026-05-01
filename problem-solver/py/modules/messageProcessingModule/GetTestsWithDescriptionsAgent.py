@@ -76,6 +76,7 @@ class GetTestsWithDescriptionsAgent(ScAgentClassic):
             return ScResult.ERROR_NOT_FOUND
 
         tests = {}
+        self.logger.warning(len(search_result))
 
         for item in search_result:
             test_node = item.get("_test")
