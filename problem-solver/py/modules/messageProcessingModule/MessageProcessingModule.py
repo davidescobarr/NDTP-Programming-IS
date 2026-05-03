@@ -17,6 +17,8 @@ from .GetIovaishiTestAgent import GetIovaishiTestAgent
 from .AnalyzeIovaishiTestAgent import AnalyzeIovaishiTestAgent
 from .GetMotivationalTestAgent import GetMotivationalTestAgent
 from .AnalyzeMotivationalTestAgent import AnalyzeMotivationalTestAgent
+from .GetPersonalityToSuccessAgent import GetPersonalityToSuccessAgent
+from .AnalyzePersonalityToSuccessTestAgent import AnalyzePersonalityToSuccessTestAgent
 
 
 class MessageProcessingModule(ScModule):
@@ -38,5 +40,7 @@ class MessageProcessingModule(ScModule):
                          GetIovaishiTestAgent(),
                          AnalyzeIovaishiTestAgent(),
                          GetMotivationalTestAgent(),
-                         AnalyzeMotivationalTestAgent()
+                         AnalyzeMotivationalTestAgent(),
+                         GetPersonalityToSuccessAgent(),
+                         AnalyzePersonalityToSuccessTestAgent()
                          )

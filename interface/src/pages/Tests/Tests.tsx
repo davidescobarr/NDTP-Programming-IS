@@ -11,6 +11,8 @@ import { analyzeIovaishiTestAgent } from "@agents/analyzeIovaishiTestAgent";
 import FadeInSection from "@components/FadeInSection/FadeInSection";
 import { GetMotivationalTestAgent } from '@api/sc/agents/getMotivationalTestAgent';
 import { analyzeMotivationalTestAgent } from '@api/sc/agents/analyzeMotivationalTestAgent';
+import { GetPersonalityToSuccessTestAgent } from '@api/sc/agents/getPersonalityToSuccessTestAgent';
+import { analyzePersonalityToSuccessTestAgent } from '@api/sc/agents/analyzePersonalityToSuccessTestAgent';
 
 
 const getTestImage = (key: string) => {
@@ -57,6 +59,7 @@ export const Tests = () => {
     const [holandTestData, setHolandTestData] = React.useState(null);
     const [iovaishiTestData, setIovaishiTestData] = React.useState(null);
     const [motivationalTestData, setMotivationalTestData] = React.useState(null);
+    const [personalityToSuccessTestData, setPersonalityToSuccessTestData] = React.useState(null);
 
     React.useEffect(() => {
         (async () => {
@@ -79,13 +82,20 @@ export const Tests = () => {
                 console.log("Motivational Test Data:", motivationalData);
                 setMotivationalTestData(motivationalData);
             }
+            if (testsData["test_personalitytosuccess"]) {
+                console.log('31243253465465464356');
+                const personalityToSuccessData = await GetPersonalityToSuccessTestAgent();
+                console.log("PersonalityToSuccess Test Data:", personalityToSuccessData);
+                setPersonalityToSuccessTestData(personalityToSuccessData);
+            }
         })();
     }, []);
 
     const testConfig = {
     'test_holand': [{ questions: holandTestData }, createEndTestHandler(analyzeHolandTestAgent, 'Холланда')],
     'test_iovaishi': [{ questions: iovaishiTestData }, createEndTestHandler(analyzeIovaishiTestAgent, 'Йоваши')],
-    'test_motivational': [{ questions: motivationalTestData}, createEndTestHandler(analyzeMotivationalTestAgent, 'Мотивационный тест')]
+    'test_motivational': [{ questions: motivationalTestData}, createEndTestHandler(analyzeMotivationalTestAgent, 'Мотивационный тест')],
+    'test_personalitytosuccess': [{ questions: personalityToSuccessTestData}, createEndTestHandler(analyzePersonalityToSuccessTestAgent, 'Диагностика личности на мотивацию к успеху')]
     };
 
     
