@@ -4,7 +4,7 @@ import { routes } from '@constants';
 import FadeInSection from "@components/FadeInSection/FadeInSection";
 import {useEffect} from "react";
 import {authenticateUser} from "@agents/userAuthorizationAgent";
-import {PROFILE} from "../../constants/routes";
+import {MAIN} from "../../constants/routes";
 import {useNavigate} from "react-router-dom";
 
 export const Registration = () => {
@@ -16,7 +16,7 @@ export const Registration = () => {
         if(nickname !== null && password !== null) {
             const user = authenticateUser(nickname, password);
             if (user !== null){
-                navigate(PROFILE);
+                navigate(MAIN);
             } else {
                 localStorage.clear();
             }
