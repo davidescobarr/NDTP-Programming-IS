@@ -9,10 +9,18 @@ import {useModal} from "@model/ModalContext"; // Импорт агента
 import { analyzeHolandTestAgent } from "@agents/analyzeHolandTestAgent";
 import { analyzeIovaishiTestAgent } from "@agents/analyzeIovaishiTestAgent";
 import FadeInSection from "@components/FadeInSection/FadeInSection";
-import { GetMotivationalTestAgent } from '@api/sc/agents/getMotivationalTestAgent';
+import { getMotivationalTestAgent } from '@api/sc/agents/getMotivationalTestAgent';
 import { analyzeMotivationalTestAgent } from '@api/sc/agents/analyzeMotivationalTestAgent';
-import { GetPersonalityToSuccessTestAgent } from '@api/sc/agents/getPersonalityToSuccessTestAgent';
+import { getPersonalityToSuccessTestAgent } from '@api/sc/agents/getPersonalityToSuccessTestAgent';
 import { analyzePersonalityToSuccessTestAgent } from '@api/sc/agents/analyzePersonalityToSuccessTestAgent';
+import { getNeedInAchievementTestAgent } from '@api/sc/agents/getNeedInAchievementAgent';
+import { analyzeNeedInAchievementTestAgent } from '@api/sc/agents/analyzeNeedInAchievementTestAgent';
+import { getNeedInApprovalTestAgent } from '@api/sc/agents/getNeedInApprovalAgent';
+import { analyzeNeedInApprovalTestAgent } from '@api/sc/agents/analyzeNeedInApprovalTestAgent';
+import { getAbilityInSympathyTestAgent } from '@api/sc/agents/getAbilityInSympathyAgent';
+import { analyzeAbilityInSympathyTestAgent } from '@api/sc/agents/analyzeAbilityInSympathyTestAgent';
+import { GetAdvancedTestAgent } from '@api/sc/agents/getAdvancedAgent';
+import { AnalyzeAdvancedTestAgent } from '@api/sc/agents/analyzeAdvancedTestAgent';
 
 
 const getTestImage = (key: string) => {
@@ -60,6 +68,10 @@ export const Tests = () => {
     const [iovaishiTestData, setIovaishiTestData] = React.useState(null);
     const [motivationalTestData, setMotivationalTestData] = React.useState(null);
     const [personalityToSuccessTestData, setPersonalityToSuccessTestData] = React.useState(null);
+    const [needInAchievementTestData, setNeedInAchievementTestData] = React.useState(null);
+    const [needInApprovalTestData, setneedInApprovalTestData] = React.useState(null);
+    const [abilityInSympathyTestData, setAbilityInSympathyTestData] = React.useState(null);
+    const [advancedTestData, setAdvancedTestData] = React.useState(null);
 
     React.useEffect(() => {
         (async () => {
@@ -78,15 +90,34 @@ export const Tests = () => {
                 setIovaishiTestData(iovaishiData);
             }
             if (testsData["test_motivational"]) {
-                const motivationalData = await GetMotivationalTestAgent();
+                const motivationalData = await getMotivationalTestAgent();
                 console.log("Motivational Test Data:", motivationalData);
                 setMotivationalTestData(motivationalData);
             }
             if (testsData["test_personalitytosuccess"]) {
-                console.log('31243253465465464356');
-                const personalityToSuccessData = await GetPersonalityToSuccessTestAgent();
+                const personalityToSuccessData = await getPersonalityToSuccessTestAgent();
                 console.log("PersonalityToSuccess Test Data:", personalityToSuccessData);
                 setPersonalityToSuccessTestData(personalityToSuccessData);
+            }
+            if (testsData["test_needinachievement"]) {
+                const needInAchievementTestData = await getNeedInAchievementTestAgent();
+                console.log("NeedInAchievement Test Data:", needInAchievementTestData);
+                setNeedInAchievementTestData(needInAchievementTestData);
+            }
+            if (testsData["test_needinapproval"]) {
+                const needInApprovalTestData = await getNeedInApprovalTestAgent();
+                console.log("NeedInApproval Test Data:", needInApprovalTestData);
+                setneedInApprovalTestData(needInApprovalTestData);
+            }
+            if (testsData["test_abilityinsympathy"]) {
+                const abilityInSympathyTestData = await getAbilityInSympathyTestAgent();
+                console.log("AbilityInSympathy Test Data:", abilityInSympathyTestData);
+                setAbilityInSympathyTestData(abilityInSympathyTestData);
+            }
+            if (testsData["test_advanced"]) {
+                const advancedTestData = await GetAdvancedTestAgent();
+                console.log("Advanced Test Data:", advancedTestData);
+                setAdvancedTestData(advancedTestData);
             }
         })();
     }, []);
@@ -95,7 +126,11 @@ export const Tests = () => {
     'test_holand': [{ questions: holandTestData }, createEndTestHandler(analyzeHolandTestAgent, 'Холланда')],
     'test_iovaishi': [{ questions: iovaishiTestData }, createEndTestHandler(analyzeIovaishiTestAgent, 'Йоваши')],
     'test_motivational': [{ questions: motivationalTestData}, createEndTestHandler(analyzeMotivationalTestAgent, 'Мотивационный тест')],
-    'test_personalitytosuccess': [{ questions: personalityToSuccessTestData}, createEndTestHandler(analyzePersonalityToSuccessTestAgent, 'Диагностика личности на мотивацию к успеху')]
+    'test_personalitytosuccess': [{ questions: personalityToSuccessTestData}, createEndTestHandler(analyzePersonalityToSuccessTestAgent, 'Диагностика личности на мотивацию к успеху')],
+    'test_needinachievement': [{ questions: needInAchievementTestData}, createEndTestHandler(analyzeNeedInAchievementTestAgent, 'Оценка потребности в достижении')],
+    'test_needinapproval': [{ questions: needInApprovalTestData}, createEndTestHandler(analyzeNeedInApprovalTestAgent, 'Оценка потребности в одобрении')],
+    'test_abilityinsympathy': [{ questions: abilityInSympathyTestData}, createEndTestHandler(analyzeAbilityInSympathyTestAgent, 'Диагностика способности к эмпатии')],
+    'test_advanced': [{ questions: advancedTestData}, createEndTestHandler(AnalyzeAdvancedTestAgent, 'Расширенный тест')]
     };
 
     
@@ -114,7 +149,7 @@ export const Tests = () => {
                             }
                         {Object.entries(tests).map(([key, value]) => {
                             console.log(key);
-                            const propsTest = testConfig[key] || createEndTestHandler(analyzeHolandTestAgent, 'Холланда');
+                            const propsTest = testConfig[key] || [{questions: holandTestData}, createEndTestHandler(analyzeHolandTestAgent, 'Холланда')];
                             return (
                                 <Test
                                     name={value.name}
@@ -128,7 +163,8 @@ export const Tests = () => {
                         })}
                         <Test
                             name="Профориентационный тест"
-                            description="Пройдя данный тест вы сможете определить свою профессию."
+                            description="Глубокий анализ интересов, способностей и предпочтений.
+Даёт более точный и развернутый профиль, чем экспресс‑тест, и помогает выбрать подходящие сферы."
                             idTest="test"
                             photo={bsuir}
                             componentTest={FormPanelComponent}
