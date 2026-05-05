@@ -1,5 +1,5 @@
 import React, { lazy, useEffect, useState } from "react";
-import {BrowserRouter, Navigate, Route, Routes} from "react-router-dom";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 import { loadingComponent } from '@components/LoadingComponent';
 import { routes } from '@constants';
 import { client } from "@api";
@@ -23,6 +23,7 @@ const EstablishmentsLazy = loadingComponent(lazy(() => import('@pages/Establishm
 const ProfessionsLazy = loadingComponent(lazy(() => import('@pages/Professions')));
 const LoginLazy = loadingComponent(lazy(() => import('@pages/Login')));
 const RegistrationLazy = loadingComponent(lazy(() => import('@pages/Registration')));
+const ProfileLazy = loadingComponent(lazy(() => import('@pages/Profile')));
 const TestsLazy = loadingComponent(lazy(() => import('@pages/Tests')));
 
 const MainRoutes = () => (
@@ -45,6 +46,10 @@ const RegistrationRoutes = () => (
     <Route path={routes.REGISTRATION} element={<RegistrationLazy />} />
 );
 
+const ProfileRoutes = () => (
+    <Route path={routes.PROFILE} element={<ProfileLazy />} />
+);
+
 const TestsRoutes = () => (
     <Route path={routes.TESTS} element={<TestsLazy />} />
 );
@@ -63,7 +68,7 @@ export const App = () => {
                         <Route path={routes.PROFESSIONS} element={<ProfessionsLazy/>}/>
                         <Route path={routes.LOGIN} element={<LoginLazy/>} />
                         <Route path={routes.REGISTRATION} element={<RegistrationLazy />} />
-                        <Route path={routes.PROFILE} element={<Navigate to={routes.MAIN} replace />} />
+                        <Route path={routes.PROFILE} element={<ProfileLazy />} />
                         <Route path={routes.TESTS} element={<TestsLazy />} />
                     </Routes>
                 </Content>

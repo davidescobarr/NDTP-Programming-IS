@@ -11,7 +11,7 @@ export const FooterPanel = () => {
                         <NavLink to={routes.MAIN}>Главная</NavLink>
                     </li>
                     <li>
-                        <NavLink to={routes.TESTS}>Пройти тест</NavLink>
+                        <NavLink to={routes.TESTS}>Тесты</NavLink>
                     </li>
                     <li>
                         <NavLink to={routes.ESTABLISHMENTS}>Учебные заведения</NavLink>

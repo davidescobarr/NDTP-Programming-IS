@@ -3,7 +3,7 @@ import {LoginForm} from "@components/LoginForm";
 import { NavLink, useNavigate } from "react-router-dom";
 import { routes } from '@constants';
 import FadeInSection from "@components/FadeInSection/FadeInSection";
-import {MAIN} from "../../constants/routes";
+import {PROFILE} from "../../constants/routes";
 import {authenticateUser} from "@agents/userAuthorizationAgent";
 
 
@@ -16,7 +16,7 @@ export const Login = () => {
         if(nickname !== null && password !== null) {
             const user = authenticateUser(nickname, password);
             if (user !== null){
-                navigate(MAIN);
+                navigate(PROFILE);
             } else {
                 localStorage.clear();
             }

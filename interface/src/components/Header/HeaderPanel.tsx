@@ -25,13 +25,16 @@ export const NavRoutes = () => {
     return (
         <ul className="nav">
             <li>
-                <NavLink to={routes.TESTS}>Пройти тест</NavLink>
+                <NavLink to={routes.TESTS}>Тесты</NavLink>
             </li>
             <li>
                 <NavLink to={routes.ESTABLISHMENTS}>Учебные заведения</NavLink>
             </li>
             <li>
                 <NavLink to={routes.PROFESSIONS}>Профессии</NavLink>
+            </li>
+            <li>
+                <NavLink to={routes.PROFILE}>Личный кабинет</NavLink>
             </li>
         </ul>
     );
