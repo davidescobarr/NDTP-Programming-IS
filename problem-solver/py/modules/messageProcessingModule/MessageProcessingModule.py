@@ -27,6 +27,10 @@ from .GetAbilityInSympathyTestAgent import GetAbilityInSympathyTestAgent
 from .AnalyzeAbilityInSympathyTestAgent import AnalyzeAbilityInSympathyTestAgent
 from .GetAdvancedTestAgent import GetAdvancedTestAgent
 from .AnalyzeAdvancedTestAgent import AnalyzeAdvancedTestAgent
+from .GetHumanitiesLevelTestAgent import GetHumanitiesLevelTestAgent
+from .AnalyzeHumanitiesLevelTestAgent import AnalyzeHumanitiesLevelTestAgent
+from .GetTechnicianLevelTestAgent import GetTechinicianLevelTestAgent
+from .AnalyzeTechnicianLevelTestAgent import AnalyzeTechnicianLevelTestAgent
 
 
 class MessageProcessingModule(ScModule):
@@ -58,5 +62,9 @@ class MessageProcessingModule(ScModule):
                          GetAbilityInSympathyTestAgent(),
                          AnalyzeAbilityInSympathyTestAgent(),
                          GetAdvancedTestAgent(),
-                         AnalyzeAdvancedTestAgent()
+                         AnalyzeAdvancedTestAgent(),
+                         GetHumanitiesLevelTestAgent(),
+                         AnalyzeHumanitiesLevelTestAgent(),
+                         GetTechinicianLevelTestAgent(),
+                         AnalyzeTechnicianLevelTestAgent()
                          )

@@ -19,8 +19,12 @@ import { getNeedInApprovalTestAgent } from '@api/sc/agents/getNeedInApprovalAgen
 import { analyzeNeedInApprovalTestAgent } from '@api/sc/agents/analyzeNeedInApprovalTestAgent';
 import { getAbilityInSympathyTestAgent } from '@api/sc/agents/getAbilityInSympathyAgent';
 import { analyzeAbilityInSympathyTestAgent } from '@api/sc/agents/analyzeAbilityInSympathyTestAgent';
-import { GetAdvancedTestAgent } from '@api/sc/agents/getAdvancedAgent';
-import { AnalyzeAdvancedTestAgent } from '@api/sc/agents/analyzeAdvancedTestAgent';
+import { getAdvancedTestAgent } from '@api/sc/agents/getAdvancedAgent';
+import { analyzeAdvancedTestAgent } from '@api/sc/agents/analyzeAdvancedTestAgent';
+import { getHumanitiesLevelTestAgent } from '@api/sc/agents/getHumanitiesLevelTestAgent';
+import { analyzeHumanitiesLevelTestAgent } from '@api/sc/agents/analyzeHumanitiesLevelTestAgent';
+import { getTechnicianLevelTestAgent } from '@api/sc/agents/getTechnicianLevelTestAgent';
+import { analyzeTechnicianLevelTestAgent } from '@api/sc/agents/analyzeTechnicianLevelTestAgent';
 
 
 const getTestImage = (key: string) => {
@@ -72,6 +76,8 @@ export const Tests = () => {
     const [needInApprovalTestData, setneedInApprovalTestData] = React.useState(null);
     const [abilityInSympathyTestData, setAbilityInSympathyTestData] = React.useState(null);
     const [advancedTestData, setAdvancedTestData] = React.useState(null);
+    const [humanitiesLevelTestData, setHumanitiesLevelTestData] = React.useState(null);
+    const [technicianLevelTestData, setTechnicianLevelTestData] = React.useState(null);
 
     React.useEffect(() => {
         (async () => {
@@ -115,9 +121,19 @@ export const Tests = () => {
                 setAbilityInSympathyTestData(abilityInSympathyTestData);
             }
             if (testsData["test_advanced"]) {
-                const advancedTestData = await GetAdvancedTestAgent();
+                const advancedTestData = await getAdvancedTestAgent();
                 console.log("Advanced Test Data:", advancedTestData);
                 setAdvancedTestData(advancedTestData);
+            }
+            if (testsData["test_humanitieslevel"]) {
+                const humanitiesLevelTestData = await getHumanitiesLevelTestAgent();
+                console.log("HumanitiesLevel Test Data:", humanitiesLevelTestData);
+                setHumanitiesLevelTestData(humanitiesLevelTestData);
+            }
+            if (testsData["test_technicianlevel"]) {
+                const technicianLevelTestData = await getTechnicianLevelTestAgent();
+                console.log("TechnicianLevel Test Data:", technicianLevelTestData);
+                setTechnicianLevelTestData(technicianLevelTestData);
             }
         })();
     }, []);
@@ -130,7 +146,9 @@ export const Tests = () => {
     'test_needinachievement': [{ questions: needInAchievementTestData}, createEndTestHandler(analyzeNeedInAchievementTestAgent, 'Оценка потребности в достижении')],
     'test_needinapproval': [{ questions: needInApprovalTestData}, createEndTestHandler(analyzeNeedInApprovalTestAgent, 'Оценка потребности в одобрении')],
     'test_abilityinsympathy': [{ questions: abilityInSympathyTestData}, createEndTestHandler(analyzeAbilityInSympathyTestAgent, 'Диагностика способности к эмпатии')],
-    'test_advanced': [{ questions: advancedTestData}, createEndTestHandler(AnalyzeAdvancedTestAgent, 'Расширенный тест')]
+    'test_advanced': [{ questions: advancedTestData}, createEndTestHandler(analyzeAdvancedTestAgent, 'Расширенный тест')],
+    'test_humanitieslevel': [{ questions: humanitiesLevelTestData}, createEndTestHandler(analyzeHumanitiesLevelTestAgent, 'Оценка склонности к гуманитарным наукам')],
+    'test_technicianlevel': [{ questions: technicianLevelTestData}, createEndTestHandler(analyzeTechnicianLevelTestAgent, 'Оценка склонности к техническим наукам')]
     };
 
     

@@ -10,12 +10,12 @@ import {
 import { makeAgent } from '@api/sc/agents/makeAgent';
 
 const question = 'question';
-const actionAnalyzeAdvancedTestAgent = 'action_analyze_advanced_test_agent';
+const actionAnalyzeTechnicianLevelTestAgent = 'action_analyze_technician_level_test_agent';
 const rrel1 = 'rrel_1';
 
 const baseKeynodes = [
   { id: question, type: ScType.NodeConstClass },
-  { id: actionAnalyzeAdvancedTestAgent, type: ScType.NodeConstClass },
+  { id: actionAnalyzeTechnicianLevelTestAgent, type: ScType.NodeConstClass },
   { id: rrel1, type: ScType.NodeConstRole },
 ];
 
@@ -49,7 +49,7 @@ const describeAgent = async (
   );
 
   template.triple(
-      keynodes[actionAnalyzeAdvancedTestAgent],
+      keynodes[actionAnalyzeTechnicianLevelTestAgent],
       ScType.EdgeAccessVarPosPerm,
       actionNodeAlias
   );
@@ -90,7 +90,7 @@ export const getAgentAnswer = async (circuitAddr: ScAddr) => {
   return null;
 };
 
-export const analyzeAdvancedTestAgent = async (userAnswers: object) => {
+export const analyzeTechnicianLevelTestAgent = async (userAnswers: object) => {
   const keynodes = await client.resolveKeynodes(baseKeynodes);
   console.log("Ключевые узлы получены");
 
