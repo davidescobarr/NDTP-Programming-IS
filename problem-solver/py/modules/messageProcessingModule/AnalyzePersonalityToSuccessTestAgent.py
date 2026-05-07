@@ -91,10 +91,8 @@ class AnalyzePersonalityToSuccessTestAgent(ScAgentClassic):
             # Подсчет баллов
             if idx in yes_score_questions and answer_val == 0:  # Ответ "Да"
                 total_score += 1
-                self.logger.debug("Question %d: Yes (answer=0) -> +1 point", idx)
             elif idx in no_score_questions and answer_val == 1:  # Ответ "Нет"
                 total_score += 1
-                self.logger.debug("Question %d: No (answer=1) -> +1 point", idx)
             else:
                 self.logger.debug("Question %d: no point added (answer=%d)", idx, answer_val)
             

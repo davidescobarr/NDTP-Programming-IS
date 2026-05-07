@@ -1,6 +1,6 @@
 import React from "react";
 import { registerUser } from "@api/sc/agents/userRegistrationAgent";
-import {MAIN} from "../../constants/routes";
+import {PROFILE} from "../../constants/routes";
 import { NavigateFunction } from "react-router-dom";
 
 interface RegistrationFormProps {
@@ -27,12 +27,12 @@ export class RegistrationForm extends React.Component<RegistrationFormProps> {
     userRegistrationCallBack = async () => {
         const user = await registerUser(this.login, this.firstname, this.surname, this.patronymic, this.password);
         if (user !== null){
-            this.goToMainPage();
+            this.goToProfilePage();
         }
     }
 
-    goToMainPage = () => {
-        this.props.navigate(MAIN);
+    goToProfilePage = () => {
+        this.props.navigate(PROFILE);
     };
 
     render() {

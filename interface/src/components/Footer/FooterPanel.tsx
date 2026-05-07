@@ -24,7 +24,7 @@ export const FooterPanel = () => {
                     </li>
                 </ul>
             </div>
-            <hr/>
+            <hr />
             <div className="about-container">
                 <p>
                     Copyright © 2005-2025 OSTIS
@@ -35,4 +35,4 @@ export const FooterPanel = () => {
             </div>
         </div>
     );
-}
+};

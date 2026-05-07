@@ -40,7 +40,7 @@ export const getAgentAnswer = async (circuitAddr: ScAddr) => {
     return null;
 };
 
-export const GetMotivationalTestAgent = async () => {
+export const getMotivationalTestAgent = async () => {
     const keynodes = await client.resolveKeynodes(baseKeynodes);
     console.log("Resolved keynodes");
 

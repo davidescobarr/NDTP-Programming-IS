@@ -19,6 +19,18 @@ from .GetMotivationalTestAgent import GetMotivationalTestAgent
 from .AnalyzeMotivationalTestAgent import AnalyzeMotivationalTestAgent
 from .GetPersonalityToSuccessAgent import GetPersonalityToSuccessAgent
 from .AnalyzePersonalityToSuccessTestAgent import AnalyzePersonalityToSuccessTestAgent
+from .GetNeedInAchievementTestAgent import GetNeedInAchievementTestAgent
+from .AnalyzeNeedInAchievementTestAgent import AnalyzeNeedInAchievementTestAgent
+from. GetNeedInApprovalTestAgent import GetNeedInApprovalTestAgent
+from .AnalyzeNeedInApprovalTestAgent import AnalyzeNeedInApprovalTestAgent
+from .GetAbilityInSympathyTestAgent import GetAbilityInSympathyTestAgent
+from .AnalyzeAbilityInSympathyTestAgent import AnalyzeAbilityInSympathyTestAgent
+from .GetAdvancedTestAgent import GetAdvancedTestAgent
+from .AnalyzeAdvancedTestAgent import AnalyzeAdvancedTestAgent
+from .GetHumanitiesLevelTestAgent import GetHumanitiesLevelTestAgent
+from .AnalyzeHumanitiesLevelTestAgent import AnalyzeHumanitiesLevelTestAgent
+from .GetTechnicianLevelTestAgent import GetTechinicianLevelTestAgent
+from .AnalyzeTechnicianLevelTestAgent import AnalyzeTechnicianLevelTestAgent
 
 
 class MessageProcessingModule(ScModule):
@@ -42,5 +54,17 @@ class MessageProcessingModule(ScModule):
                          GetMotivationalTestAgent(),
                          AnalyzeMotivationalTestAgent(),
                          GetPersonalityToSuccessAgent(),
-                         AnalyzePersonalityToSuccessTestAgent()
+                         AnalyzePersonalityToSuccessTestAgent(),
+                         GetNeedInAchievementTestAgent(),
+                         AnalyzeNeedInAchievementTestAgent(),
+                         GetNeedInApprovalTestAgent(),
+                         AnalyzeNeedInApprovalTestAgent(),
+                         GetAbilityInSympathyTestAgent(),
+                         AnalyzeAbilityInSympathyTestAgent(),
+                         GetAdvancedTestAgent(),
+                         AnalyzeAdvancedTestAgent(),
+                         GetHumanitiesLevelTestAgent(),
+                         AnalyzeHumanitiesLevelTestAgent(),
+                         GetTechinicianLevelTestAgent(),
+                         AnalyzeTechnicianLevelTestAgent()
                          )

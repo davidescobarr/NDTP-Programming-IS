@@ -9,8 +9,8 @@ import './assets/main.css';
 import { Layout } from 'antd';
 const { Header, Content, Footer } = Layout;
 
-import { HeaderPanel } from "@components/Header";
-import { FooterPanel } from "@components/Footer";
+import { HeaderPanel } from "@components/Header/HeaderPanel";
+import { FooterPanel } from "@components/Footer/FooterPanel";
 import { ModalProvider } from "@model/ModalContext";
 import Modal from "@components/Modal/Modal";
 
@@ -31,10 +31,10 @@ export const App = () => {
                 </Header>
                 <Content>
                     <Routes>
-                        <Route path={routes.MAIN} element={<Main/>}/>
+                        <Route path={routes.MAIN} element={<Main />} />
                         <Route path={routes.ESTABLISHMENTS} element={<EstablishmentsLazy />} />
-                        <Route path={routes.PROFESSIONS} element={<ProfessionsLazy/>}/>
-                        <Route path={routes.LOGIN} element={<LoginLazy/>} />
+                        <Route path={routes.PROFESSIONS} element={<ProfessionsLazy />} />
+                        <Route path={routes.LOGIN} element={<LoginLazy />} />
                         <Route path={routes.REGISTRATION} element={<RegistrationLazy />} />
                         <Route path={routes.PROFILE} element={<Navigate to={routes.MAIN} replace />} />
                         <Route path={routes.TESTS} element={<TestsLazy />} />

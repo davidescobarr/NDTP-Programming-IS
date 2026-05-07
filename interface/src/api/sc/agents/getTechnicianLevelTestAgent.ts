@@ -3,10 +3,10 @@ import { ScAddr, ScTemplate, ScType } from 'ts-sc-client';
 import { makeAgent } from '@api/sc/agents/makeAgent';
 
 const question = 'question';
-const actionGetPersonalityToSuccessTestAgent = 'action_get_personality_to_success_test_agent';
+const actionGetTechnicianLevelTestAgent = 'action_get_technician_level_test_agent';
 const baseKeynodes = [
     { id: question, type: ScType.NodeConstClass },
-    { id: actionGetPersonalityToSuccessTestAgent, type: ScType.NodeConstClass },
+    { id: actionGetTechnicianLevelTestAgent, type: ScType.NodeConstClass },
 ];
 
 const describeAgent = async (keynodes: Record<string, ScAddr>) => {
@@ -14,7 +14,7 @@ const describeAgent = async (keynodes: Record<string, ScAddr>) => {
 
     const template = new ScTemplate();
     template.triple(keynodes[question], ScType.EdgeAccessVarPosPerm, [ScType.NodeVar, actionNodeAlias]);
-    template.triple(keynodes[actionGetPersonalityToSuccessTestAgent], ScType.EdgeAccessVarPosPerm, actionNodeAlias);
+    template.triple(keynodes[actionGetTechnicianLevelTestAgent], ScType.EdgeAccessVarPosPerm, actionNodeAlias);
 
     return [template, actionNodeAlias] as const;
 };
@@ -40,7 +40,7 @@ export const getAgentAnswer = async (circuitAddr: ScAddr) => {
     return null;
 };
 
-export const getPersonalityToSuccessTestAgent = async () => {
+export const getTechnicianLevelTestAgent = async () => {
     const keynodes = await client.resolveKeynodes(baseKeynodes);
     console.log("Resolved keynodes");
 
