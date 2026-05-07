@@ -1,4 +1,20 @@
 services:
+  career-ai:
+    image: ostis/nika-career-ai:0.1.0
+    build:
+      context: ./career-ai-service
+      dockerfile: ./Dockerfile
+    container_name: nika-career-ai
+    restart: unless-stopped
+    ports:
+      - "8010:8010"
+    expose:
+      - 8010
+    networks:
+      - nika
+    environment:
+      - CORS_ORIGINS=http://localhost:3033,http://127.0.0.1:3033
+
   web:
     image: ostis/sc-web:prerelease-0.8.0
     build:

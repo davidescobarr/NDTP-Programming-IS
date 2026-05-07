@@ -1,9 +1,7 @@
-import React, { lazy, useEffect, useState } from "react";
-import {BrowserRouter, Navigate, Route, Routes} from "react-router-dom";
+import React, { lazy } from "react";
+import { Navigate, Route, Routes } from "react-router-dom";
 import { loadingComponent } from '@components/LoadingComponent';
 import { routes } from '@constants';
-import { client } from "@api";
-import { ScAddr, ScEventParams, ScEventType, ScTemplate, ScType } from "ts-sc-client";
 
 import 'antd/dist/antd.css';
 import './assets/main.css';
@@ -13,10 +11,8 @@ const { Header, Content, Footer } = Layout;
 
 import { HeaderPanel } from "@components/Header";
 import { FooterPanel } from "@components/Footer";
-import {FormPanel} from "@components/Chat/Forms/Form";
-import {ModalProvider} from "@model/ModalContext";
+import { ModalProvider } from "@model/ModalContext";
 import Modal from "@components/Modal/Modal";
-import Tests from "@pages/Tests";
 
 const Main = loadingComponent(lazy(() => import('@pages/Main')));
 const EstablishmentsLazy = loadingComponent(lazy(() => import('@pages/Establishments')));
@@ -24,30 +20,7 @@ const ProfessionsLazy = loadingComponent(lazy(() => import('@pages/Professions')
 const LoginLazy = loadingComponent(lazy(() => import('@pages/Login')));
 const RegistrationLazy = loadingComponent(lazy(() => import('@pages/Registration')));
 const TestsLazy = loadingComponent(lazy(() => import('@pages/Tests')));
-
-const MainRoutes = () => (
-    <Route path={routes.MAIN} element={<Main/>}/>
-);
-
-const EstablishmentsRoutes = () => (
-    <Route path={routes.ESTABLISHMENTS} element={<EstablishmentsLazy />} />
-);
-
-const ProfessionsRoutes = () => (
-    <Route path={routes.PROFESSIONS} element={<ProfessionsLazy/>}/>
-);
-
-const LoginRoutes = () => (
-    <Route path={routes.LOGIN} element={<LoginLazy/>} />
-);
-
-const RegistrationRoutes = () => (
-    <Route path={routes.REGISTRATION} element={<RegistrationLazy />} />
-);
-
-const TestsRoutes = () => (
-    <Route path={routes.TESTS} element={<TestsLazy />} />
-);
+const CareerTestLazy = loadingComponent(lazy(() => import('@pages/CareerTest')));
 
 export const App = () => {
     return (
@@ -65,6 +38,7 @@ export const App = () => {
                         <Route path={routes.REGISTRATION} element={<RegistrationLazy />} />
                         <Route path={routes.PROFILE} element={<Navigate to={routes.MAIN} replace />} />
                         <Route path={routes.TESTS} element={<TestsLazy />} />
+                        <Route path={routes.CAREER_TEST} element={<CareerTestLazy />} />
                     </Routes>
                 </Content>
                 <Footer>

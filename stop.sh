@@ -9,5 +9,6 @@ stop_screen_session "session1"
 stop_screen_session "session2"
 stop_screen_session "session3"
 stop_screen_session "session4"
+stop_screen_session "career-ai"
 
 echo "Screens stopped"
