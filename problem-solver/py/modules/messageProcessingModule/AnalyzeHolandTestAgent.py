@@ -41,7 +41,6 @@ class AnalyzeHolandTestAgent(ScAgentClassic):
     def run(self, action_node: ScAddr) -> ScResult:
         self.logger.info("AnalyzeHolandTestAgent started")
 
-        # Получаем JSON с ответами (Sc-ссылка)
         json_link = get_action_arguments(action_node, 1)[0]
         json_data = get_link_content_data(json_link)
         if not json_data:
@@ -49,16 +48,6 @@ class AnalyzeHolandTestAgent(ScAgentClassic):
             return ScResult.ERROR
 
         try:
-            # Ожидается, что JSON – это массив объектов-вопросов, например:
-            # [
-            #   {
-            #       "display_name": "Какая профессия вам больше подходит?",
-            #       "answers": [ {"name": "Инженер-технолог", "id": 0},
-            #                    {"name": "Инженер-конструктор", "id": 1} ],
-            #       "answer": 0
-            #   },
-            #   ...
-            # ]
             questions = json.loads(json_data)
             self.logger.info("Received JSON data: %s", questions)
         except json.JSONDecodeError as e:
@@ -69,11 +58,6 @@ class AnalyzeHolandTestAgent(ScAgentClassic):
             self.logger.error("JSON data is not a list")
             return ScResult.ERROR
 
-        # Таблица категорий.
-        # Для каждой категории указаны идентификаторы вопросов,
-        # при которых начисляется балл для данной категории.
-        # Суффикс "а" означает, что балл начисляется, если выбран вариант с id=0;
-        # суффикс "в" – если выбран вариант с id=1.
         category_definitions = {
             "category1": ["1а", "2а", "3а", "4а", "5а", "16а", "17а", "19а", "21а", "28а", "31а", "32а", "33а", "34а"],
             "category2": ["1в", "6а", "7а", "8а", "9а", "16в", "20а", "22а", "23а", "24а", "31в", "35а", "36а", "37а"],
@@ -83,29 +67,21 @@ class AnalyzeHolandTestAgent(ScAgentClassic):
             "category6": ["5в", "9в", "12в", "14в", "15в", "21в", "24в", "27в", "29в", "30в", "34в", "37в", "41а", "42в"],
         }
 
-        # Инициализируем счетчики баллов для каждой категории
         category_scores = {cat: 0 for cat in category_definitions}
 
-        # Проходим по всем вопросам. Если в JSON не указан явный номер вопроса, используем порядковый номер.
         for i, question in enumerate(questions):
             answer_val = question.get("answer")
-            # Формируем эффективный идентификатор:
-            # номер вопроса (i+1) + суффикс "а" (если answer == 0) или "в" (если answer == 1)
             question_number = i + 1
             effective_id = f"{question_number}{'а' if answer_val == 0 else 'в'}"
             self.logger.info("Question %s: effective id %s", question_number, effective_id)
 
-            # Для каждого вопроса проверяем, в каких категориях содержится этот идентификатор
             for cat, id_list in category_definitions.items():
                 if effective_id in id_list:
                     category_scores[cat] += 1
 
-        # Находим категорию с максимальным количеством баллов
         winning_category = max(category_scores, key=category_scores.get)
         self.logger.info("Winning category: %s", winning_category)
 
-        # Здесь в зависимости от победившей категории записываем разный текст.
-        # Вы можете заменить сообщения на свои.
         if winning_category == "category1":
             result_text = '''Ваш результат преобладает в категории 1.
                             Реалистический – предпочитает работать с вещами, а не с

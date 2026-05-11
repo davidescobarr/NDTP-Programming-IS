@@ -1,6 +1,8 @@
 import * as React from 'react';
 import Counter from "@components/Counter/Counter";
 import FadeInSection from "@components/FadeInSection/FadeInSection";
+import { Link } from 'react-router-dom';
+import { CareerTest } from '../CareerTest/CareerTest';
 
 const banner1 = require('@assets/img/banner1.png'); // with require
 const banner2 = require('@assets/img/banner2.png'); // with require
@@ -53,9 +55,9 @@ export const Main = () => {
                             <div>
                                 <img src={icon_question} alt="icon-modern" />
                                 <p>
-                                    <b>Возможность вопросов</b>
+                                    <b>Ответы на вопросы</b>
                                 </p>
-                                <p>На сайте можно задавать вопросы касаемо учебных заведений и профессий</p>
+                                <p>На сайте можно ознакомиться с информацией об учебных заведениях и профессиях</p>
                             </div>
                         </FadeInSection>
                     </section>
@@ -84,7 +86,9 @@ export const Main = () => {
                                     заведении
                                 </b>
                             </p>
-                            <button>Зарегистрироваться</button>
+                            <Link to="/Test">  {/* 👈 Оборачиваем кнопку в Link */}
+                                <button>Пройти тест</button>
+                            </Link>
                         </div>
                     </FadeInSection>
                 </div>
